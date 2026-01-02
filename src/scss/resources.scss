@@ -1,5 +1,10 @@
-// Resources import: variables and fonts for global usage
-@import 'variables';
-@import 'fonts';
+@mixin fullHeightFullWidth {
+  width: 100%;
+  height: 100%;
+}
 
-// Add other global imports below
+@mixin makeItCenter ($horizontal: center, $vertical: center) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}

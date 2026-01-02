@@ -1,0 +1,65 @@
+{%- render 'stylesheet', name: 'category-grid' -%}
+
+<div class="category-grid-section">
+  <div class="container">
+    <div class="category__content">
+      {% if section.settings.section_title %}
+        <h2 class="category-grid-section__title">{{ section.settings.section_title }}</h2>
+      {% endif %}
+
+      {% if section.settings.section_subtitle %}
+        <p class="category-grid-section__subtitle">{{ section.settings.section_subtitle }}</p>
+      {% endif %}
+    </div>
+    <div class="category__wrapper">
+      {% for category in section.settings.section_list %}
+        <div class="category-item {{ category.title | downcase }}">
+          {% if category.featured_image and category.url %}
+            <a href="{{ category.url }}" class="category-item__link">
+              {{ category.featured_image | image_url: width: 600 | image_tag }}
+              {% if category.title %}
+                <h2 class="category-item__name">{{ category.title }}</h2>
+              {% endif %}
+            </a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Category Grid",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Category Grid Settings"
+      },
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Section Title",
+        "default": "View Our Range Of Categories"
+      },
+      {
+        "type": "text",
+        "id": "section_subtitle",
+        "label": "Section Subtitle",
+        "default": "Browse our categories: Implants, Devices, Accessories, and Consumables. Find what you need with ease."
+      },
+      {
+        "type": "collection_list",
+        "id": "section_list",
+        "label": "Category List"
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Category Grid",
+        "category": "Collections"
+      }
+    ]
+  }
+{% endschema %}
