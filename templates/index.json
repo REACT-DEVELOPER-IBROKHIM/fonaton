@@ -1,10 +1,73 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "navigation": {
-      "type": "navigation"
+      "type": "navigation",
+      "settings": {
+        "navigation_logo_light": "shopify://shop_images/logo_22b057a9-a987-424a-a833-38f1817f6002.svg",
+        "navigation_logo_dark": "shopify://shop_images/Group.svg",
+        "navigation_logo_alt_text": "FONATON"
+      }
+    },
+    "hero_rxeQg7": {
+      "type": "hero",
+      "name": "Hero Section",
+      "settings": {
+        "hero_heading": "Rediscover Every Sound",
+        "hero_subheading": "Experience the world in full clarity with our advanced hearing solutions. Designed for comfort and precision, our devices help you reconnect with loved ones and enjoy every moment—loud and clear.",
+        "is_cta_link": true,
+        "hero_cta_link": "shopify://collections/all",
+        "hero_cta_text": "Register for FREE Consultation",
+        "hero_video": "shopify://files/videos/IMG_0062 (3).mp4"
+      }
+    },
+    "category_grid_zYPD8t": {
+      "type": "category-grid",
+      "name": "Category Grid",
+      "settings": {
+        "section_title": "View Our Range Of Categories",
+        "section_subtitle": "Browse our categories: Implants, Devices, Accessories, and Consumables. Find what you need with ease.",
+        "section_list": ["accessories", "consumables", "devices", "implants"]
+      }
+    },
+    "why_us_cacyhT": {
+      "type": "why-us",
+      "blocks": {
+        "text_KfjK4j": {
+          "type": "text",
+          "settings": {
+            "metric_title": "99%",
+            "metric_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+          }
+        },
+        "text_qBeM9Q": {
+          "type": "text",
+          "settings": {
+            "metric_title": "99%",
+            "metric_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+          }
+        }
+      },
+      "block_order": ["text_KfjK4j", "text_qBeM9Q"],
+      "name": "Why Us Section",
+      "settings": {
+        "section_title": "Why you should choose us?",
+        "section_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+      }
     }
   },
   "order": [
-    "navigation"
+    "navigation",
+    "hero_rxeQg7",
+    "category_grid_zYPD8t",
+    "why_us_cacyhT"
   ]
 }
