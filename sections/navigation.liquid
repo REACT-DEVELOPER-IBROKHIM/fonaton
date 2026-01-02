@@ -1,18 +1,95 @@
-<!-- Empty Navigation section - created by Copilot -->
-<nav class="section-navigation" role="navigation" aria-label="Site navigation">
-  <h1>Hello</h1>
+{%- render 'stylesheet', name: 'navigation' -%}
+{%- render 'tag-script', name: 'navigation', loading: 'defer' -%}
+
+<nav
+  id="#navigation"
+  class="section-navigation"
+  role="navigation"
+  aria-label="Site navigation">
+  <div class="container">
+    <div class="navigation__wrapper">
+      <h1 class="visually-hidden">FONATON</h1>
+      {% if section.settings.navigation_logo_light and section.settings.navigation_logo_alt_text %}
+        <div class='navigation__logo--light'>
+          {{ section.settings.navigation_logo_light | image_url: width: 150 | image_tag: alt: section.settings.navigation_logo_alt_text }}
+        </div>
+        <div class='navigation__logo--dark'>
+          {{ section.settings.navigation_logo_dark | image_url: width: 150 | image_tag: alt: section.settings.navigation_logo_alt_text }}
+        </div>
+      {% endif %}
+
+      <ul class="navigation__menu">
+        {% for link in linklists.main-menu.links %}
+          <li class="navigation__menu-item">
+            {% if link.links != blank %}
+              <a class="navigation__menu-link">
+              {{ link.title }}
+            </a>
+            {% else %}
+               <a href="{{ link.url }}" class="navigation__menu-link">
+              {{ link.title }}
+            </a>
+            {% endif %}
+              {% if link.links != blank %}
+                  {% render 'chevron-down' %}
+              {% endif %}</a>
+            {%- if link.links != blank -%}
+              <div class="submenu-wrapper">
+                <div class="container">
+                  <ul class="submenu">
+                    {%- for child_link in link.links -%}
+                      <li role="listitem" class="submenu-item">
+                        <a
+                          role="link"
+                          class="submenu-item__link"
+                          href="{{ child_link.url }}"
+                          {% if child_link.active %}
+                          aria-current="page"
+                          {% endif %}>
+                          {{ child_link.title }}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              </div>
+            {%- endif -%}
+          </li>
+        {% endfor %}
+      </ul>
+
+      <button>Smth</button>
+    </div>
+  </div>
 </nav>
 
 {% schema %}
-{
-  "name": "Navigation",
-  "settings": [],
-  "blocks": [],
-  "presets": [
-    {
-      "name": "Navigation",
-      "category": "Header"
-    }
-  ]
-}
+  {
+    "name": "Navigation",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "navigation_logo_light",
+        "label": "Navigation Logo Light"
+      },
+      {
+        "type": "image_picker",
+        "id": "navigation_logo_dark",
+        "label": "Navigation Logo Dark"
+      },
+      {
+        "type": "text",
+        "id": "navigation_logo_alt_text",
+        "label": "Navigation Logo Alt Text",
+        "default": "FONATON"
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Navigation",
+        "category": "Header"
+      }
+    ]
+  }
 {% endschema %}

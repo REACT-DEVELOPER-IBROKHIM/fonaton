@@ -1,0 +1,98 @@
+{%- render 'stylesheet', name: 'hero' -%}
+
+<section class="section-hero">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__content-wrapper">
+        {% if section.settings.hero_heading %}
+          <h1 class="hero__heading">{{ section.settings.hero_heading }}</h1>
+        {% endif %}
+
+        {% if section.settings.hero_subheading %}
+          <p class="hero__subheading">{{ section.settings.hero_subheading }}</p>
+        {% endif %}
+
+        {% if section.settings.hero_cta_text and section.settings.hero_cta_link %}
+          {% if section.settings.is_cta_link %}
+            <a href="{{ section.settings.hero_cta_link }}" class="hero__cta-button">
+              {{ section.settings.hero_cta_text }}
+            </a>
+          {% else %}
+            <button class="hero__cta-button">
+              {{ section.settings.hero_cta_text }}
+            </button>
+          {% endif %}
+        {% endif %}
+      </div>
+    </div>
+
+    <video
+      class="hero__media--video"
+      crossorigin="anonymous"
+      autoplay
+      playsinline
+      muted
+      loop
+      preload="none"
+      src="{{ section.settings.hero_video.sources[1].url }}"
+      autoplay
+      muted
+      loop></video>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Hero",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Hero Section Settings"
+      },
+      {
+        "type": "text",
+        "id": "hero_heading",
+        "label": "Hero Heading",
+        "default": "Rediscover Every Sound"
+      },
+      {
+        "type": "textarea",
+        "id": "hero_subheading",
+        "label": "Hero Subheading",
+        "default": "Experience the world in full clarity with our advanced hearing solutions. Designed for comfort and precision, our devices help you reconnect with loved ones and enjoy every moment—loud and clear."
+      },
+      {
+        "type": "checkbox",
+        "id": "is_cta_link",
+        "label": "Is CTA a Link?",
+        "default": true
+      },
+      {
+        "type": "url",
+        "id": "hero_cta_link",
+        "label": "CTA Link",
+        "default": "/collections/all"
+      },
+      {
+        "type": "text",
+        "id": "hero_cta_text",
+        "label": "CTA Text",
+        "default": "Register for FREE Consultation"
+      },
+      {
+        "type": "video",
+        "id": "hero_video",
+        "label": "Hero video"
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Hero Section",
+        "category": "Hero"
+      }
+    ]
+  }
+{% endschema %}

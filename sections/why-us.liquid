@@ -1,0 +1,64 @@
+{%- render 'stylesheet', name: 'why-us' -%}
+
+<div class="section-why-us">
+  <div class="container">
+    <div class="why-us__content">
+      {% if section.settings.section_title %}
+        <h2 class="why-us-section__title">{{ section.settings.section_title }}</h2>
+      {% endif %}
+
+      {% if section.settings.section_subtitle %}
+        <p class="why-us-section__subtitle">{{ section.settings.section_subtitle }}</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Why Us Section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Why Us Section Settings"
+      },
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Section Title",
+        "default": "Why you should choose us?"
+      },
+      {
+        "type": "text",
+        "id": "section_subtitle",
+        "label": "Section Subtitle",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Section Metrics",
+        "settings": [
+          {
+            "type": "text",
+            "id": "metric_title",
+            "label": "Metric Title",
+            "default": "99%"
+          },
+          {
+            "type": "text",
+            "id": "metric_subtitle",
+            "label": "Metric Subtitle",
+            "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Why Us Section"
+      }
+    ]
+  }
+{% endschema %}
