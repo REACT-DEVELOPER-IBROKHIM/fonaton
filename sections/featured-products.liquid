@@ -1,0 +1,60 @@
+{%- render 'stylesheet', name: 'featured-products' -%}
+
+<div class="section-featured-products">
+  <div class="container">
+    <div class="featured-products__header">
+      {% if section.settings.section_heading %}
+        <h2 class="featured-products__heading">{{ section.settings.section_heading }}</h2>
+      {% endif %}
+
+      {% if section.settings.section_subheading %}
+        <p class="featured-products__subheading">{{ section.settings.section_subheading }}</p>
+      {% endif %}
+    </div>
+
+    <div class="featured-products__grid">
+      {% for product in collections.featured.products limit: 4 %}
+        <div class="featured-product">
+          <a href="{{ product.url }}" class="featured-product__link">
+            <img
+              src="{{ product.featured_image | img_url: 'medium' }}"
+              alt="{{ product.title }}"
+              class="featured-product__image" />
+            <h3 class="featured-product__title">{{ product.title }}</h3>
+            <p class="featured-product__price">{{ product.price | money }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Featured Products",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Featured Products Section Settings"
+      },
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Section Heading",
+        "default": "Featured Products"
+      },
+      {
+        "type": "text",
+        "id": "section_subheading",
+        "label": "Section Subheading",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla nunc in molestie feugiat. Nunc auctor consectetur elit, quis pulvina."
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Products",
+        "category": "Products"
+      }
+    ]
+  }
+{% endschema %}
