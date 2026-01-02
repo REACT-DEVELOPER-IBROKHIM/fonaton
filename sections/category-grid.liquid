@@ -1,4 +1,5 @@
-{%- render 'stylesheet', name: 'category-grid' -%}
+{%- render 'stylesheet'
+  , name: 'category-grid' -%}
 
 <div class="category-grid-section">
   <div class="container">
@@ -12,7 +13,7 @@
       {% endif %}
     </div>
     <div class="category__wrapper">
-      {% for category in section.settings.section_list %}
+      {% for category in section.settings.section_list limit: 4 %}
         <div class="category-item {{ category.title | downcase }}">
           {% if category.featured_image and category.url %}
             <a href="{{ category.url }}" class="category-item__link">
