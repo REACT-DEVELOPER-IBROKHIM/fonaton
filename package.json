@@ -28,6 +28,7 @@
     "webpack-watch": "webpack --watch",
     "deploy": "webpack && theme deploy --env=development",
     "watch": "npm-run-all --parallel webpack-watch theme-watch components-watch",
+    "pull": "shopify theme pull",
     "format:write": "prettier --write .",
     "format:check": "prettier --check ."
   },
