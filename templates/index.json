@@ -35,7 +35,12 @@
       "settings": {
         "section_title": "View Our Range Of Categories",
         "section_subtitle": "Browse our categories: Implants, Devices, Accessories, and Consumables. Find what you need with ease.",
-        "section_list": ["accessories", "consumables", "devices", "implants"]
+        "section_list": [
+          "accessories",
+          "consumables",
+          "devices",
+          "implants"
+        ]
       }
     },
     "why_us_cacyhT": {
@@ -56,11 +61,22 @@
           }
         }
       },
-      "block_order": ["text_KfjK4j", "text_qBeM9Q"],
+      "block_order": [
+        "text_KfjK4j",
+        "text_qBeM9Q"
+      ],
       "name": "Why Us Section",
       "settings": {
         "section_title": "Why you should choose us?",
         "section_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+      }
+    },
+    "featured_products_9tw8NX": {
+      "type": "featured-products",
+      "name": "Featured Products",
+      "settings": {
+        "section_heading": "Featured Products",
+        "section_subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla nunc in molestie feugiat. Nunc auctor consectetur elit, quis pulvina."
       }
     }
   },
@@ -68,6 +84,7 @@
     "navigation",
     "hero_rxeQg7",
     "category_grid_zYPD8t",
-    "why_us_cacyhT"
+    "why_us_cacyhT",
+    "featured_products_9tw8NX"
   ]
 }
