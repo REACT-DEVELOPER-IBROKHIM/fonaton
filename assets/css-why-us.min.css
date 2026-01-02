@@ -3,18 +3,39 @@
   \*********************************************************************************************************************************************************************************************************************************/
 .section-why-us {
   background-color: var(--main-blue);
-  height: 500px;
   width: 100%;
+  color: var(--color-white);
+  display: flex;
 }
 
 .why-us__content {
   display: flex;
-  justify-content: space-between;
+  height: 100%;
+  padding: 200px 0;
+  justify-content: center;
+  gap: 0 200px;
 }
 
 .why-us-section__title {
   max-width: 500px;
-  color: var(--main-white);
+  flex: 1;
   font-size: 36px;
   font-weight: 700;
+  line-height: 56px;
+}
+
+.why-us-section__items {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.why-us-section__item-wrapper {
+  display: flex;
+  gap: 40px;
+}
+.why-us-section__item-wrapper h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
