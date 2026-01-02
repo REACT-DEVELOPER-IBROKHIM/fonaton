@@ -1,6 +1,7 @@
 :root {
-  --font-family-poppins: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif;
+  --font-family-poppins:
+    "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
   --max-container-size: 1240px;
 
   // padding sizes
@@ -8,9 +9,8 @@
   --tablet-padding: 16px;
   --mobile-padding: 12px;
 
-
   // colors
   --color-black: #000000;
-  --color-white: #FFFFFF;
-  --main-blue: #2382F2;
+  --color-white: #ffffff;
+  --main-blue: #2382f2;
 }

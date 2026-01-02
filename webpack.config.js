@@ -14,7 +14,7 @@ const files = {
   common_jsPath: "./src/scripts/common.js",
   assetsDir: __dirname + "/assets",
   snippetsDir: __dirname + "/snippets",
-  resources: __dirname + "/src/scss/resources.scss"
+  resources: __dirname + "/src/scss/resources.scss",
 };
 
 function mergePaths(arr) {

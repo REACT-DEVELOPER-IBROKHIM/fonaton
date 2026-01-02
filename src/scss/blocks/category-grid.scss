@@ -4,17 +4,17 @@
   width: 100%;
 }
 
-.category__content{
+.category__content {
   text-align: center;
 
-  .category-grid-section__title{
+  .category-grid-section__title {
     font-size: 36px;
     font-weight: 700;
     color: var(--color-black);
     margin-bottom: 20px;
   }
 
-  .category-grid-section__subtitle{
+  .category-grid-section__subtitle {
     font-size: 18px;
     font-weight: 400;
     color: var(--color-black);
@@ -45,7 +45,7 @@
     "accessories implants consumables"
     "accessories devices consumables"
     "accessories devices consumables";
-  
+
   height: 500px;
 }
 
@@ -56,9 +56,11 @@
   font-size: 15px;
   display: flex;
   align-items: flex-end;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 2px 0px, rgba(60, 64, 67, 0.15) 0px 0px 3px 1px;
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 0px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 0px 3px 1px;
 
-  a{
+  a {
     height: 100%;
     width: 100%;
     display: block;

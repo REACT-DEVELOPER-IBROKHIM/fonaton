@@ -3,7 +3,7 @@
   height: 100%;
 }
 
-@mixin makeItCenter ($horizontal: center, $vertical: center) {
+@mixin makeItCenter($horizontal: center, $vertical: center) {
   display: flex;
   justify-content: $horizontal;
   align-items: $vertical;
