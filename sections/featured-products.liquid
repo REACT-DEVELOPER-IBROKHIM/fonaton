@@ -16,11 +16,18 @@
     <div class="featured-products__grid">
       {% for product in collections.featured.products limit: 4 %}
         <div class="featured-product">
-          {% if product.compare_at_price %}
-            <div class="product-discount-percentage">
-              {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | floor | prepend: '-' }}%
-            </div>
-          {% endif %}
+
+          <div class="product-tag-header">
+            {% if product.tags.size > 0 %}
+              <div class="product-tags">
+                {% for tag in product.tags %}
+                  {% if tag != "featured" %}
+                    <p class="product-tag {{ tag }}">{{ tag }}</p>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
           <a href="{{ product.url }}" class="featured-product__link">
             <img
               src="{{ product.featured_image | img_url: 'medium' }}"
@@ -33,6 +40,11 @@
               <p class="featured-product__original-price">{{ product.compare_at_price | money }}</p>
             {% endif %}
             <p class="featured-product__sale-price">{{ product.price | money }}</p>
+            {% if product.compare_at_price %}
+              <div class="product-discount-percentage">
+                {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | floor | prepend: '-' }}%
+              </div>
+            {% endif %}
           </div>
           <a href="{{ product.url }}" class="featured-product__caa">
             More Details

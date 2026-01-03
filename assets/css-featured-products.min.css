@@ -32,12 +32,26 @@
   padding: 20px 0;
   position: relative;
 }
+.featured-product .product-tag-header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.featured-product .product-tag.new {
+  background-color: red;
+  padding: 3px 6px;
+  font-size: 14px;
+  border-radius: 10px;
+  color: var(--color-white);
+  justify-self: flex-end;
+}
 .featured-product .product-discount-percentage {
   background-color: var(--main-blue);
   color: var(--color-white);
   padding: 3px 6px;
   display: flex;
-  position: absolute;
   font-size: 14px;
   border-radius: 10px;
 }
@@ -73,6 +87,7 @@
 .featured-product .featured-product__sale-price {
   font-weight: 600;
   font-size: 16px;
+  margin-right: 20px;
 }
 .featured-product .featured-product__caa {
   background-color: var(--main-blue);
