@@ -31,12 +31,28 @@
   padding: 20px 0;
   position: relative;
 
+  .product-tag-header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .product-tag.new {
+    background-color: red;
+    padding: 3px 6px;
+    font-size: 14px;
+    border-radius: 10px;
+    color: var(--color-white);
+    justify-self: flex-end;
+  }
+
   .product-discount-percentage {
     background-color: var(--main-blue);
     color: var(--color-white);
     padding: 3px 6px;
     display: flex;
-    position: absolute;
     font-size: 14px;
     border-radius: 10px;
   }
@@ -78,6 +94,7 @@
   .featured-product__sale-price {
     font-weight: 600;
     font-size: 16px;
+    margin-right: 20px;
   }
 
   .featured-product__caa {
