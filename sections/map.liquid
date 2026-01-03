@@ -9,6 +9,47 @@
     <div class="map-container">
       {% render 'map' %}
     </div>
+
+    <div class="map-iframe">
+      {% if section.settings.map_subheading %}
+        <h4 class="map-iframe-subheading">{{ section.settings.map_subheading }}</h4>
+      {% endif %}
+      {% if section.settings.map_heading_secondary %}
+        <h3 class="map-iframe-heading">{{ section.settings.map_heading_secondary }}</h3>
+      {% endif %}
+
+      <div class="location-details">
+        {% for block in section.blocks %}
+          {% assign location_href = '' %}
+          {% case block.settings.location_info_type %}
+            {% when 'phone' %}
+              {% assign location_href = 'tel:' | append: block.settings.location_info_data %}
+            {% when 'email' %}
+              {% assign location_href = 'mailto:' | append: block.settings.location_info_data %}
+          {% endcase %}
+
+          <div class="location-detail">
+            {% if block.settings.location_info_image %}
+              <div class="location-detail-image">
+                <img src="{{ block.settings.location_info_image | img_url: 'medium' }}" alt="{{ block.settings.location_info_label }}">
+              </div>
+            {% endif %}
+            <div class="location-detail-info">
+              <h5 class="location-detail-label">{{ block.settings.location_info_label }}</h5>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="{{ location_href }}"
+                class="location-detail-data">{{ block.settings.location_info_data }}</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="map-iframe-wrapper">
+        {{ section.settings.map_location_iframe }}
+      </div>
+    </div>
   </div>
 </div>
 
@@ -21,6 +62,72 @@
         "id": "map_heading",
         "label": "Map Heading",
         "default": "Our locations"
+      },
+      {
+        "type": "text",
+        "id": "map_heading_secondary",
+        "label": "Map Heading Secondary",
+        "default": "Discover Our Location"
+      },
+      {
+        "type": "text",
+        "id": "map_subheading",
+        "label": "Map Subheading",
+        "default": "Location"
+      },
+      {
+        "type": "html",
+        "id": "map_location_iframe",
+        "label": "Map Location Iframe",
+        "default": "<div style=\"position:relative;overflow:hidden;\"><a href=\"https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps\" style=\"color:#eee;font-size:12px;position:absolute;top:0px;\">Ташкент</a><a href=\"https://yandex.uz/maps/geo/771288885/?ll=69.323750%2C41.290231&utm_medium=mapframe&utm_source=maps&z=11.63\" style=\"color:#eee;font-size:12px;position:absolute;top:14px;\">Ташкент — Яндекс Карты</a><iframe src=\"https://yandex.uz/map-widget/v1/?ll=69.323750%2C41.290231&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgk3NzEyODg4ODUSFk_Ku3piZWtpc3RvbiwgVG9zaGtlbnQiCg04j4pCFZ0-JUI%2C&z=11.63\" width=\"560\" height=\"400\" frameborder=\"1\" allowfullscreen=\"true\" style=\"position:relative;\"></iframe></div>"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "location",
+        "name": "Location",
+        "settings": [
+          {
+            "type": "select",
+            "id": "location_info_type",
+            "label": "Location Info Type",
+            "options": [
+              {
+                "value": "address",
+                "label": "Address"
+              },
+              {
+                "value": "phone",
+                "label": "Phone"
+              },
+              {
+                "value": "email",
+                "label": "Email"
+              },
+              {
+                "value": "other",
+                "label": "Other"
+              }
+            ]
+          },
+          {
+            "type": "image_picker",
+            "id": "location_info_image",
+            "label": "Location Image"
+          },
+          {
+            "type": "text",
+            "id": "location_info_label",
+            "label": "Location Label",
+            "default": "Location"
+          },
+          {
+            "type": "text",
+            "id": "location_info_data",
+            "label": "Location Data",
+            "default": "Tashkent, Alisher Navoiy, 20"
+          }
+        ]
       }
     ],
     "presets": [
