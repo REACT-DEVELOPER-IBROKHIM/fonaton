@@ -143,7 +143,8 @@
         "social_link_77Jxg7": {
           "type": "social_link",
           "settings": {
-            "social_url": ""
+            "social_url": "shopify://pages/contact",
+            "social_icon": "shopify://shop_images/Social_Icons_1.svg"
           }
         }
       },
