@@ -29,6 +29,14 @@
         "hero_video": "shopify://files/videos/IMG_0062 (3).mp4"
       }
     },
+    "featured_products_9tw8NX": {
+      "type": "featured-products",
+      "name": "Featured Products",
+      "settings": {
+        "section_heading": "Featured Products",
+        "section_subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla nunc in molestie feugiat. Nunc auctor consectetur elit, quis pulvina."
+      }
+    },
     "category_grid_zYPD8t": {
       "type": "category-grid",
       "name": "Category Grid",
@@ -69,14 +77,6 @@
       "settings": {
         "section_title": "Why you should choose us?",
         "section_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
-      }
-    },
-    "featured_products_9tw8NX": {
-      "type": "featured-products",
-      "name": "Featured Products",
-      "settings": {
-        "section_heading": "Featured Products",
-        "section_subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla nunc in molestie feugiat. Nunc auctor consectetur elit, quis pulvina."
       }
     },
     "map_6b7jhh": {
@@ -127,9 +127,9 @@
   "order": [
     "navigation",
     "hero_rxeQg7",
+    "featured_products_9tw8NX",
     "category_grid_zYPD8t",
     "why_us_cacyhT",
-    "featured_products_9tw8NX",
     "map_6b7jhh"
   ]
 }
