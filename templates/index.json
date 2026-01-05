@@ -82,13 +82,13 @@
     "map_6b7jhh": {
       "type": "map",
       "blocks": {
-        "location_cHMcjY": {
+        "location_CqTg7i": {
           "type": "location",
           "settings": {
-            "location_info_type": "email",
-            "location_info_image": "shopify://shop_images/mail.svg",
-            "location_info_label": "Email",
-            "location_info_data": "fonaton@gmail.com"
+            "location_info_type": "address",
+            "location_info_image": "shopify://shop_images/location_on.svg",
+            "location_info_label": "Location",
+            "location_info_data": "Tashkent, Alisher Navoiy, 20"
           }
         },
         "location_CBR8wH": {
@@ -100,20 +100,20 @@
             "location_info_data": "+998999787525"
           }
         },
-        "location_CqTg7i": {
+        "location_cHMcjY": {
           "type": "location",
           "settings": {
-            "location_info_type": "address",
-            "location_info_image": "shopify://shop_images/location_on.svg",
-            "location_info_label": "Location",
-            "location_info_data": "Tashkent, Alisher Navoiy, 20"
+            "location_info_type": "email",
+            "location_info_image": "shopify://shop_images/mail.svg",
+            "location_info_label": "Email",
+            "location_info_data": "fonaton@gmail.com"
           }
         }
       },
       "block_order": [
-        "location_cHMcjY",
+        "location_CqTg7i",
         "location_CBR8wH",
-        "location_CqTg7i"
+        "location_cHMcjY"
       ],
       "name": "Map Section",
       "settings": {
