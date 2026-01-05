@@ -81,6 +81,40 @@
     },
     "map_6b7jhh": {
       "type": "map",
+      "blocks": {
+        "location_cHMcjY": {
+          "type": "location",
+          "settings": {
+            "location_info_type": "email",
+            "location_info_image": "shopify://shop_images/mail.svg",
+            "location_info_label": "Email",
+            "location_info_data": "fonaton@gmail.com"
+          }
+        },
+        "location_CBR8wH": {
+          "type": "location",
+          "settings": {
+            "location_info_type": "phone",
+            "location_info_image": "shopify://shop_images/phone.svg",
+            "location_info_label": "Phone",
+            "location_info_data": "+998999787525"
+          }
+        },
+        "location_CqTg7i": {
+          "type": "location",
+          "settings": {
+            "location_info_type": "address",
+            "location_info_image": "shopify://shop_images/location_on.svg",
+            "location_info_label": "Location",
+            "location_info_data": "Tashkent, Alisher Navoiy, 20"
+          }
+        }
+      },
+      "block_order": [
+        "location_cHMcjY",
+        "location_CBR8wH",
+        "location_CqTg7i"
+      ],
       "name": "Map Section",
       "settings": {
         "map_heading": "Our locations",
