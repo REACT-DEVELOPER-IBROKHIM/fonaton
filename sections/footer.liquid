@@ -1,0 +1,103 @@
+{%- render 'stylesheet'
+  , name: 'footer' -%}
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-section__main">
+      <div class="footer-logo">
+        {% if section.settings.footer_logo %}
+          <img src="{{ section.settings.footer_logo | img_url: 'medium' }}" alt="Footer Logo">
+        {% endif %}
+        <p>{{ section.settings.footer_text }}</p>
+      </div>
+      <div class="footer-links">
+        {% if section.settings.footer_links2 %}
+          <ul class="footer-list">
+            {% for link in linklists[section.settings.footer_links2].links %}
+              <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% if section.settings.footer_links1 %}
+          <ul class="footer-list">
+            {% for link in linklists[section.settings.footer_links1].links %}
+              <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      <div class="footer-social-links">
+        {% for block in section.blocks %}
+          <a
+            href="{{ block.settings.social_url }}"
+            target="_blank"
+            rel="noopener noreferrer">
+            {% if block.settings.social_icon %}
+              <img src="{{ block.settings.social_icon | img_url: 'small' }}" alt="Social Icon">
+            {% endif %}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="footer-section__bottom">
+      Copyright © {{ 'now' | date: '%Y' }} www.fonaton.com. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+  {
+    "name": "Footer Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "footer_logo",
+        "label": "Footer Logo"
+      },
+      {
+        "type": "text",
+        "id": "footer_text",
+        "label": "Footer Text",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut."
+      },
+      {
+        "type": "link_list",
+        "id": "footer_links1",
+        "label": "Footer Links Privacy Policy, Terms of Service, etc."
+      },
+      {
+        "type": "link_list",
+        "id": "footer_links2",
+        "label": "Footer Links Customer Service, Contact Us, etc."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "social_link",
+        "name": "Social Link",
+        "settings": [
+          {
+            "type": "url",
+            "id": "social_url",
+            "label": "Social Media URL"
+          },
+          {
+            "type": "image_picker",
+            "id": "social_icon",
+            "label": "Social Media Icon",
+            "info": "Recommended size: 24x24 pixels"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Footer Section",
+        "category": "Footer"
+      }
+    ]
+  }
+{% endschema %}
