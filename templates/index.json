@@ -122,6 +122,16 @@
         "map_subheading": "Location",
         "map_location_iframe": "<div style=\"position:relative;overflow:hidden;\">\n<a href=\"https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&amp;utm_source=maps\" style=\"color:#eee;font-size:12px;position:absolute;top:0px;\">Ташкент</a><a href=\"https://yandex.uz/maps/geo/771288885/?ll=69.323750%2C41.290231&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=11.63\" style=\"color:#eee;font-size:12px;position:absolute;top:14px;\">Ташкент — Яндекс Карты</a><iframe src=\"https://yandex.uz/map-widget/v1/?ll=69.323750%2C41.290231&amp;mode=search&amp;ol=geo&amp;ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgk3NzEyODg4ODUSFk_Ku3piZWtpc3RvbiwgVG9zaGtlbnQiCg04j4pCFZ0-JUI%2C&amp;z=11.63\" width=\"100%\" height=\"400\" frameborder=\"1\" allowfullscreen=\"true\" style=\"position:relative;\"></iframe>\n</div>"
       }
+    },
+    "footer_F9QCxA": {
+      "type": "footer",
+      "name": "Footer Section",
+      "settings": {
+        "footer_logo": "shopify://shop_images/x35_6mJNW.tif_1.svg",
+        "footer_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut.",
+        "footer_links1": "terms-and-conditions",
+        "footer_links2": "footer"
+      }
     }
   },
   "order": [
@@ -130,6 +140,7 @@
     "featured_products_9tw8NX",
     "category_grid_zYPD8t",
     "why_us_cacyhT",
-    "map_6b7jhh"
+    "map_6b7jhh",
+    "footer_F9QCxA"
   ]
 }
