@@ -1,0 +1,83 @@
+{%- render 'stylesheet'
+  , name: 'timer' -%}
+{%- render 'tag-script'
+  , name: 'timer'
+  , loading: 'defer' -%}
+
+
+<section class="section-timer">
+  <div class="container">
+    <div class="timer-section__content">
+     {% if section.settings.timer_heading %}
+       <h2 class="timer-section__heading">{{ section.settings.timer_heading }}</h2>
+     {% endif %}
+      {% if section.settings.timer_subheading %}
+        <p class="timer-section__subheading">{{ section.settings.timer_subheading }}</p>
+      {% endif %}
+      <div
+        class="timer"
+        id="endtime"
+        data-end-time="{{ section.settings.timer_end_time }}">
+        <div class="time-segment">
+          <span class="time-value" id="days">00</span>
+          <span class="time-label">Days</span>
+        </div>
+        <p class="timer-seperator">:</p>
+        <div class="time-segment">
+          <span class="time-value" id="hours">00</span>
+          <span class="time-label">Hours</span>
+        </div>
+        <p class="timer-seperator">:</p>
+        <div class="time-segment">
+          <span class="time-value" id="minutes">00</span>
+          <span class="time-label">Minutes</span>
+        </div>
+        <p class="timer-seperator">:</p>
+        <div class="time-segment">
+          <span class="time-value" id="seconds">00</span>
+          <span class="time-label">Seconds</span>
+        </div>
+      </div>
+      {% if section.settings.timer_button %}
+        <button class="timer__button">{{ section.settings.timer_button }}</button>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Timer Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "timer_heading",
+        "label": "Timer Heading",
+        "default": "Register for FREE Consultation."
+      },
+      {
+        "type": "text",
+        "id": "timer_subheading",
+        "label": "Timer Subheading",
+        "default": "Get Free Consultation from our Experts. Offer ends soon! Get a ticket now to secure your spot."
+      },
+      {
+        "type": "text",
+        "id": "timer_end_time",
+        "label": "End Time (YYYY-MM-DD HH:MM)",
+        "default": "2026-01-09 00:59"
+      },
+      {
+        "type": "text",
+        "id": "timer_button",
+        "label": "Button Text",
+        "default": "Register"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Timer Section",
+        "category": "Timer"
+      }
+    ]
+  }
+{% endschema %}
