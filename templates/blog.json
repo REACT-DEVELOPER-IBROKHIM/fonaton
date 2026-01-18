@@ -16,9 +16,18 @@
         "navigation_logo_dark": "shopify://shop_images/Group.svg",
         "navigation_logo_alt_text": "FONATON"
       }
+    },
+    "blog_posts_UikPrm": {
+      "type": "blog-posts",
+      "name": "Blog Posts",
+      "settings": {
+        "blog_posts_title": "All our featured blogs",
+        "blog_posts_subtitle": "Latest news and updates"
+      }
     }
   },
   "order": [
-    "navigation"
+    "navigation",
+    "blog_posts_UikPrm"
   ]
 }
