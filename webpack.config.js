@@ -146,16 +146,11 @@ module.exports = (env, argv) => {
           ],
         },
         {
-          test: /\.(woff(2)?|ttf|eot|svg|jpe?g|png|gif)(\?v=\d+\.\d+\.\d+)?$/,
-          use: [
-            {
-              loader: "file-loader",
-              options: {
-                name: "[name].[ext]",
-                outputPath: "./",
-              },
-            },
-          ],
+          test: /\.(woff(2)?|ttf|eot|svg|jpe?g|png|gif)$/,
+          type: "asset/resource",
+          generator: {
+            filename: "[name][ext]"
+          },
         },
       ],
     },
