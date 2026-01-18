@@ -115,3 +115,19 @@
 .pinned-navbar .navigation__logo--dark {
   display: block;
 }
+
+.default-navbar {
+  background-color: var(--color-white);
+}
+.default-navbar .navigation__menu-link {
+  color: var(--color-black);
+}
+.default-navbar path {
+  stroke: var(--color-black);
+}
+.default-navbar .navigation__logo--light {
+  display: none;
+}
+.default-navbar .navigation__logo--dark {
+  display: block;
+}

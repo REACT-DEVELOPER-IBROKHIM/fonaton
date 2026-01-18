@@ -3,7 +3,7 @@
 
 <nav
   id="#navigation"
-  class="section-navigation"
+  class="section-navigation {% if request.page_type != 'index' %}default-navbar{% endif %}"
   role="navigation"
   aria-label="Site navigation">
   <div class="container">
