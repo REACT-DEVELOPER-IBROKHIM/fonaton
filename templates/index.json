@@ -170,6 +170,50 @@
         "footer_links1": "terms-and-conditions",
         "footer_links2": "footer"
       }
+    },
+    "faq_MWQp7c": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_a7pMBg": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+          }
+        },
+        "faq_item_McyEmM": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+          }
+        },
+        "faq_item_FjAXCx": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+          }
+        },
+        "faq_item_XiBwkN": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_a7pMBg",
+        "faq_item_McyEmM",
+        "faq_item_FjAXCx",
+        "faq_item_XiBwkN"
+      ],
+      "name": "FAQ Section",
+      "settings": {
+        "faq_title": "Frequently Asked Questions",
+        "faq_subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet."
+      }
     }
   },
   "order": [
@@ -180,6 +224,7 @@
     "category_grid_zYPD8t",
     "why_us_cacyhT",
     "map_6b7jhh",
-    "footer_F9QCxA"
+    "footer_F9QCxA",
+    "faq_MWQp7c"
   ]
 }
