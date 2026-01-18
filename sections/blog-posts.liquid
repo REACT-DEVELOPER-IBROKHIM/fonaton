@@ -1,0 +1,54 @@
+{%- render 'stylesheet'
+  , name: 'blog-posts' -%}
+
+<section class="section-blog-posts">
+  <div class="container">
+    <div class="blog-posts__header">
+      <h2 class="blog-posts__title">{{ section.settings.blog_posts_title }}</h2>
+      <p class="blog-posts__subtitle">{{ section.settings.blog_posts_subtitle }}</p>
+    </div>
+    {% if blogs['our-featured-posts'].articles  %}
+      <div class="blog-posts__content">
+      {% for post in blogs['our-featured-posts'].articles %}
+        <article class="blog-post">
+          {{ post.image | image_url: width: 400 | image_tag: alt: post.title, class: 'blog-post__image' }}
+          <div class="blog-post__content">
+            <h3 class="blog-post__title">{{ post.title }}</h3>
+          <div class="blog-post__excerpt">{{ post.excerpt_or_content | truncatewords: 20 }}</div>
+          <p class="blog-post__date">{{ post.published_at | date: "%B %d, %Y"  }}</p>
+          <a class="blog-post__link" href="{{ post.url }}">Read more</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+    {% else %}
+      <div class="blog-post-no-data">No blog posts available.</div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Blog Posts",
+    "settings": [
+      {
+        "type": "text",
+        "id": "blog_posts_title",
+        "label": "Blog Posts Heading",
+        "default": "All our featured blogs"
+      },
+      {
+        "type": "text",
+        "id": "blog_posts_subtitle",
+        "label": "Blog Posts Subtitle",
+        "default": "Latest news and updates"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Blog Posts",
+        "category": "Blog"
+      }
+    ]
+  }
+{% endschema %}

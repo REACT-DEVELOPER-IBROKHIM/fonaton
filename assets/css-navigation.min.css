@@ -25,6 +25,9 @@
 .section-navigation:hover .navigation__logo--dark {
   display: block;
 }
+.section-navigation:hover .localeBtn {
+  color: var(--color-black) !important;
+}
 
 .navigation__wrapper {
   display: flex;
@@ -118,6 +121,9 @@
 
 .default-navbar {
   background-color: var(--color-white);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 .default-navbar .navigation__menu-link {
   color: var(--color-black);
@@ -130,4 +136,7 @@
 }
 .default-navbar .navigation__logo--dark {
   display: block;
+}
+.default-navbar .localeBtn {
+  color: var(--color-black) !important;
 }

@@ -48,7 +48,7 @@
   justify-self: flex-end;
 }
 .featured-product .product-discount-percentage {
-  background-color: var(--main-blue);
+  background-color: var(--background-blue);
   color: var(--color-white);
   padding: 3px 6px;
   display: flex;
@@ -90,7 +90,7 @@
   margin-right: 20px;
 }
 .featured-product .featured-product__caa {
-  background-color: var(--main-blue);
+  background-color: var(--background-blue);
   color: var(--color-white);
   text-decoration: none;
   display: block;

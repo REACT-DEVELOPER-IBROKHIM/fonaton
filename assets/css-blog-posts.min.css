@@ -1,0 +1,71 @@
+/*!*************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-resources-loader/lib/loader.js??ruleSet[1].rules[0].use[3]!./src/scss/blocks/blog-posts.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************/
+.section-blog-posts {
+  padding-top: 100px;
+}
+
+.blog-posts__title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.blog-posts__subtitle {
+  font-size: 18px;
+  color: var(--color-grey);
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.blog-posts__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.blog-posts__content .blog-post {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  border-radius: 20px;
+}
+.blog-posts__content .blog-post .blog-post__image {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.blog-posts__content .blog-post .blog-post__content {
+  margin-top: 12px;
+}
+.blog-posts__content .blog-post .blog-post__content .blog-post__title {
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+}
+.blog-posts__content .blog-post .blog-post__content .blog-post__excerpt {
+  font-size: 16px;
+  color: var(--color-grey);
+  margin: 20px 0;
+}
+.blog-posts__content .blog-post .blog-post__content .blog-post__date {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-light-grey);
+  margin-bottom: 20px;
+}
+.blog-posts__content .blog-post .blog-post__content .blog-post__link {
+  background-color: var(--background-blue);
+  color: var(--color-white);
+  display: inline-block;
+  padding: 14px 30px;
+  text-decoration: none;
+  border-radius: 16px;
+}
+
+.blog-post-no-data {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--color-grey);
+}
