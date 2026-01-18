@@ -16,6 +16,9 @@
 .section-navigation:hover .navigation__menu-link {
   color: var(--color-black);
 }
+.section-navigation:hover path {
+  stroke: var(--color-black);
+}
 .section-navigation:hover .navigation__logo--light {
   display: none;
 }
@@ -105,6 +108,9 @@
 }
 .pinned-navbar .navigation__logo--light {
   display: none;
+}
+.pinned-navbar path {
+  stroke: var(--color-black);
 }
 .pinned-navbar .navigation__logo--dark {
   display: block;

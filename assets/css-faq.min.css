@@ -1,0 +1,77 @@
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-resources-loader/lib/loader.js??ruleSet[1].rules[0].use[3]!./src/scss/blocks/faq.scss ***!
+  \******************************************************************************************************************************************************************************************************************************/
+.faq-section {
+  width: 100%;
+}
+
+.faq-wrapper {
+  display: flex;
+  padding: 100px 0;
+  justify-content: space-between;
+}
+
+.faq-header {
+  width: 45%;
+}
+
+.faq-title {
+  font-size: 36px;
+  color: var(--color-black);
+}
+
+.faq-subtitle {
+  font-size: 18px;
+  color: var(--color-grey);
+  margin-top: 20px;
+}
+
+.faq-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  gap: 20px 0;
+  position: relative;
+  width: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.faq-items .faq-item {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--color-light-grey);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faq-items .faq-item .faq-question {
+  font-size: 20px;
+  color: var(--color-black);
+}
+.faq-items .faq-item .faq-answer {
+  font-size: 16px;
+  color: var(--color-grey);
+  max-width: 80%;
+  opacity: 0;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  transition: all 0.2s linear;
+}
+.faq-items .faq-item svg {
+  width: 20px;
+  height: 20px;
+}
+.faq-items .faq-item path {
+  stroke: var(--color-black);
+}
+.faq-items .faq-item[aria-expanded=true] .faq-answer {
+  margin-top: 30px;
+  opacity: 1;
+  max-height: 9em;
+  transition: all 0.2s linear;
+}
+.faq-items .faq-item[aria-expanded=true] svg {
+  transform: rotate(180deg);
+}

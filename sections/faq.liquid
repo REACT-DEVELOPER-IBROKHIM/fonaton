@@ -1,0 +1,81 @@
+{%- render 'stylesheet'
+  , name: 'faq' -%}
+{%- render 'tag-script'
+  , name: 'faq'
+  , loading: 'defer' -%}
+
+<section class="faq-section">
+  <div class="container">
+    <div class="faq-wrapper">
+      <div class="faq-header">
+        {% if section.settings.faq_title %}
+          <h2 class="faq-title">{{ section.settings.faq_title }}</h2>
+        {% endif %}
+        {% if section.settings.faq_subtitle %}
+          <p class="faq-subtitle">{{ section.settings.faq_subtitle }}</p>
+        {% endif %}
+      </div>
+      <ul class="faq-items">
+        {% for block in section.blocks %}
+          {% if block.type == 'faq_item' %}
+            <li class="faq-item" aria-expanded="false">
+              <div>
+                <h3 class="faq-question">{{ block.settings.question }}</h3>
+                <div class="faq-answer" aria-hidden="true">
+                  {{ block.settings.answer }}
+                </div>
+              </div>
+              {% render 'chevron-down' %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "FAQ Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "faq_title",
+        "label": "FAQ Title",
+        "default": "Frequently Asked Questions"
+      },
+      {
+        "type": "text",
+        "id": "faq_subtitle",
+        "label": "FAQ Subtitle",
+        "default": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "faq_item",
+        "name": "FAQ Item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "question",
+            "label": "Question",
+            "default": "What is your return policy?"
+          },
+          {
+            "type": "textarea",
+            "id": "answer",
+            "label": "Answer",
+            "default": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "FAQ Section",
+        "category": "Sections"
+      }
+    ]
+  }
+{% endschema %}

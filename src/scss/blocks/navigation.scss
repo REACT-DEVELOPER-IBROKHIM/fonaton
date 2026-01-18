@@ -14,6 +14,10 @@
     color: var(--color-black);
   }
 
+  path {
+    stroke: var(--color-black);
+  }
+
   .navigation__logo--light {
     display: none;
   }
@@ -107,6 +111,10 @@
 
   .navigation__logo--light {
     display: none;
+  }
+
+  path {
+    stroke: var(--color-black);
   }
 
   .navigation__logo--dark {
