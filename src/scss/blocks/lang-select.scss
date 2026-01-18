@@ -1,0 +1,51 @@
+.lang_switcher{
+    position: relative;
+    margin-left: 16px;
+    padding: 10px;
+    z-index: 6;
+}
+
+.localeBtn{
+    opacity: 1;
+    background-color: transparent;
+    color: var(--color-white);
+    border: none;
+    text-transform: uppercase;
+}
+
+.lang-content{
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--background-white);
+    display: none;
+
+    a{
+        font-size: 12px;
+        text-decoration: none;
+    }
+}
+
+#localeItem{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px;
+    color: var(--color-black);
+}
+
+.lang_switcher:hover .lang-content{
+    display: block;
+}
+
+.pinned-navbar .localeBtn{
+    color: var(--color-light) !important;
+}
+
+.pinned-navbar .lang-content{
+    background-color: var(--background-white);
+}
+
+.pinned-navbar #localeItem{
+    color: var(--color-black) !important;
+}
