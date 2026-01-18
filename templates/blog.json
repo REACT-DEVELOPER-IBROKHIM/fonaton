@@ -7,7 +7,6 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-
 {
   "sections": {
     "navigation": {
@@ -17,7 +16,21 @@
         "navigation_logo_dark": "shopify://shop_images/Group.svg",
         "navigation_logo_alt_text": "FONATON"
       }
+    },
+    "hero_hDHBjK": {
+      "type": "hero",
+      "name": "Hero Section",
+      "settings": {
+        "hero_heading": "Latest Blog Posts",
+        "hero_subheading": "Get useful information about our company and products. Have more insights about hearing products and what is more suitable for you",
+        "is_cta_link": true,
+        "hero_cta_link": "shopify://blogs/our-featured-posts/fonaton-is-leading-dealer-in-selling-hearing-aid-products-in-uzbekistan",
+        "hero_cta_text": "Read about Fonaton"
+      }
     }
   },
-  "order": ["navigation"]
+  "order": [
+    "navigation",
+    "hero_hDHBjK"
+  ]
 }

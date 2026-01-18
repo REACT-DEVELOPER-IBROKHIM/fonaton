@@ -121,3 +121,23 @@
     display: block;
   }
 }
+
+.default-navbar {
+  background-color: var(--color-white);
+
+  .navigation__menu-link {
+    color: var(--color-black);
+  }
+
+  path {
+    stroke: var(--color-black);
+  }
+
+  .navigation__logo--light {
+    display: none;
+  }
+
+  .navigation__logo--dark {
+    display: block;
+  }
+}
