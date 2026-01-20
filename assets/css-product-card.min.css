@@ -1,0 +1,72 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-resources-loader/lib/loader.js??ruleSet[1].rules[0].use[3]!./src/scss/blocks/product-card.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.product {
+  padding: 20px 0;
+  position: relative;
+}
+.product .product-tag-header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.product .product-tag.new {
+  background-color: red;
+  padding: 3px 6px;
+  font-size: 14px;
+  border-radius: 10px;
+  color: var(--color-white);
+  justify-self: flex-end;
+}
+.product .product-discount-percentage {
+  background-color: var(--background-blue);
+  color: var(--color-white);
+  padding: 3px 6px;
+  display: flex;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.product .product__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+.product .product__title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.product .product__link {
+  text-decoration: none;
+  color: var(--color-black);
+}
+.product .product__prices {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+.product .product__original-price {
+  text-decoration: line-through;
+  color: var(--color-grey);
+  margin-right: 10px;
+  font-size: 13px;
+}
+.product .product__sale-price {
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.product .product__caa {
+  background-color: var(--background-blue);
+  color: var(--color-white);
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}

@@ -1,0 +1,36 @@
+{%- render 'stylesheet', name: 'product-card' -%}
+
+  <div class="product">
+          <div class="product-tag-header">
+            {% if product.tags.size > 0 %}
+              <div class="product-tags">
+                {% for tag in product.tags %}
+                  {% if tag != "featured" %}
+                    <p class="product-tag {{ tag }}">{{ tag }}</p>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+          <a href="{{ product.url }}" class="product__link">
+            <img
+              src="{{ product.featured_image | img_url: 'medium' }}"
+              alt="{{ product.title }}"
+              class="product__image" />
+          </a>
+          <h3 class="product__title">{{ product.title }}</h3>
+          <div class="product__prices">
+            {% if product.compare_at_price %}
+              <p class="product__original-price">{{ product.compare_at_price | money }}</p>
+            {% endif %}
+            <p class="product__sale-price">{{ product.price | money }}</p>
+            {% if product.compare_at_price %}
+              <div class="product-discount-percentage">
+                {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | floor | prepend: '-' }}%
+              </div>
+            {% endif %}
+          </div>
+          <a href="{{ product.url }}" class="product__caa">
+            More Details
+          </a>
+        </div>
