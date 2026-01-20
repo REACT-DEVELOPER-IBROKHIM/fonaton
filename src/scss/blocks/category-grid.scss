@@ -9,7 +9,7 @@
 
   .category-grid-section__title {
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 600;
     color: var(--color-black);
     margin-bottom: 20px;
   }
@@ -67,6 +67,10 @@
     color: var(--color-black);
     text-decoration: none;
   }
+
+   .category-item__name{
+      font-weight: 500;
+    }
 
   img {
     width: 100%;

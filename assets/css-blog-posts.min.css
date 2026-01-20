@@ -3,11 +3,13 @@
   \*************************************************************************************************************************************************************************************************************************************/
 .section-blog-posts {
   padding-top: 100px;
+  margin-bottom: 100px;
 }
 
 .blog-posts__title {
   font-size: 36px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .blog-posts__subtitle {
@@ -26,6 +28,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 16px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
 .blog-posts__content .blog-post .blog-post__image {
   width: 100%;
@@ -35,16 +39,21 @@
 }
 .blog-posts__content .blog-post .blog-post__content {
   margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
 }
 .blog-posts__content .blog-post .blog-post__content .blog-post__title {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 600;
   height: 40px;
 }
 .blog-posts__content .blog-post .blog-post__content .blog-post__excerpt {
   font-size: 16px;
   color: var(--color-grey);
   margin: 20px 0;
+  flex: 1;
 }
 .blog-posts__content .blog-post .blog-post__content .blog-post__date {
   font-size: 14px;

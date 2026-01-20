@@ -18,12 +18,14 @@
 .faq-title {
   font-size: 36px;
   color: var(--color-black);
+  font-weight: 600;
 }
 
 .faq-subtitle {
-  font-size: 18px;
+  font-size: 14px;
   color: var(--color-grey);
   margin-top: 20px;
+  line-height: 24px;
 }
 
 .faq-items {
@@ -46,8 +48,9 @@
   cursor: pointer;
 }
 .faq-items .faq-item .faq-question {
-  font-size: 20px;
+  font-size: 18px;
   color: var(--color-black);
+  font-weight: 600;
 }
 .faq-items .faq-item .faq-answer {
   font-size: 16px;
