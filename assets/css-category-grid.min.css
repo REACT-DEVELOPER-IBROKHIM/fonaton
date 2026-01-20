@@ -12,7 +12,7 @@
 }
 .category__content .category-grid-section__title {
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-black);
   margin-bottom: 20px;
 }
@@ -63,6 +63,9 @@
   display: block;
   color: var(--color-black);
   text-decoration: none;
+}
+.category-item .category-item__name {
+  font-weight: 500;
 }
 .category-item img {
   width: 100%;

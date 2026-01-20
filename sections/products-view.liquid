@@ -1,10 +1,10 @@
-<section class="section-products-view">
-  {%- render 'stylesheet'
+{%- render 'stylesheet'
     , name: 'products-view' -%}
 
+<section class="section-products-view">
   <div class="container">
     <h2 class="product-grid-section__title">{{- collection.title | upcase }} COLLECTION</h2>
-    {% paginate collection.products by 6 %}
+    {% paginate collection.products by 12 %}
       <div class="products__grid">
         {% for product in collection.products %}
           {% render 'product-card'
