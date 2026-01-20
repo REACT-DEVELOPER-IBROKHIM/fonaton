@@ -22,12 +22,6 @@
   line-height: 160%;
 }
 
-.featured-products__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
 .featured-product {
   padding: 20px 0;
   position: relative;

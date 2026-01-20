@@ -9,7 +9,8 @@
   <div class="container">
     <div class="navigation__wrapper">
       <h1 class="visually-hidden">FONATON</h1>
-      {% if section.settings.navigation_logo_light and section.settings.navigation_logo_alt_text %}
+      <a href="{{ routes.root_url }}">
+        {% if section.settings.navigation_logo_light and section.settings.navigation_logo_alt_text %}
         <div class='navigation__logo--light'>
           {{ section.settings.navigation_logo_light | image_url: width: 150 | image_tag: alt: section.settings.navigation_logo_alt_text }}
         </div>
@@ -17,6 +18,7 @@
           {{ section.settings.navigation_logo_dark | image_url: width: 150 | image_tag: alt: section.settings.navigation_logo_alt_text }}
         </div>
       {% endif %}
+      </a>
 
       <ul class="navigation__menu">
         {% for link in linklists.main-menu.links %}
