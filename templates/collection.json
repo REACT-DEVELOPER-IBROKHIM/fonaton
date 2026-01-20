@@ -7,7 +7,6 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-
 {
   "sections": {
     "navigation": {
@@ -17,7 +16,15 @@
         "navigation_logo_dark": "shopify://shop_images/Group.svg",
         "navigation_logo_alt_text": "FONATON"
       }
+    },
+    "products_view_VKbxQa": {
+      "type": "products-view",
+      "name": "Products View Section",
+      "settings": {}
     }
   },
-  "order": ["navigation"]
+  "order": [
+    "navigation",
+    "products_view_VKbxQa"
+  ]
 }
