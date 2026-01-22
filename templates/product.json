@@ -1,0 +1,55 @@
+{
+  "sections": {
+     "navigation": {
+      "type": "navigation",
+      "settings": {
+        "navigation_logo_light": "shopify://shop_images/logo_22b057a9-a987-424a-a833-38f1817f6002.svg",
+        "navigation_logo_dark": "shopify://shop_images/Group.svg",
+        "navigation_logo_alt_text": "FONATON"
+      }
+    },
+    "product": {
+      "type": "product-page",
+      "settings": {}
+    },
+     "footer": {
+      "type": "footer",
+      "blocks": {
+        "social_link_b9mPNF": {
+          "type": "social_link",
+          "settings": {
+            "social_url": "shopify://products/boreal-xd460-drwc",
+            "social_icon": "shopify://shop_images/Vector.svg"
+          }
+        },
+        "social_link_r8ePUD": {
+          "type": "social_link",
+          "settings": {
+            "social_url": "shopify://pages/blogs",
+            "social_icon": "shopify://shop_images/Social_Icons.svg"
+          }
+        },
+        "social_link_77Jxg7": {
+          "type": "social_link",
+          "settings": {
+            "social_url": "shopify://pages/contact",
+            "social_icon": "shopify://shop_images/Social_Icons_1.svg"
+          }
+        }
+      },
+      "block_order": [
+        "social_link_b9mPNF",
+        "social_link_r8ePUD",
+        "social_link_77Jxg7"
+      ],
+      "name": "Footer Section",
+      "settings": {
+        "footer_logo": "shopify://shop_images/x35_6mJNW.tif_1.svg",
+        "footer_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut.",
+        "footer_links1": "terms-and-conditions",
+        "footer_links2": "footer"
+      }
+    }
+  },
+  "order": ["navigation", "product", "footer"]
+}

@@ -1,0 +1,29 @@
+<div class="product-gallery">
+  <div class="product-gallery__main">
+    <img
+      src="{{ product.featured_image | img_url: '800x800' }}"
+      alt="{{ product.title }}"
+      class="product-gallery__main-image"
+      id="mainProductImage"
+      loading="lazy" />
+  </div>
+
+  {% if product.images.size > 1 %}
+    <div class="product-gallery__thumbnails">
+      {% for image in product.images limit: 5 %}
+        <button
+          type="button"
+          class="product-gallery__thumbnail {% if forloop.first %}active{% endif %}"
+          data-src="{{ image | img_url: '800x800' }}"
+          data-full-src="{{ image | img_url: '1000x1000' }}"
+          aria-label="View product image {{ forloop.index }}"
+          data-image-index="{{ forloop.index0 }}">
+          <img
+            src="{{ image | img_url: '150x150' }}"
+            alt="Product thumbnail {{ forloop.index }}"
+            loading="lazy" />
+        </button>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

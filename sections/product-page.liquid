@@ -1,0 +1,25 @@
+{%- render 'stylesheet', name: 'product-page' -%}
+
+<div class="section-product-page">
+  <div class="container">
+    <div class="product-page__wrapper">
+      {% render 'product-gallery', product: product %}
+      {% render 'product-info', product: product %}
+    </div>
+  </div>
+</div>
+
+<script src="{{ 'js-product-page.min.js' | asset_url }}" defer></script>
+
+{% schema %}
+  {
+    "name": "Product Page",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Product Page",
+        "category": "Products"
+      }
+    ]
+  }
+{% endschema %}

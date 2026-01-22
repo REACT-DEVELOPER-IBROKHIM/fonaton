@@ -1,0 +1,54 @@
+<div class="product-info">
+  <div class="product-info__header">
+    <h1 class="product-info__title">{{ product.title }}</h1>
+  </div>
+
+  <!-- Product Price -->
+  <div class="product-info__pricing">
+    {% if product.compare_at_price %}
+      <span class="product-info__original-price">{{ product.compare_at_price | money }}</span>
+    {% endif %}
+    <span class="product-info__price">{{ product.price | money }}</span>
+    {% if product.compare_at_price %}
+      <div class="product-info__discount">
+        {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | floor | prepend: '-' }}% OFF
+      </div>
+    {% endif %}
+  </div>
+
+  <!-- Product Description -->
+  <div class="product-info__description">
+    {{ product.description }}
+  </div>
+
+  <!-- Shipping Info -->
+  <div class="product-info__shipping">
+    <div class="product-info__shipping-item">
+      <div class="product-info__shipping-icon">📦</div>
+      <div class="product-info__shipping-text">
+        <strong>Free worldwide shipping</strong>
+        <p>on all orders over $100</p>
+      </div>
+    </div>
+    <div class="product-info__shipping-item">
+      <div class="product-info__shipping-icon">🚚</div>
+      <div class="product-info__shipping-text">
+        <strong>Delivers in 3-7 Working Days</strong>
+        <p>Shipping & Return</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Meta Info -->
+  <div class="product-info__meta">
+    {% if product.vendor %}
+      <p><strong>Vendor:</strong> {{ product.vendor }}</p>
+    {% endif %}
+    {% if product.type %}
+      <p><strong>Type:</strong> {{ product.type }}</p>
+    {% endif %}
+    {% if product.sku %}
+      <p><strong>SKU:</strong> {{ product.sku }}</p>
+    {% endif %}
+  </div>
+</div>
