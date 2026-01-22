@@ -4,7 +4,7 @@
     <button class="localeBtn" disabled> {{ form.current_locale.endonym_name }}</button>
     <div class="lang-content">
         {% for language in localization.available_languages %}
-             <a href="#"{% if language.iso_code == localization.language.iso_code %} aria-current="true"{% endif %} hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}" data-value="{{ language.iso_code }}">
+             <a href="#"{% if language.iso_code == localization.language.iso_code %} aria-current="true"{% endif %} id="localeItem" hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}" data-value="{{ language.iso_code }}">
                 {{ language.endonym_name | capitalize }}
               </a>
         {% endfor %}
