@@ -35,7 +35,7 @@
       "settings": {
         "timer_heading": "Register for FREE Consultation.",
         "timer_subheading": "Get Free Consultation from our Experts. Offer ends soon! Get a ticket now to secure your spot.",
-        "timer_end_time": "2026-01-09 00:59",
+        "timer_end_time": "2026-01-26 00:59",
         "timer_button": "Register"
       }
     },
@@ -87,6 +87,58 @@
       "settings": {
         "section_title": "Why you should choose us?",
         "section_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
+      }
+    },
+    "blog_posts_JWaxGC": {
+      "type": "blog-posts",
+      "name": "Blog Posts",
+      "settings": {
+        "blog_posts_title": "All our featured blogs",
+        "blog_posts_subtitle": "Latest news and updates"
+      }
+    },
+    "faq_MWQp7c": {
+      "type": "faq",
+      "blocks": {
+        "faq_item_a7pMBg": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+          }
+        },
+        "faq_item_McyEmM": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+          }
+        },
+        "faq_item_FjAXCx": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+          }
+        },
+        "faq_item_XiBwkN": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What is your return policy?",
+            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_a7pMBg",
+        "faq_item_McyEmM",
+        "faq_item_FjAXCx",
+        "faq_item_XiBwkN"
+      ],
+      "name": "FAQ Section",
+      "settings": {
+        "faq_title": "Frequently Asked Questions",
+        "faq_subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet."
       }
     },
     "map_6b7jhh": {
@@ -169,58 +221,6 @@
         "footer_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut.",
         "footer_links1": "terms-and-conditions",
         "footer_links2": "footer"
-      }
-    },
-    "faq_MWQp7c": {
-      "type": "faq",
-      "blocks": {
-        "faq_item_a7pMBg": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What is your return policy?",
-            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
-          }
-        },
-        "faq_item_McyEmM": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What is your return policy?",
-            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
-          }
-        },
-        "faq_item_FjAXCx": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What is your return policy?",
-            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
-          }
-        },
-        "faq_item_XiBwkN": {
-          "type": "faq_item",
-          "settings": {
-            "question": "What is your return policy?",
-            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
-          }
-        }
-      },
-      "block_order": [
-        "faq_item_a7pMBg",
-        "faq_item_McyEmM",
-        "faq_item_FjAXCx",
-        "faq_item_XiBwkN"
-      ],
-      "name": "FAQ Section",
-      "settings": {
-        "faq_title": "Frequently Asked Questions",
-        "faq_subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet."
-      }
-    },
-    "blog_posts_JWaxGC": {
-      "type": "blog-posts",
-      "name": "Blog Posts",
-      "settings": {
-        "blog_posts_title": "All our featured blogs",
-        "blog_posts_subtitle": "Latest news and updates"
       }
     }
   },
