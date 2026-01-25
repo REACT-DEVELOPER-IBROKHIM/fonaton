@@ -18,6 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("hours").textContent = "00";
         document.getElementById("minutes").textContent = "00";
         document.getElementById("seconds").textContent = "00";
+        // Hide the timer section when the countdown ends
+        const timerSection = document.querySelector(".section-timer");
+        if (timerSection) {
+          timerSection.style.display = "none";
+        }
         return;
       }
 
