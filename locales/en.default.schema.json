@@ -17,13 +17,6 @@
         "alt_text_label": "Alt Text",
         "alt_text_info": "Text for screen readers and SEO purposes."
       }
-    },
-    "favicon": {
-      "name": "Favicon",
-      "settings": {
-        "favicon_label": "Upload your favicon image",
-        "info": "The recommended size for a favicon is 32x32 pixels in .ico, .png, or .gif format."
-      }
     }
   }
 }

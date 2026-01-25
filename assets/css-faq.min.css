@@ -69,12 +69,12 @@
 .faq-items .faq-item path {
   stroke: var(--color-black);
 }
-.faq-items .faq-item[aria-expanded=true] .faq-answer {
+.faq-items .faq-item[aria-expanded="true"] .faq-answer {
   margin-top: 30px;
   opacity: 1;
   max-height: 9em;
   transition: all 0.2s linear;
 }
-.faq-items .faq-item[aria-expanded=true] svg {
+.faq-items .faq-item[aria-expanded="true"] svg {
   transform: rotate(180deg);
 }
