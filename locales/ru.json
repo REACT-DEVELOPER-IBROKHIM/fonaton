@@ -1,19 +1,17 @@
 {
-  "t": {
-    "settings_schema": {
-      "logo": {
-        "name": "Логотип",
-        "settings": {
-          "light_theme_label": "Логотип для светлой темы",
-          "dark_theme_label": "Логотип для темной темы"
-        }
-      },
-      "favicon": {
-        "name": "Фавикон",
-        "settings": {
-          "favicon_label": "Загрузите изображение фавикона",
-          "info": "Рекомендуемый размер фавикона: 32x32 пикселя в формате .ico, .png или .gif."
-        }
+  "settings_schema": {
+    "logo": {
+      "name": "Логотип",
+      "settings": {
+        "light_theme_label": "Логотип для светлой темы",
+        "dark_theme_label": "Логотип для темной темы"
+      }
+    },
+    "favicon": {
+      "name": "Фавикон",
+      "settings": {
+        "favicon_label": "Загрузите изображение фавикона",
+        "info": "Рекомендуемый размер фавикона: 32x32 пикселя в формате .ico, .png или .gif."
       }
     }
   }
