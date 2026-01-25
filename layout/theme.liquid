@@ -8,16 +8,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="">
   <link rel="canonical" href="{{ canonical_url }}">
- <!-- Standard favicon -->
   <link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png' | asset_url }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png' | asset_url }}">
   <link rel="icon" type="image/png" sizes="48x48" href="{{ 'favicon-48x48.png' | asset_url }}">
-
-  <!-- Apple Touch Icon -->
   <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | asset_url }}">
-
-  <!-- Manifest -->
-  <link rel="manifest" href="{{ 'manifest.json' | asset_url }}">
+  <link rel="favicon" type="image/ico" href="{{ 'favicon.ico' | asset_url }}">
+  <link rel="manifest" href="{{ 'site.webmanifest.json' | asset_url }}">
   {%- assign common_css_url = 'common.css' | asset_url -%}
   {%- render 'stylesheet', name: common_css_url -%}
   <script src="//code.jivo.ru/widget/udJg8fyaDj" async></script>
