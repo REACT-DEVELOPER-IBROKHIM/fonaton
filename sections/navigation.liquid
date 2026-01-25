@@ -10,12 +10,12 @@
     <div class="navigation__wrapper">
       <h1 class="visually-hidden">FONATON</h1>
       <a href="{{ routes.root_url }}">
-        {% if section.settings.navigation_logo_light and section.settings.navigation_logo_alt_text %}
+        {% if settings.logo_light and settings.logo_dark %}
         <div class='navigation__logo--light'>
-          {{ section.settings.navigation_logo_light | image_url: width: 150 | image_tag: alt: section.settings.navigation_logo_alt_text }}
+          {{ settings.logo_light | image_url: width: 150 | image_tag: alt: settings.logo_alt_text }}
         </div>
         <div class='navigation__logo--dark'>
-          {{ section.settings.navigation_logo_dark | image_url: width: 150 | image_tag: alt: section.settings.navigation_logo_alt_text }}
+          {{ settings.logo_dark | image_url: width: 150 | image_tag: alt: settings.logo_alt_text }}
         </div>
       {% endif %}
       </a>
@@ -68,24 +68,7 @@
 {% schema %}
   {
     "name": "Navigation",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "navigation_logo_light",
-        "label": "Navigation Logo Light"
-      },
-      {
-        "type": "image_picker",
-        "id": "navigation_logo_dark",
-        "label": "Navigation Logo Dark"
-      },
-      {
-        "type": "text",
-        "id": "navigation_logo_alt_text",
-        "label": "Navigation Logo Alt Text",
-        "default": "FONATON"
-      }
-    ],
+    "settings": [],
     "blocks": [],
     "presets": [
       {

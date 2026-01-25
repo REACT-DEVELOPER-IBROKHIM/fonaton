@@ -4,7 +4,9 @@
       "name": "Logo",
       "settings": {
         "light_theme_label": "Logo for Light Theme",
-        "dark_theme_label": "Logo for Dark Theme"
+        "dark_theme_label": "Logo for Dark Theme",
+        "alt_text_label": "Alt Text",
+        "alt_text_info": "Text for screen readers and SEO purposes."
       }
     },
     "favicon": {
