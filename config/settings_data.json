@@ -9,6 +9,8 @@
  */
 {
   "current": {
+    "logo_light": "shopify://shop_images/logo_22b057a9-a987-424a-a833-38f1817f6002.svg",
+    "logo_dark": "shopify://shop_images/Group.svg",
     "logo_width": 90,
     "color_schemes": {
       "scheme-1": {
@@ -182,7 +184,8 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "cart_color_scheme": "scheme-1"
+    "cart_color_scheme": "scheme-1",
+    "content_for_index": []
   },
   "presets": {
     "Dawn": {
