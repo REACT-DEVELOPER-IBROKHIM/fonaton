@@ -21,9 +21,9 @@
         "label": "t:settings_schema.logo.settings.dark_theme_label"
       },
       {
-        "type" : "text",
-        "id" : "logo_alt_text",
-        "label" : "t:settings_schema.logo.settings.alt_text_label",
+        "type": "text",
+        "id": "logo_alt_text",
+        "label": "t:settings_schema.logo.settings.alt_text_label",
         "info": "t:settings_schema.logo.settings.alt_text_info",
         "default": "FONATON"
       }

@@ -262,8 +262,7 @@ table {
   font-display: swap;
 }
 :root {
-  --font-family-poppins:
-    "Poppins";
+  --font-family-poppins: "Poppins";
   --max-container-size: 1240px;
   --default-padding: 24px;
   --tablet-padding: 16px;

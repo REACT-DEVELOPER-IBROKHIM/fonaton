@@ -149,7 +149,7 @@ module.exports = (env, argv) => {
           test: /\.(woff(2)?|ttf|eot|svg|jpe?g|png|gif)$/,
           type: "asset/resource",
           generator: {
-            filename: "[name][ext]"
+            filename: "[name][ext]",
           },
         },
       ],

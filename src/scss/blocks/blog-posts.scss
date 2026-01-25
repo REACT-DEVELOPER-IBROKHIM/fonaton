@@ -3,13 +3,13 @@
   margin-bottom: 100px;
 }
 
-.blog-posts__title{
+.blog-posts__title {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.blog-posts__subtitle{
+.blog-posts__subtitle {
   font-size: 18px;
   color: var(--color-grey);
   margin-top: 8px;
@@ -62,7 +62,7 @@
         margin-bottom: 20px;
       }
 
-      .blog-post__link{
+      .blog-post__link {
         background-color: var(--background-blue);
         color: var(--color-white);
         display: inline-block;
@@ -74,8 +74,7 @@
   }
 }
 
-
-.blog-post-no-data{
+.blog-post-no-data {
   display: flex;
   height: 300px;
   align-items: center;

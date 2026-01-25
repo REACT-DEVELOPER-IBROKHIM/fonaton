@@ -61,9 +61,5 @@
       }
     }
   },
-  "order": [
-    "navigation",
-    "products_view_VKbxQa",
-    "footer"
-  ]
+  "order": ["navigation", "products_view_VKbxQa", "footer"]
 }

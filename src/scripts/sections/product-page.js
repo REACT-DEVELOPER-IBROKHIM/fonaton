@@ -1,9 +1,7 @@
 class ProductGallery {
   constructor() {
     this.mainImage = document.getElementById("mainProductImage");
-    this.thumbnails = document.querySelectorAll(
-      ".product-gallery__thumbnail"
-    );
+    this.thumbnails = document.querySelectorAll(".product-gallery__thumbnail");
     this.quantityInput = document.getElementById("quantity");
     this.quantityBtns = document.querySelectorAll(".quantity-btn");
 
@@ -52,7 +50,7 @@ class ProductGallery {
       () => {
         this.mainImage.style.opacity = "1";
       },
-      { once: true }
+      { once: true },
     );
   }
 

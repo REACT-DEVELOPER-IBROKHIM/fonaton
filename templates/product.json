@@ -1,6 +1,6 @@
 {
   "sections": {
-     "navigation": {
+    "navigation": {
       "type": "navigation",
       "settings": {
         "navigation_logo_light": "shopify://shop_images/logo_22b057a9-a987-424a-a833-38f1817f6002.svg",
@@ -12,7 +12,7 @@
       "type": "product-page",
       "settings": {}
     },
-     "footer": {
+    "footer": {
       "type": "footer",
       "blocks": {
         "social_link_b9mPNF": {

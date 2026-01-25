@@ -72,7 +72,9 @@
   z-index: 4;
   transition: 0.3s;
   background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.1764705882) 0px 5px 27px -30px, rgba(0, 0, 0, 0.1725490196) 0px 5px 16px -8px;
+  box-shadow:
+    rgba(50, 50, 93, 0.1764705882) 0px 5px 27px -30px,
+    rgba(0, 0, 0, 0.1725490196) 0px 5px 16px -8px;
 }
 
 .submenu {
