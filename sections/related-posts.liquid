@@ -1,0 +1,89 @@
+{%- render 'stylesheet', name: 'related-posts' -%}
+
+<section class="section-related-posts">
+  <div class="container">
+    <div class="related-posts__header">
+      <h2 class="related-posts__title">Related Articles</h2>
+      <p class="related-posts__subtitle">Check out these other great reads</p>
+    </div>
+
+    {% if article.blog.articles.size > 1 %}
+      <div class="related-posts__grid">
+        {% assign related_count = 0 %}
+        {% assign posts_limit = 3 %}
+
+        {% for post in article.blog.articles %}
+          {% unless post.id == article.id %}
+            {% if related_count < posts_limit %}
+              <article class="related-post">
+                <div class="related-post__image-wrapper">
+                  {% if post.image %}
+                    {{ post.image | image_url: width: 400 | image_tag: 
+                      alt: post.title, 
+                      class: 'related-post__image',
+                      loading: 'lazy' 
+                    }}
+                  {% else %}
+                    <div class="related-post__image-placeholder">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                        <circle cx="8.5" cy="8.5" r="1.5"/>
+                        <polyline points="21 15 16 10 5 21"/>
+                      </svg>
+                    </div>
+                  {% endif %}
+                </div>
+
+                <div class="related-post__content">
+                  <div class="related-post__meta">
+                    <span class="related-post__date">
+                      {{ post.published_at | date: "%b %d, %Y" }}
+                    </span>
+                  </div>
+
+                  <h3 class="related-post__title">{{ post.title }}</h3>
+
+                  <p class="related-post__excerpt">
+                    {{ post.excerpt_or_content | truncatewords: 15 }}
+                  </p>
+
+                  <a href="{{ post.url }}" class="related-post__link">
+                    Read More
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              {% assign related_count = related_count | plus: 1 %}
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+
+      <div class="related-posts__footer">
+        <a href="{{ article.blog.url }}" class="related-posts__view-all">
+          View All Articles
+        </a>
+      </div>
+    {% else %}
+      <div class="related-posts__empty">
+        <p>No other articles available at this time.</p>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Related Posts",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Related Posts",
+        "category": "Blog"
+      }
+    ]
+  }
+{% endschema %}
