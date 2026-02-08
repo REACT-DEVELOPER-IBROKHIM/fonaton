@@ -17,19 +17,21 @@
       "type": "product-page",
       "settings": {}
     },
-    "1770540345c3f6a762": {
+    "1770540442c8acc954": {
       "type": "apps",
       "blocks": {
-        "junip_junip_product_summary_d66GkV": {
-          "type": "shopify://apps/junip/blocks/junip-product-summary/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+        "junip_junip_product_review_PcaeGQ": {
+          "type": "shopify://apps/junip/blocks/junip-product-review/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
           "settings": {
             "product": "{{product}}",
-            "alignment": ""
+            "title": "",
+            "alignment": "",
+            "sortOrder": "mostRecent"
           }
         }
       },
       "block_order": [
-        "junip_junip_product_summary_d66GkV"
+        "junip_junip_product_review_PcaeGQ"
       ],
       "settings": {}
     },
@@ -74,7 +76,7 @@
   "order": [
     "navigation",
     "product",
-    "1770540345c3f6a762",
+    "1770540442c8acc954",
     "footer"
   ]
 }
