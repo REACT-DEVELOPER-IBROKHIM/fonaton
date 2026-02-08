@@ -253,3 +253,12 @@ body {
   background-color: rgba(75, 75, 75, 0.3215686275);
   z-index: 3;
 }
+
+#reviews {
+  max-width: 1440px !important;
+}
+
+.AirReviews-Blocks {
+  display: flex !important;
+  flex-direction: column !important;
+}
