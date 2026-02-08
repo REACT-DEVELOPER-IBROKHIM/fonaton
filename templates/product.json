@@ -17,8 +17,19 @@
       "type": "product-page",
       "settings": {}
     },
-    "1770540442c8acc954": {
+    "0f5600ec59ba2ae34aa8": {
       "type": "apps",
+      "blocks": {
+        "d37e7028-80c3-4925-b31b-b7f3f5e0ec84": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "d37e7028-80c3-4925-b31b-b7f3f5e0ec84"
+      ],
       "settings": {}
     },
     "footer": {
@@ -57,44 +68,12 @@
         "footer_links1": "terms-and-conditions",
         "footer_links2": "footer"
       }
-    },
-    "505d810f0ff5b08c680d": {
-      "type": "apps",
-      "blocks": {
-        "cb50d842-2a0b-4c8c-be24-97da2fa2e2b7": {
-          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-          "settings": {
-            "product": "{{product}}"
-          }
-        }
-      },
-      "block_order": [
-        "cb50d842-2a0b-4c8c-be24-97da2fa2e2b7"
-      ],
-      "settings": {}
-    },
-    "016a4867157f3ffcb68f": {
-      "type": "apps",
-      "blocks": {
-        "74f9424c-1b80-4f6d-88fd-f7b1a55d82b6": {
-          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-          "settings": {
-            "product": "{{product}}"
-          }
-        }
-      },
-      "block_order": [
-        "74f9424c-1b80-4f6d-88fd-f7b1a55d82b6"
-      ],
-      "settings": {}
     }
   },
   "order": [
     "navigation",
     "product",
-    "1770540442c8acc954",
-    "footer",
-    "505d810f0ff5b08c680d",
-    "016a4867157f3ffcb68f"
+    "0f5600ec59ba2ae34aa8",
+    "footer"
   ]
 }
