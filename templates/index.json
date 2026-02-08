@@ -85,6 +85,10 @@
         "section_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat."
       }
     },
+    "1770539438f265e0a9": {
+      "type": "apps",
+      "settings": {}
+    },
     "blog_posts_JWaxGC": {
       "type": "blog-posts",
       "name": "Blog Posts",
@@ -218,19 +222,38 @@
         "footer_links2": "footer"
       }
     },
-    "1770539438f265e0a9": {
+    "177053991509763573": {
       "type": "apps",
       "blocks": {
-        "trustshop_reviews_widget_box_KCND4Q": {
-          "type": "shopify://apps/trustshop-reviews/blocks/widget-box/18b0c4cc-5411-4b6e-922d-34fdc2f30ab9",
+        "reviews_io_reviewsio_card_carousel_yEr6xg": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-card-carousel/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
-            "selected_product": "",
-            "wrapper_class": ""
+            "star": "#000",
+            "review_type": "product",
+            "reviews_shown": 20,
+            "header_bg_colour": "#000",
+            "header_colour": "#fff",
+            "header_star_colour": "#fff",
+            "heading_text_colour": "#0E1311",
+            "heading_font": "sans_serif_n4",
+            "body_text_colour": "#0E1311",
+            "badge_icon_colour": "#0E1311",
+            "badge_text_colour": "#0E1311",
+            "bg_start_colour": "#ffffff",
+            "bg_end_colour": "#ffffff",
+            "item_border_width": "0px",
+            "item_border_colour": "#F2F2F2",
+            "item_border_radius": "0px",
+            "item_shadow_size": "10px",
+            "item_shadow_colour": "#F2F2F2",
+            "enable_rich_snippets": false,
+            "disable_same_customer": false,
+            "logo_colour": "var(--logo-inverted)"
           }
         }
       },
       "block_order": [
-        "trustshop_reviews_widget_box_KCND4Q"
+        "reviews_io_reviewsio_card_carousel_yEr6xg"
       ],
       "settings": {}
     }
@@ -246,6 +269,7 @@
     "blog_posts_JWaxGC",
     "faq_MWQp7c",
     "map_6b7jhh",
-    "footer_F9QCxA"
+    "footer_F9QCxA",
+    "177053991509763573"
   ]
 }
