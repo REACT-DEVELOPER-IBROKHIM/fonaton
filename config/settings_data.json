@@ -187,12 +187,10 @@
     "cart_color_scheme": "scheme-1",
     "content_for_index": [],
     "blocks": {
-      "16017602894386113438": {
-        "type": "shopify://apps/junip/blocks/junip-store-key/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
+      "7570552984445421165": {
+        "type": "shopify://apps/yotpo-product-photo-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
         "disabled": false,
-        "settings": {
-          "enablePreviewMode": true
-        }
+        "settings": {}
       }
     }
   },

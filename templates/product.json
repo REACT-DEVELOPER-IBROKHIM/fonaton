@@ -19,20 +19,6 @@
     },
     "1770540442c8acc954": {
       "type": "apps",
-      "blocks": {
-        "junip_junip_product_review_PcaeGQ": {
-          "type": "shopify://apps/junip/blocks/junip-product-review/dc14f5a8-ed15-41b1-ad08-cfba23f9789b",
-          "settings": {
-            "product": "{{product}}",
-            "title": "Customer Reviews",
-            "alignment": "",
-            "sortOrder": "mostRecent"
-          }
-        }
-      },
-      "block_order": [
-        "junip_junip_product_review_PcaeGQ"
-      ],
       "settings": {}
     },
     "footer": {
@@ -71,12 +57,44 @@
         "footer_links1": "terms-and-conditions",
         "footer_links2": "footer"
       }
+    },
+    "505d810f0ff5b08c680d": {
+      "type": "apps",
+      "blocks": {
+        "cb50d842-2a0b-4c8c-be24-97da2fa2e2b7": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "cb50d842-2a0b-4c8c-be24-97da2fa2e2b7"
+      ],
+      "settings": {}
+    },
+    "016a4867157f3ffcb68f": {
+      "type": "apps",
+      "blocks": {
+        "74f9424c-1b80-4f6d-88fd-f7b1a55d82b6": {
+          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "74f9424c-1b80-4f6d-88fd-f7b1a55d82b6"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "navigation",
     "product",
     "1770540442c8acc954",
-    "footer"
+    "footer",
+    "505d810f0ff5b08c680d",
+    "016a4867157f3ffcb68f"
   ]
 }
