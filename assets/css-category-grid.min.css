@@ -23,19 +23,19 @@
   margin-bottom: 40px;
 }
 
-.accessories {
+.cat-name1 {
   grid-area: accessories;
 }
 
-.implants {
+.cat-name2 {
   grid-area: implants;
 }
 
-.devices {
+.cat-name3 {
   grid-area: devices;
 }
 
-.consumables {
+.cat-name4 {
   grid-area: consumables;
 }
 
