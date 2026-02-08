@@ -11,11 +11,7 @@
   "sections": {
     "navigation": {
       "type": "navigation",
-      "settings": {
-        "navigation_logo_light": "shopify://shop_images/logo_22b057a9-a987-424a-a833-38f1817f6002.svg",
-        "navigation_logo_dark": "shopify://shop_images/Group.svg",
-        "navigation_logo_alt_text": "FONATON"
-      }
+      "settings": {}
     },
     "hero_rxeQg7": {
       "type": "hero",
@@ -53,7 +49,12 @@
       "settings": {
         "section_title": "View Our Range Of Categories",
         "section_subtitle": "Browse our categories: Implants, Devices, Accessories, and Consumables. Find what you need with ease.",
-        "section_list": ["accessories", "consumables", "devices", "implants"]
+        "section_list": [
+          "accessories",
+          "consumables",
+          "devices",
+          "implants"
+        ]
       }
     },
     "why_us_cacyhT": {
@@ -74,7 +75,10 @@
           }
         }
       },
-      "block_order": ["text_KfjK4j", "text_qBeM9Q"],
+      "block_order": [
+        "text_KfjK4j",
+        "text_qBeM9Q"
+      ],
       "name": "Why Us Section",
       "settings": {
         "section_title": "Why you should choose us?",
@@ -164,7 +168,11 @@
           }
         }
       },
-      "block_order": ["location_CqTg7i", "location_CBR8wH", "location_cHMcjY"],
+      "block_order": [
+        "location_CqTg7i",
+        "location_CBR8wH",
+        "location_cHMcjY"
+      ],
       "name": "Map Section",
       "settings": {
         "map_heading": "Our locations",
@@ -205,11 +213,26 @@
       ],
       "name": "Footer Section",
       "settings": {
-        "footer_logo": "shopify://shop_images/x35_6mJNW.tif_1.svg",
         "footer_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut.",
         "footer_links1": "terms-and-conditions",
         "footer_links2": "footer"
       }
+    },
+    "1770539438f265e0a9": {
+      "type": "apps",
+      "blocks": {
+        "trustshop_reviews_widget_box_KCND4Q": {
+          "type": "shopify://apps/trustshop-reviews/blocks/widget-box/18b0c4cc-5411-4b6e-922d-34fdc2f30ab9",
+          "settings": {
+            "selected_product": "",
+            "wrapper_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "trustshop_reviews_widget_box_KCND4Q"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -219,6 +242,7 @@
     "featured_products_9tw8NX",
     "category_grid_zYPD8t",
     "why_us_cacyhT",
+    "1770539438f265e0a9",
     "blog_posts_JWaxGC",
     "faq_MWQp7c",
     "map_6b7jhh",
