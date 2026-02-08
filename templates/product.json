@@ -68,28 +68,12 @@
         "footer_links1": "terms-and-conditions",
         "footer_links2": "footer"
       }
-    },
-    "633d7b9da9d9abf236bd": {
-      "type": "apps",
-      "blocks": {
-        "fb68ad34-ae02-4340-8a21-d23dc3251e89": {
-          "type": "shopify://apps/yotpo-product-reviews/blocks/reviews/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-          "settings": {
-            "product": "{{product}}"
-          }
-        }
-      },
-      "block_order": [
-        "fb68ad34-ae02-4340-8a21-d23dc3251e89"
-      ],
-      "settings": {}
     }
   },
   "order": [
     "navigation",
     "product",
     "1770540442c8acc954",
-    "footer",
-    "633d7b9da9d9abf236bd"
+    "footer"
   ]
 }
