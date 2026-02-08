@@ -14,7 +14,7 @@
     </div>
     <div class="category__wrapper">
       {% for category in section.settings.section_list limit: 4 %}
-        <div class="category-item {{ category.title | downcase }}">
+        <div class="category-item {{ 'cat-name' |  append: forloop.index }}">
           {% if category.featured_image and category.url %}
             <a href="{{ category.url }}" class="category-item__link">
               {{ category.featured_image | image_url: width: 600 | image_tag }}
