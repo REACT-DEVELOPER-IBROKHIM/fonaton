@@ -1,0 +1,105 @@
+{%- render 'stylesheet', name: 'text-image' -%}
+
+<section class="section-text-image">
+  <div class="container">
+    <div class="text-image__wrapper {% if section.settings.image_position == 'left' %}text-image--image-left{% else %}text-image--image-right{% endif %}">
+      <div class="text-image__content">
+        {% if section.settings.section_heading %}
+          <h2 class="text-image__heading">{{ section.settings.section_heading }}</h2>
+        {% endif %}
+
+        {% if section.settings.section_description %}
+          <p class="text-image__description">{{ section.settings.section_description }}</p>
+        {% endif %}
+
+        {% if section.settings.link_text and section.settings.link_url %}
+          <a href="{{ section.settings.link_url }}" class="text-image__link">
+            {{ section.settings.link_text }}
+          </a>
+        {% endif %}
+      </div>
+
+      {% if section.settings.image %}
+        <div class="text-image__image">
+          <img src="{{ section.settings.image | img_url: 'large' }}" alt="{{ section.settings.image_alt }}">
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Text with Image",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Text and Image Settings"
+      },
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Heading",
+        "default": "Take a hearing test now"
+      },
+      {
+        "type": "textarea",
+        "id": "section_description",
+        "label": "Description",
+        "default": "Our online hearing test is a quick and easy way to check your hearing health. It can help identify potential hearing issues and guide you towards seeking professional care if needed."
+      },
+      {
+        "type": "header",
+        "content": "Link Settings"
+      },
+      {
+        "type": "text",
+        "id": "link_text",
+        "label": "Link Text",
+        "default": "Take the test"
+      },
+      {
+        "type": "url",
+        "id": "link_url",
+        "label": "Link URL"
+      },
+      {
+        "type": "header",
+        "content": "Image Settings"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "image_alt",
+        "label": "Image Alt Text",
+        "default": "Text and image section"
+      },
+      {
+        "type": "select",
+        "id": "image_position",
+        "label": "Image Position",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "right"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Text with Image",
+        "category": "Content"
+      }
+    ]
+  }
+{% endschema %}

@@ -27,9 +27,7 @@
           }
         }
       },
-      "block_order": [
-        "yotpo_product_reviews_reviews_ADTka3"
-      ],
+      "block_order": ["yotpo_product_reviews_reviews_ADTka3"],
       "settings": {}
     },
     "footer": {
@@ -70,10 +68,5 @@
       }
     }
   },
-  "order": [
-    "navigation",
-    "product",
-    "1770540442c8acc954",
-    "footer"
-  ]
+  "order": ["navigation", "product", "1770540442c8acc954", "footer"]
 }
