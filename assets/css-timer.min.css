@@ -50,19 +50,49 @@
 }
 
 .timer__button {
-  background-color: var(--background-blue);
-  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 30px;
-  border: none;
-  outline: none;
+  background: linear-gradient(135deg, var(--background-blue) 0%, #1a5fc9 100%);
+  color: var(--color-white);
+  text-decoration: none;
   border-radius: 10px;
-  text-transform: capitalize;
+  border: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  font-weight: 600;
+  width: fit-content;
   font-size: 18px;
-  margin-top: 50px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(35, 130, 242, 0.2);
   cursor: pointer;
-  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+.timer__button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
 }
 .timer__button:hover {
-  opacity: 0.9;
-  transform: scale(1.1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(35, 130, 242, 0.3);
+}
+.timer__button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+.timer__button:active {
+  transform: translateY(-1px);
+}
+.timer__button {
+  margin-top: 50px;
 }

@@ -52,20 +52,12 @@
 }
 
 .timer__button {
-  background-color: var(--background-blue);
-  color: var(--color-white);
-  padding: 10px 30px;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  text-transform: capitalize;
-  font-size: 18px;
+  @include buttonPrimary(
+    $padding: 10px 30px,
+    $fontSize: 18px,
+    $borderRadius: 10px,
+    $bgColor: var(--background-blue),
+    $hoverBgColor: #1a5fc9
+  );
   margin-top: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    opacity: 0.9;
-    transform: scale(1.1);
-  }
 }
