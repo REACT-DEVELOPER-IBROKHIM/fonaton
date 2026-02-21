@@ -128,15 +128,18 @@
   background: linear-gradient(135deg, var(--color-blue) 0%, #1a5fc9 100%);
   color: var(--color-white);
   text-decoration: none;
-  border-radius: 50px;
+  border-radius: 10px;
+  border: none;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-weight: 600;
   width: fit-content;
   font-size: 16px;
   letter-spacing: 0.5px;
   box-shadow: 0 4px 15px rgba(35, 130, 242, 0.2);
+  cursor: pointer;
   position: relative;
   overflow: hidden;
+  text-transform: capitalize;
 }
 .text-image__link::before {
   content: "";
@@ -153,7 +156,6 @@
     height 0.5s;
 }
 .text-image__link:hover {
-  background: linear-gradient(135deg, #1a5fc9 0%, #134ba5 100%);
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(35, 130, 242, 0.3);
 }

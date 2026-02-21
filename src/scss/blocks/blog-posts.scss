@@ -63,12 +63,14 @@
       }
 
       .blog-post__link {
-        background-color: var(--background-blue);
-        color: var(--color-white);
-        display: inline-block;
-        padding: 14px 30px;
+        @include buttonPrimary(
+          $padding: 14px 30px,
+          $fontSize: 16px,
+          $borderRadius: 10px,
+          $bgColor: var(--color-blue),
+          $hoverBgColor: #1a5fc9
+        );
         text-decoration: none;
-        border-radius: 16px;
       }
     }
   }

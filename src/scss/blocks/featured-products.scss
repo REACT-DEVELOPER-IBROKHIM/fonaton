@@ -92,11 +92,15 @@
   }
 
   .featured-product__caa {
-    background-color: var(--background-blue);
-    color: var(--color-white);
+    @include buttonPrimary(
+      $padding: 10px 20px,
+      $fontSize: 16px,
+      $borderRadius: 10px,
+      $bgColor: var(--color-blue),
+      $hoverBgColor: #1a5fc9
+    );
     text-decoration: none;
     display: block;
     text-align: center;
-    padding: 10px 0;
   }
 }

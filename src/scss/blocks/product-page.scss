@@ -438,27 +438,14 @@
 }
 
 .product-info__cta {
+  @include buttonPrimary(
+    $padding: 16px 32px,
+    $fontSize: 16px,
+    $borderRadius: 10px,
+    $bgColor: var(--color-blue),
+    $hoverBgColor: #1a5fc9
+  );
   width: 100%;
-  padding: 16px 32px;
-  background: linear-gradient(to right, #1fa2ff 0%, #12d8fa 51%, #1fa2ff 100%);
-  background-size: 200% auto;
-  color: var(--color-white);
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-position: right center;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(35, 130, 242, 0.3);
-  }
-
-  &:active {
-    transform: translateY(0);
-  }
 
   @media (max-width: 480px) {
     padding: 14px 24px;

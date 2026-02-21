@@ -51,6 +51,7 @@
   .product__prices {
     display: flex;
     align-items: center;
+    height: 20px;
     margin-top: 12px;
     margin-bottom: 24px;
   }
@@ -69,11 +70,14 @@
   }
 
   .product__caa {
-    background-color: var(--background-blue);
-    color: var(--color-white);
+    @include buttonPrimary(
+      $padding: 10px 0px,
+      $fontSize: 16px,
+      $borderRadius: 10px,
+      $bgColor: var(--background-blue),
+      $hoverBgColor: #1a5fc9
+    );
     text-decoration: none;
-    display: block;
-    text-align: center;
-    padding: 10px 0;
+    width: 100%;
   }
 }
