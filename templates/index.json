@@ -31,7 +31,7 @@
       "settings": {
         "timer_heading": "Register for FREE Consultation.",
         "timer_subheading": "Get Free Consultation from our Experts. Offer ends soon! Get a ticket now to secure your spot.",
-        "timer_end_time": "2026-01-26 00:59",
+        "timer_end_time": "2026-03-26 00:59",
         "timer_button": "Register"
       }
     },
@@ -49,7 +49,12 @@
       "settings": {
         "section_title": "View Our Range Of Categories",
         "section_subtitle": "Browse our categories: Implants, Devices, Accessories, and Consumables. Find what you need with ease.",
-        "section_list": ["accessories", "consumables", "devices", "implants"]
+        "section_list": [
+          "accessories",
+          "consumables",
+          "devices",
+          "implants"
+        ]
       }
     },
     "why_us_cacyhT": {
@@ -70,7 +75,10 @@
           }
         }
       },
-      "block_order": ["text_KfjK4j", "text_qBeM9Q"],
+      "block_order": [
+        "text_KfjK4j",
+        "text_qBeM9Q"
+      ],
       "name": "Why Us Section",
       "settings": {
         "section_title": "Why you should choose us?",
@@ -164,7 +172,11 @@
           }
         }
       },
-      "block_order": ["location_CqTg7i", "location_CBR8wH", "location_cHMcjY"],
+      "block_order": [
+        "location_CqTg7i",
+        "location_CBR8wH",
+        "location_cHMcjY"
+      ],
       "name": "Map Section",
       "settings": {
         "map_heading": "Our locations",
@@ -212,35 +224,6 @@
     },
     "177053991509763573": {
       "type": "apps",
-      "blocks": {
-        "reviews_io_reviewsio_card_carousel_yEr6xg": {
-          "type": "shopify://apps/reviews-io/blocks/reviewsio-card-carousel/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {
-            "star": "#000",
-            "review_type": "product",
-            "reviews_shown": 20,
-            "header_bg_colour": "#000",
-            "header_colour": "#fff",
-            "header_star_colour": "#fff",
-            "heading_text_colour": "#0E1311",
-            "heading_font": "sans_serif_n4",
-            "body_text_colour": "#0E1311",
-            "badge_icon_colour": "#0E1311",
-            "badge_text_colour": "#0E1311",
-            "bg_start_colour": "#ffffff",
-            "bg_end_colour": "#ffffff",
-            "item_border_width": "0px",
-            "item_border_colour": "#F2F2F2",
-            "item_border_radius": "0px",
-            "item_shadow_size": "10px",
-            "item_shadow_colour": "#F2F2F2",
-            "enable_rich_snippets": false,
-            "disable_same_customer": false,
-            "logo_colour": "var(--logo-inverted)"
-          }
-        }
-      },
-      "block_order": ["reviews_io_reviewsio_card_carousel_yEr6xg"],
       "settings": {}
     }
   },
