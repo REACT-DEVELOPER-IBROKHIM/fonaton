@@ -35,6 +35,19 @@
         "timer_button": "Register"
       }
     },
+    "text_image_CdhqVD": {
+      "type": "text-image",
+      "name": "Text with Image",
+      "settings": {
+        "section_heading": "Take a hearing test now",
+        "section_description": "Our online hearing test is a quick and easy way to check your hearing health. It can help identify potential hearing issues and guide you towards seeking professional care if needed.",
+        "link_text": "Take the test",
+        "link_url": "shopify://pages/contact-us",
+        "image": "shopify://shop_images/GettyImages-hearing-test-1800px-1485227737.webp",
+        "image_alt": "Text and image section",
+        "image_position": "right"
+      }
+    },
     "featured_products_9tw8NX": {
       "type": "featured-products",
       "name": "Featured Products",
@@ -225,18 +238,6 @@
     "177053991509763573": {
       "type": "apps",
       "settings": {}
-    },
-    "text_image_CdhqVD": {
-      "type": "text-image",
-      "name": "Text with Image",
-      "settings": {
-        "section_heading": "Take a hearing test now",
-        "section_description": "Our online hearing test is a quick and easy way to check your hearing health. It can help identify potential hearing issues and guide you towards seeking professional care if needed.",
-        "link_text": "Take the test",
-        "link_url": "",
-        "image_alt": "Text and image section",
-        "image_position": "right"
-      }
     }
   },
   "order": [
