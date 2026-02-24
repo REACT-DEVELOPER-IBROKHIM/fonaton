@@ -1,5 +1,16 @@
 {
   "related_posts": {
     "btn_text": "Batafsil"
+  },
+  "modal": {
+    "title": "Bepul Maslahat",
+    "description": "Minglab qoniqtirilgan mijozlarga qo'shiling. Bugun bizning mutaxassislardan bepul maslahat oling!",
+    "first_name": "Ism",
+    "first_name_placeholder": "Ismingizni kiriting",
+    "last_name": "Familiya",
+    "last_name_placeholder": "Familiyangizni kiriting",
+    "phone": "Telefon raqami",
+    "phone_placeholder": "Telefon raqamingizni kiriting",
+    "submit": "Bepul Maslahatni Olish"
   }
 }

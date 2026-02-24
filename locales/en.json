@@ -1,5 +1,16 @@
 {
   "related_posts": {
     "btn_text": "Read more"
+  },
+  "modal": {
+    "title": "Free Consultation",
+    "description": "Join thousands of satisfied customers. Get your free consultation from our experts today!",
+    "first_name": "First Name",
+    "first_name_placeholder": "Enter your first name",
+    "last_name": "Last Name",
+    "last_name_placeholder": "Enter your last name",
+    "phone": "Phone Number",
+    "phone_placeholder": "Enter your phone number",
+    "submit": "Get Free Consultation"
   }
 }
