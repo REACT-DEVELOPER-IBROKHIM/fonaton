@@ -437,12 +437,11 @@
     font-size: 15px;
   }
 }
-.quantity-input::-webkit-outer-spin-button,
-.quantity-input::-webkit-inner-spin-button {
+.quantity-input::-webkit-outer-spin-button, .quantity-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.quantity-input[type="number"] {
+.quantity-input[type=number] {
   -moz-appearance: textfield;
 }
 
@@ -477,9 +476,7 @@
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  transition:
-    width 0.5s,
-    height 0.5s;
+  transition: width 0.5s, height 0.5s;
 }
 .product-info__cta:hover {
   transform: translateY(-3px);

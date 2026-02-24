@@ -1,0 +1,67 @@
+<div class="customer-modal" id="customerModal">
+  <div class="customer-modal__overlay"></div>
+  <div class="customer-modal__content">
+    <button class="customer-modal__close" aria-label="Close modal">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    
+    <div class="customer-modal__body">
+      <h2 class="customer-modal__title">{{ 'modal.title' | t }}</h2>
+      <p class="customer-modal__description">{{ 'modal.description' | t }}</p>
+      
+      <form class="customer-modal__form" id="customerForm">
+        <div class="form-group">
+          <label for="firstName" class="form-label">
+            {{ 'modal.first_name' | t }}
+            <span class="form-required">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="firstName" 
+            name="firstName" 
+            class="form-input" 
+            placeholder="{{ 'modal.first_name_placeholder' | t }}"
+            required>
+          <span class="form-error" id="firstNameError"></span>
+        </div>
+        
+        <div class="form-group">
+          <label for="lastName" class="form-label">
+            {{ 'modal.last_name' | t }}
+            <span class="form-required">*</span>
+          </label>
+          <input 
+            type="text" 
+            id="lastName" 
+            name="lastName" 
+            class="form-input" 
+            placeholder="{{ 'modal.last_name_placeholder' | t }}"
+            required>
+          <span class="form-error" id="lastNameError"></span>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone" class="form-label">
+            {{ 'modal.phone' | t }}
+            <span class="form-required">*</span>
+          </label>
+          <input 
+            type="tel" 
+            id="phone" 
+            name="phone" 
+            class="form-input" 
+            placeholder="{{ 'modal.phone_placeholder' | t }}"
+            required>
+          <span class="form-error" id="phoneError"></span>
+        </div>
+        
+        <button type="submit" class="form-submit">{{ 'modal.submit' | t }}</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="{{ 'js-component-customer-modal.min.js' | asset_url }}" type="module" defer></script>
