@@ -4,23 +4,32 @@
   </div>
 
   <!-- Product Price -->
-  <div class="product-info__pricing">
-    {% if product.compare_at_price %}
-      <span class="product-info__original-price">{{ product.compare_at_price | money }}</span>
-    {% endif %}
-    <span class="product-info__price">{{ product.price | money }}</span>
-    {% if product.compare_at_price %}
-      <div class="product-info__discount">
-        {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | floor | prepend: '-' }}% OFF
-      </div>
-    {% endif %}
-  </div>
+  {% if product.price > 0 %}
+    <div class="product-info__pricing">
+      {% if product.compare_at_price %}
+        <span class="product-info__original-price">{{ product.compare_at_price | money }}</span>
+      {% endif %}
+      <span class="product-info__price">{{ product.price | money }}</span>
+      {% if product.compare_at_price %}
+        <div class="product-info__discount">
+          {{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | floor | prepend: '-' }}% OFF
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
 
   <!-- Product Description -->
-  <div class="product-info__description">
+  <div class="product-info__description{% if product.price == 0 %} product-info__description--no-pricing{% endif %}">
     <!-- Start of Judge.me code -->{% assign has_legacy = false %}{% if product.metafields.judgeme.widget.size > 20 %}{% assign has_legacy = true %}{% endif %}<div style='clear:both'></div><div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-product-title='{{ product.title | escape }}' data-id='{{ product.id }}' data-product-id='{{ product.id }}' data-widget='review' data-auto-install='false' data-shop-reviews-count='{{ shop.metafields.judgeme.shop_reviews_count | default: 0 | escape }}' data-entry-point='review_widget.js' data-entry-key='review-widget/main.js'>{% if has_legacy %}<div class='jdgm-legacy-widget-content' style='display: none;'>{{ product.metafields.judgeme.widget }}</div>{% endif %}</div>{% if product.metafields.judgeme.review_widget_data %}<script>jdgm.data ||= {}; jdgm.data.reviewWidget ||= {}; jdgm.data.reviewWidget[{{ product.id }}] = {{ product.metafields.judgeme.review_widget_data }}</script>{% endif %}<!-- End of Judge.me code -->
     {{ product.description }}
   </div>
+
+  <!-- Product Conclusion -->
+  {% if product.metafields.custom.conclusion %}
+    <div class="product-info__conclusion">
+      {{ product.metafields.custom.conclusion  |  metafield_tag}}
+    </div>
+  {% endif %}
 
   <!-- Shipping Info -->
   <div class="product-info__shipping">
