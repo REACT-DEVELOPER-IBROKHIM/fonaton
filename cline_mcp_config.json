@@ -1,0 +1,49 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      }
+    }
+  },
+  "skills": [
+    {
+      "name": "create-github-pr",
+      "description": "Create a GitHub pull request with auto-generated branch name, commit, and push",
+      "path": "./skills/github-pr-creator.js",
+      "command": "createPRWithAutoBranch",
+      "parameters": {
+        "prTitle": {
+          "type": "string",
+          "description": "The title of the pull request (used to generate branch name)",
+          "required": true
+        },
+        "prDescription": {
+          "type": "string",
+          "description": "Detailed description of the pull request changes",
+          "required": true
+        },
+        "baseBranch": {
+          "type": "string",
+          "description": "Base branch to create PR against",
+          "default": "main"
+        },
+        "labels": {
+          "type": "array",
+          "description": "GitHub labels to add to the PR (e.g., 'bug', 'feature', 'enhancement')",
+          "default": []
+        },
+        "branchPrefix": {
+          "type": "string",
+          "description": "Branch prefix (feature, bugfix, hotfix, etc.)",
+          "default": "feature"
+        }
+      }
+    }
+  ]
+}
