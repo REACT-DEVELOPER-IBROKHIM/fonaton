@@ -4,20 +4,114 @@
 <section class="section-products-view">
   <div class="container">
     <h2 class="product-grid-section__title">{{- collection.title | upcase }} COLLECTION</h2>
-    {% paginate collection.products by 12 %}
-      <div class="products__grid">
-        {% for product in collection.products %}
-          {% render 'product-card'
-            , product: product %}
-        {% endfor %}
-      </div>
-      {% if paginate.pages > 1 %}
-        {% render 'pagination'
-          , paginate: paginate %}
+
+    {%- liquid
+      assign vendors = ''
+      assign types = ''
+      assign tags = ''
+      for product in collection.products
+        unless vendors contains product.vendor
+          if vendors == ''
+            assign vendors = product.vendor
+          else
+            assign vendors = vendors | append: ',' | append: product.vendor
+          endif
+        endunless
+        unless types contains product.type
+          if product.type != blank
+            if types == ''
+              assign types = product.type
+            else
+              assign types = types | append: ',' | append: product.type
+            endif
+          endif
+        endunless
+        for tag in product.tags
+          unless tags contains tag
+            if tags == ''
+              assign tags = tag
+            else
+              assign tags = tags | append: ',' | append: tag
+            endif
+          endunless
+        endfor
+      endfor
+      assign vendor_list = vendors | split: ','
+      assign type_list = types | split: ','
+      assign tag_list = tags | split: ','
+    -%}
+
+    <div class="products-view__layout">
+      {% if vendor_list.size > 0 or type_list.size > 0 or tag_list.size > 0 %}
+        <aside class="products-filter" data-products-filter>
+          {% if vendor_list.size > 0 %}
+            <div class="products-filter__group">
+              <h3 class="products-filter__title">{{ 'products_view.filter_by_vendor' | t }}</h3>
+              <div class="products-filter__options">
+                {% for vendor in vendor_list %}
+                  <label class="products-filter__option">
+                    <input type="checkbox" value="{{ vendor | escape }}" data-filter-checkbox="vendor" checked>
+                    <span class="products-filter__checkmark"></span>
+                    <span class="products-filter__name">{{ vendor }}</span>
+                  </label>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if type_list.size > 0 %}
+            <div class="products-filter__group">
+              <h3 class="products-filter__title">{{ 'products_view.filter_by_type' | t }}</h3>
+              <div class="products-filter__options">
+                {% for type in type_list %}
+                  <label class="products-filter__option">
+                    <input type="checkbox" value="{{ type | escape }}" data-filter-checkbox="type" checked>
+                    <span class="products-filter__checkmark"></span>
+                    <span class="products-filter__name">{{ type }}</span>
+                  </label>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+
+          {% if tag_list.size > 0 %}
+            <div class="products-filter__group">
+              <h3 class="products-filter__title">{{ 'products_view.filter_by_tag' | t }}</h3>
+              <div class="products-filter__options">
+                {% for tag in tag_list %}
+                  <label class="products-filter__option">
+                    <input type="checkbox" value="{{ tag | escape }}" data-filter-checkbox="tag" checked>
+                    <span class="products-filter__checkmark"></span>
+                    <span class="products-filter__name">{{ tag }}</span>
+                  </label>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </aside>
       {% endif %}
-    {% endpaginate %}
+
+      <div class="products-view__content">
+        {% paginate collection.products by 12 %}
+          <div class="products__grid" data-products-grid>
+            {% for product in collection.products %}
+              <div class="product-card-wrapper" data-product-vendor="{{ product.vendor | escape }}" data-product-type="{{ product.type | escape }}" data-product-tags="{{ product.tags | join: ',' | escape }}">
+                {% render 'product-card'
+                  , product: product %}
+              </div>
+            {% endfor %}
+          </div>
+          {% if paginate.pages > 1 %}
+            {% render 'pagination'
+              , paginate: paginate %}
+          {% endif %}
+        {% endpaginate %}
+      </div>
+    </div>
   </div>
 </section>
+
+<script src="{{ 'js-products-view.min.js' | asset_url }}" defer></script>
 
 {% schema %}
   {

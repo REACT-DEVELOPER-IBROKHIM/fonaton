@@ -23,12 +23,12 @@
   "main": "index.js",
   "scripts": {
     "components-watch": "node watch.js",
-    "theme-watch": "shopify theme dev",
+    "theme-watch": "shopify theme dev --store=f4p1qj-ne.myshopify.com",
     "dev": "npm run watch",
     "webpack-watch": "webpack --watch",
     "deploy": "webpack && theme deploy --env=development",
     "watch": "npm-run-all --parallel webpack-watch theme-watch components-watch",
-    "pull": "shopify theme pull",
+    "pull": "shopify theme pull --store=f4p1qj-ne.myshopify.com",
     "format:write": "prettier --write .",
     "format:check": "prettier --check ."
   },

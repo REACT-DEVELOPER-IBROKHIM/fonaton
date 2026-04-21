@@ -32,8 +32,16 @@ body {
   max-width: var(--max-container-size);
   margin: 0 auto;
   padding: 0 var(--default-padding);
+  width: 100%;
+  height: 100%;
 
-  @include fullHeightFullWidth();
+  @media (max-width: 768px) {
+    padding: 0 var(--tablet-padding);
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 var(--mobile-padding);
+  }
 }
 
 .overlay {

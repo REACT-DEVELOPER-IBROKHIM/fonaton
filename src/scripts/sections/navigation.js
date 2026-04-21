@@ -7,3 +7,26 @@ document.addEventListener("scroll", (e) => {
     navigation.classList.remove("pinned-navbar");
   }
 });
+
+// Mobile hamburger menu toggle
+const hamburger = document.querySelector(".navigation__hamburger");
+const menu = document.querySelector(".navigation__menu");
+
+if (hamburger && menu) {
+  hamburger.addEventListener("click", () => {
+    const isOpen = menu.classList.toggle("is-open");
+    hamburger.classList.toggle("is-active");
+    hamburger.setAttribute("aria-expanded", isOpen);
+    document.body.style.overflow = isOpen ? "hidden" : "";
+  });
+
+  // Close menu when clicking a link
+  menu.querySelectorAll(".navigation__menu-link[href]").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("is-open");
+      hamburger.classList.remove("is-active");
+      hamburger.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    });
+  });
+}

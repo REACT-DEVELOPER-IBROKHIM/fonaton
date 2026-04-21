@@ -2,6 +2,11 @@
   "related_posts": {
     "btn_text": "Read more"
   },
+  "products_view": {
+    "filter_by_vendor": "Filter by brand",
+    "filter_by_type": "Filter by type",
+    "filter_by_tag": "Filter by tag"
+  },
   "modal": {
     "title": "Free Consultation",
     "description": "Join thousands of satisfied customers. Get your free consultation from our experts today!",

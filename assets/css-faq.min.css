@@ -65,6 +65,7 @@
 .faq-items .faq-item svg {
   width: 20px;
   height: 20px;
+  flex-shrink: 0;
 }
 .faq-items .faq-item path {
   stroke: var(--color-black);
@@ -77,4 +78,44 @@
 }
 .faq-items .faq-item[aria-expanded=true] svg {
   transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .faq-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 0;
+  }
+  .faq-header {
+    width: 100%;
+  }
+  .faq-title {
+    font-size: 28px;
+  }
+  .faq-items {
+    width: 100%;
+  }
+  .faq-items .faq-item .faq-question {
+    font-size: 16px;
+  }
+  .faq-items .faq-item .faq-answer {
+    max-width: 90%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .faq-wrapper {
+    padding: 40px 0;
+    gap: 24px;
+  }
+  .faq-title {
+    font-size: 24px;
+  }
+  .faq-items .faq-item {
+    padding: 16px;
+  }
+  .faq-items .faq-item[aria-expanded=true] .faq-answer {
+    margin-top: 16px;
+    max-height: 15em;
+  }
 }

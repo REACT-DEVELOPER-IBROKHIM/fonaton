@@ -2,7 +2,6 @@
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-resources-loader/lib/loader.js??ruleSet[1].rules[0].use[3]!./src/scss/blocks/category-grid.scss ***!
   \****************************************************************************************************************************************************************************************************************************************/
 .category-grid-section {
-  height: 700px;
   padding: 100px 0;
   width: 100%;
 }
@@ -45,7 +44,7 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 40px;
   grid-template-areas: "accessories implants consumables" "accessories implants consumables" "accessories devices consumables" "accessories devices consumables";
-  height: 500px;
+  min-height: 500px;
 }
 
 .category-item {
@@ -73,4 +72,44 @@
   border-radius: 8px;
   object-fit: contain;
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .category-grid-section {
+    padding: 60px 0;
+  }
+  .category__content .category-grid-section__title {
+    font-size: 28px;
+  }
+  .category__content .category-grid-section__subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .category__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "accessories implants" "devices consumables";
+    gap: 20px;
+    min-height: auto;
+  }
+  .category-item img {
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
+@media (max-width: 480px) {
+  .category-grid-section {
+    padding: 40px 0;
+  }
+  .category__content .category-grid-section__title {
+    font-size: 24px;
+  }
+  .category__content .category-grid-section__subtitle {
+    font-size: 14px;
+  }
+  .category__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas: "accessories" "implants" "devices" "consumables";
+    gap: 16px;
+  }
 }
