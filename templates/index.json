@@ -106,8 +106,8 @@
       "type": "blog-posts",
       "name": "Blog Posts",
       "settings": {
-        "blog_posts_title": "All our featured blogs",
-        "blog_posts_subtitle": "Latest news and updates"
+        "blog_posts_title": "Our Latest Updates",
+        "blog_posts_subtitle": "Recent news and information"
       }
     },
     "faq_MWQp7c": {
@@ -116,29 +116,29 @@
         "faq_item_a7pMBg": {
           "type": "faq_item",
           "settings": {
-            "question": "What is your return policy?",
-            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+            "question": "How do I choose the right hearing aid?",
+            "answer": "We recommend consulting with our audiologist first. Our specialists will assess your level of hearing and lifestyle to suggest the most suitable hearing aid for you."
           }
         },
         "faq_item_McyEmM": {
           "type": "faq_item",
           "settings": {
-            "question": "What is your return policy?",
-            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+            "question": "Under what circumstances can a product be returned?",
+            "answer": "If a defect is found within 14 days of purchase, you are eligible for a free replacement or a full refund. Please contact us for more details."
           }
         },
         "faq_item_FjAXCx": {
           "type": "faq_item",
           "settings": {
-            "question": "What is your return policy?",
-            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+            "question": "Is the online hearing test reliable?",
+            "answer": "Our online test is a great tool for an initial self-assessment. However, for a complete and accurate diagnosis, we recommend visiting our clinic for a professional audiological examination."
           }
         },
         "faq_item_XiBwkN": {
           "type": "faq_item",
           "settings": {
-            "question": "What is your return policy?",
-            "answer": "Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can’t offer you a refund or exchange."
+            "question": "How can I contact the clinic?",
+            "answer": "You can reach us by phone, through the contact form on our website, or by visiting our clinic in person. Our clinic in Tashkent is open on weekdays from 9:00 AM to 6:00 PM."
           }
         }
       },
@@ -151,7 +151,7 @@
       "name": "FAQ Section",
       "settings": {
         "faq_title": "Frequently Asked Questions",
-        "faq_subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet."
+        "faq_subtitle": "Find answers to the most common questions about our hearing aids and services."
       }
     },
     "map_6b7jhh": {
