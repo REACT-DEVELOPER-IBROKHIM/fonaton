@@ -17,6 +17,69 @@
       "settings": {
         "hero_subheading": "Uzbek"
       }
+    },
+    "text_image_CdhqVD": {
+      "settings": {
+        "section_heading": "Eshitish testidan hoziroq o'ting",
+        "section_description": "Bizning onlayn eshitish testimiz siz uchun eshitish salomatligingizni tekshirishning tez va qulay usuli hisoblanadi. U eshitish muammolarini aniqlash va zarur bo'lsa mutaxassis yordamiga murojaat qilishda sizga yo'l ko'rsatishi mumkin.",
+        "link_text": "Testni boshlash"
+      }
+    },
+    "why_us_cacyhT": {
+      "settings": {
+        "section_title": "Nega bizni tanlash kerak?",
+        "section_subtitle": "Fonaton O'zbekistonda eshitish apparatlari sohasidagi yetakchi klinika bo'lib, biz har bir mijozimizga individual yondashuv va yuqori sifatli xizmat taklif qilamiz. Tajribali mutaxassislarimiz siz uchun eng mos yechimni topishda yordam beradi."
+      },
+      "blocks": {
+        "text_KfjK4j": {
+          "settings": {
+            "metric_subtitle": "Mijozlarimizning to'liq qoniqishi va ishonchi bizning asosiy maqsadimizdir."
+          }
+        },
+        "text_qBeM9Q": {
+          "settings": {
+            "metric_subtitle": "Yuqori sifatli mahsulotlar va xizmatlar bilan mijozlarni xursand qilish darajasi."
+          }
+        }
+      }
+    },
+    "blog_posts_JWaxGC": {
+      "settings": {
+        "blog_posts_title": "Bizning ma'lumotlar",
+        "blog_posts_subtitle": "Eng so'ngi yangiliklar va ma'lumotlar"
+      }
+    },
+    "faq_MWQp7c": {
+      "settings": {
+        "faq_title": "Tez-tez so'raladigan savollar",
+        "faq_subtitle": "Eshitish apparatlari va xizmatlarimiz haqida eng ko'p so'raladigan savollar va ularning javoblari."
+      },
+      "blocks": {
+        "faq_item_a7pMBg": {
+          "settings": {
+            "question": "Eshitish apparatini qanday tanlash kerak?",
+            "answer": "Eshitish apparatini tanlash uchun avval audiolog mutaxassisimiz bilan maslahatlashish tavsiya etiladi. Biz eshitish darajangiz va turmush tarzingizga mos apparat tavsiya qilamiz."
+          }
+        },
+        "faq_item_McyEmM": {
+          "settings": {
+            "question": "Mahsulotni qanday hollarda qaytariladi?",
+            "answer": "Mahsulot sotib olinganidan keyin 14 kun ichida defekt aniqlansa, bepul almashtirish yoki qaytarish imkoniyati mavjud. Batafsil ma'lumot uchun biz bilan bog'laning"
+          }
+        },
+        "faq_item_FjAXCx": {
+          "settings": {
+            "question": "Onlayn eshitish testi ishonchli bo'ladimi?",
+            "answer": "Bizning onlayn testimiz dastlabki baholash uchun juda foydali. Ammo to'liq va aniq tashxis uchun klinikamizda professional audiologik tekshiruvdan o'tish tavsiya etiladi."
+          }
+        },
+        "faq_item_XiBwkN": {
+          "settings": {
+            "question": "Klinikaga qanday murojaat qilsa bo'ladi?",
+            "answer": "Bizga telefon orqali, saytdagi forma orqali yoki bevosita klinikamizga kelib murojaat qilishingiz mumkin. Toshkent shahrida joylashgan klinikamiz hafta kunlari 9:00 dan 18:00 gacha ochiq."
+          }
+        }
+      }
     }
   }
 }
