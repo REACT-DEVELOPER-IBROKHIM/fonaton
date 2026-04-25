@@ -52,8 +52,8 @@
       "type": "featured-products",
       "name": "Featured Products",
       "settings": {
-        "section_heading": "Featured Products",
-        "section_subheading": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla nunc in molestie feugiat. Nunc auctor consectetur elit, quis pulvina."
+        "section_heading": "Tavsiya etilgan mahsulot",
+        "section_subheading": "Do‘konning asosiy va eng ko‘p sotiladigan mahsulotilari to'plami."
       }
     },
     "category_grid_zYPD8t": {
@@ -230,7 +230,7 @@
       ],
       "name": "Footer Section",
       "settings": {
-        "footer_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut.",
+        "footer_text": "Fonaton O'zbekistonda eshitish apparatlari sohasidagi yetakchi klinika bo'lib, biz har bir mijozimizga individual yondashuv va yuqori sifatli xizmat taklif qilamiz.",
         "footer_links1": "terms-and-conditions",
         "footer_links2": "footer"
       }
