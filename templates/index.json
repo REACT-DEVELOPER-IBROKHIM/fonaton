@@ -39,9 +39,9 @@
       "type": "text-image",
       "name": "Text with Image",
       "settings": {
-        "section_heading": "Take a Hearing Test Today",
-        "section_description": "Our online hearing test is a quick and convenient way to check your hearing health. It helps identify potential hearing problems and guides you toward seeking professional care when needed.",
-        "link_text": "Start the test",
+        "section_heading": "Eshitish testidan hoziroq o'ting",
+        "section_description": "Bizning onlayn eshitish testimiz siz uchun eshitish salomatligingizni tekshirishning tez va qulay usuli hisoblanadi. U eshitish muammolarini aniqlash va zarur bo'lsa mutaxassis yordamiga murojaat qilishda sizga yo'l ko'rsatishi mumkin.",
+        "link_text": "Testni boshlash",
         "link_url": "shopify://pages/fonaton-hearing-test",
         "image": "shopify://shop_images/GettyImages-hearing-test-1800px-1485227737.webp",
         "image_alt": "Text and image section",
@@ -77,14 +77,14 @@
           "type": "text",
           "settings": {
             "metric_title": "100%",
-            "metric_subtitle": "Complete client satisfaction and trust are our primary goals."
+            "metric_subtitle": "Mijozlarimizning to'liq qoniqishi va ishonchi bizning asosiy maqsadimizdir."
           }
         },
         "text_qBeM9Q": {
           "type": "text",
           "settings": {
             "metric_title": "99%",
-            "metric_subtitle": "Our rate of delighting clients through high-quality products and services."
+            "metric_subtitle": "Yuqori sifatli mahsulotlar va xizmatlar bilan mijozlarni xursand qilish darajasi."
           }
         }
       },
@@ -94,8 +94,8 @@
       ],
       "name": "Why Us Section",
       "settings": {
-        "section_title": "Why you should choose us?",
-        "section_subtitle": "Fonaton is a leading clinic in the field of hearing aids in Uzbekistan. We provide an individual approach and high-quality service to every client. Our experienced specialists will help you find the most suitable solution for your needs."
+        "section_title": "Nega bizni tanlash kerak?",
+        "section_subtitle": "Fonaton O'zbekistonda eshitish apparatlari sohasidagi yetakchi klinika bo'lib, biz har bir mijozimizga individual yondashuv va yuqori sifatli xizmat taklif qilamiz. Tajribali mutaxassislarimiz siz uchun eng mos yechimni topishda yordam beradi."
       }
     },
     "1770539438f265e0a9": {
@@ -106,8 +106,8 @@
       "type": "blog-posts",
       "name": "Blog Posts",
       "settings": {
-        "blog_posts_title": "Our Latest Updates",
-        "blog_posts_subtitle": "Recent news and information"
+        "blog_posts_title": "Bizning ma'lumotlar",
+        "blog_posts_subtitle": "Eng so'ngi yangiliklar va ma'lumotlar"
       }
     },
     "faq_MWQp7c": {
@@ -116,29 +116,29 @@
         "faq_item_a7pMBg": {
           "type": "faq_item",
           "settings": {
-            "question": "How do I choose the right hearing aid?",
-            "answer": "We recommend consulting with our audiologist first. Our specialists will assess your level of hearing and lifestyle to suggest the most suitable hearing aid for you."
+            "question": "Eshitish apparatini qanday tanlash kerak?",
+            "answer": "Eshitish apparatini tanlash uchun avval audiolog mutaxassisimiz bilan maslahatlashish tavsiya etiladi. Biz eshitish darajangiz va turmush tarzingizga mos apparat tavsiya qilamiz."
           }
         },
         "faq_item_McyEmM": {
           "type": "faq_item",
           "settings": {
-            "question": "Under what circumstances can a product be returned?",
-            "answer": "If a defect is found within 14 days of purchase, you are eligible for a free replacement or a full refund. Please contact us for more details."
+            "question": "Mahsulotni qanday hollarda qaytariladi?",
+            "answer": "Mahsulot sotib olinganidan keyin 14 kun ichida defekt aniqlansa, bepul almashtirish yoki qaytarish imkoniyati mavjud. Batafsil ma'lumot uchun biz bilan bog'laning."
           }
         },
         "faq_item_FjAXCx": {
           "type": "faq_item",
           "settings": {
-            "question": "Is the online hearing test reliable?",
-            "answer": "Our online test is a great tool for an initial self-assessment. However, for a complete and accurate diagnosis, we recommend visiting our clinic for a professional audiological examination."
+            "question": "Onlayn eshitish testi ishonchli bo'ladimi?",
+            "answer": "Bizning onlayn testimiz dastlabki baholash uchun juda foydali. Ammo to'liq va aniq tashxis uchun klinikamizda professional audiologik tekshiruvdan o'tish tavsiya etiladi."
           }
         },
         "faq_item_XiBwkN": {
           "type": "faq_item",
           "settings": {
-            "question": "How can I contact the clinic?",
-            "answer": "You can reach us by phone, through the contact form on our website, or by visiting our clinic in person. Our clinic in Tashkent is open on weekdays from 9:00 AM to 6:00 PM."
+            "question": "Klinikaga qanday murojaat qilsa bo'ladi?",
+            "answer": "Bizga telefon orqali, saytdagi forma orqali yoki bevosita klinikamizga kelib murojaat qilishingiz mumkin. Toshkent shahrida joylashgan klinikamiz hafta kunlari 9:00 dan 18:00 gacha ochiq."
           }
         }
       },
@@ -150,8 +150,8 @@
       ],
       "name": "FAQ Section",
       "settings": {
-        "faq_title": "Frequently Asked Questions",
-        "faq_subtitle": "Find answers to the most common questions about our hearing aids and services."
+        "faq_title": "Tez-tez so'raladigan savollar",
+        "faq_subtitle": "Eshitish apparatlari va xizmatlarimiz haqida eng ko'p so'raladigan savollar va ularning javoblari."
       }
     },
     "map_6b7jhh": {
@@ -162,7 +162,7 @@
           "settings": {
             "location_info_type": "address",
             "location_info_image": "shopify://shop_images/location_on.svg",
-            "location_info_label": "Location",
+            "location_info_label": "Manzil",
             "location_info_data": "Tashkent, Alisher Navoiy, 20"
           }
         },
@@ -192,9 +192,9 @@
       ],
       "name": "Map Section",
       "settings": {
-        "map_heading": "Our locations",
-        "map_heading_secondary": "Discover Our Location",
-        "map_subheading": "Location",
+        "map_heading": "Bizning joylashuv",
+        "map_heading_secondary": "Bizni manzillar",
+        "map_subheading": "Manzil",
         "map_location_iframe": "<div style=\"position:relative;overflow:hidden;\">\n<a href=\"https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&amp;utm_source=maps\" style=\"color:#eee;font-size:12px;position:absolute;top:0px;\">Ташкент</a><a href=\"https://yandex.uz/maps/geo/771288885/?ll=69.323750%2C41.290231&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=11.63\" style=\"color:#eee;font-size:12px;position:absolute;top:14px;\">Ташкент — Яндекс Карты</a><iframe src=\"https://yandex.uz/map-widget/v1/?ll=69.323750%2C41.290231&amp;mode=search&amp;ol=geo&amp;ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgk3NzEyODg4ODUSFk_Ku3piZWtpc3RvbiwgVG9zaGtlbnQiCg04j4pCFZ0-JUI%2C&amp;z=11.63\" width=\"100%\" height=\"400\" frameborder=\"1\" allowfullscreen=\"true\" style=\"position:relative;\"></iframe>\n</div>"
       }
     },
