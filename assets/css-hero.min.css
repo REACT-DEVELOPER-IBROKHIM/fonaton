@@ -3,6 +3,7 @@
   \*******************************************************************************************************************************************************************************************************************************/
 .section-hero {
   height: 100vh;
+  height: 100dvh;
   margin: 0 auto;
   position: relative;
 }
@@ -25,6 +26,8 @@
   gap: 50px 0;
   padding-bottom: 80px;
   z-index: 4;
+  padding-left: var(--default-padding);
+  padding-right: var(--default-padding);
 }
 
 .hero__heading {
@@ -100,4 +103,41 @@
   height: 100%;
   object-fit: cover;
   z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero__content-wrapper {
+    gap: 30px 0;
+    padding-bottom: 60px;
+    padding-left: var(--tablet-padding);
+    padding-right: var(--tablet-padding);
+  }
+  .hero__heading {
+    font-size: 32px;
+  }
+  .hero__subheading {
+    font-size: 16px;
+  }
+  .hero__cta-button {
+    padding: 16px 32px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .hero__content-wrapper {
+    gap: 24px 0;
+    padding-bottom: 40px;
+    padding-left: var(--mobile-padding);
+    padding-right: var(--mobile-padding);
+  }
+  .hero__heading {
+    font-size: 26px;
+  }
+  .hero__subheading {
+    font-size: 15px;
+  }
+  .hero__cta-button {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
 }

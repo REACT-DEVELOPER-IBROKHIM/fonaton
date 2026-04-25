@@ -2,6 +2,11 @@
   "related_posts": {
     "btn_text": "Batafsil"
   },
+  "products_view": {
+    "filter_by_vendor": "Brend bo'yicha filtrlash",
+    "filter_by_type": "Turi bo'yicha filtrlash",
+    "filter_by_tag": "Teg bo'yicha filtrlash"
+  },
   "modal": {
     "title": "Bepul Maslahat",
     "description": "Minglab qoniqtirilgan mijozlarga qo'shiling. Bugun bizning mutaxassislardan bepul maslahat oling!",
