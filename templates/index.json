@@ -171,7 +171,7 @@
           "settings": {
             "location_info_type": "phone",
             "location_info_image": "shopify://shop_images/phone.svg",
-            "location_info_label": "Phone",
+            "location_info_label": "Telefon",
             "location_info_data": "+998999787525"
           }
         },
