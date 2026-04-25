@@ -180,7 +180,7 @@
           "settings": {
             "location_info_type": "email",
             "location_info_image": "shopify://shop_images/mail.svg",
-            "location_info_label": "Email",
+            "location_info_label": "Eelektron pochta",
             "location_info_data": "fonaton@gmail.com"
           }
         }
