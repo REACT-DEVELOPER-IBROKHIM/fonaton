@@ -48,7 +48,7 @@
                   </p>
 
                   <a href="{{ post.url }}" class="related-post__link">
-                    {{ 'related_posts.btn_text' | t }}
+                    {{ section.settings.read_more_text }}
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                       <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
@@ -78,7 +78,14 @@
 {% schema %}
   {
     "name": "Related Posts",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "read_more_text",
+        "label": "Read More Button Text",
+        "default": "Read more"
+      }
+    ],
     "presets": [
       {
         "name": "Related Posts",

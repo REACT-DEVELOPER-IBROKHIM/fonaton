@@ -40,6 +40,6 @@
             </div>
           {% endif %}
           <a href="{{ product.url }}" class="product__caa">
-            More Details
+            {{ more_details_text | default: 'More Details' }}
           </a>
         </div>

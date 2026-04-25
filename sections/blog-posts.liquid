@@ -16,7 +16,7 @@
             <h3 class="blog-post__title">{{ post.title }}</h3>
           <div class="blog-post__excerpt">{{ post.excerpt_or_content | truncatewords: 20 }}</div>
           <p class="blog-post__date">{{ post.published_at | date: "%B %d, %Y"  }}</p>
-          <a class="blog-post__link" href="{{ post.url }}">Read more</a>
+          <a class="blog-post__link" href="{{ post.url }}">{{ section.settings.read_more_text }}</a>
           </div>
         </article>
       {% endfor %}
@@ -42,6 +42,12 @@
         "id": "blog_posts_subtitle",
         "label": "Blog Posts Subtitle",
         "default": "Latest news and updates"
+      },
+      {
+        "type": "text",
+        "id": "read_more_text",
+        "label": "Read More Button Text",
+        "default": "Read more"
       }
     ],
     "presets": [
