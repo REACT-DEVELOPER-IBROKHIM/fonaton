@@ -230,6 +230,7 @@
       ],
       "name": "Footer Section",
       "settings": {
+        "footer_logo": "shopify://shop_images/light_logo.svg",
         "footer_text": "Fonaton O'zbekistonda eshitish apparatlari sohasidagi yetakchi klinika bo'lib, biz har bir mijozimizga individual yondashuv va yuqori sifatli xizmat taklif qilamiz.",
         "footer_links1": "terms-and-conditions",
         "footer_links2": "footer"
