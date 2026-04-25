@@ -21,7 +21,7 @@
         "hero_subheading": "Dunyoni to‘liq ravshanlikda his eting — ilg‘or eshitish vositalarimiz bilan. Qulaylik va aniqlik uchun yaratilgan qurilmalarimiz sizni yaqinlaringiz bilan qayta bog‘laydi va har bir lahzani aniq va ravshan tarzda bahramand bo‘lishingizga yordam beradi.",
         "is_cta_link": true,
         "hero_cta_link": "shopify://collections/devices",
-        "hero_cta_text": "Shop Now",
+        "hero_cta_text": "Hoziroq sotib oling",
         "hero_video": "shopify://files/videos/IMG_0062 (3).mp4"
       }
     },
@@ -53,7 +53,8 @@
       "name": "Featured Products",
       "settings": {
         "section_heading": "Tavsiya etilgan mahsulot",
-        "section_subheading": "Do‘konning asosiy va eng ko‘p sotiladigan mahsulotilari to'plami."
+        "section_subheading": "Do‘konning asosiy va eng ko‘p sotiladigan mahsulotilari to'plami.",
+        "more_details_text": "More Details"
       }
     },
     "category_grid_zYPD8t": {
@@ -107,7 +108,8 @@
       "name": "Blog Posts",
       "settings": {
         "blog_posts_title": "Bizning ma'lumotlar",
-        "blog_posts_subtitle": "Eng so'ngi yangiliklar va ma'lumotlar"
+        "blog_posts_subtitle": "Eng so'ngi yangiliklar va ma'lumotlar",
+        "read_more_text": "Read more"
       }
     },
     "faq_MWQp7c": {
