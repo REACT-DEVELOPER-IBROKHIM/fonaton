@@ -60,8 +60,8 @@
       "type": "category-grid",
       "name": "Category Grid",
       "settings": {
-        "section_title": "View Our Range Of Categories",
-        "section_subtitle": "Browse our categories: Implants, Devices, Accessories, and Consumables. Find what you need with ease.",
+        "section_title": "Bizning barcha mahsulot turlarimiz",
+        "section_subtitle": "Barcha mahsulot turlarimizni shu yerdan toping.",
         "section_list": [
           "accessories",
           "consumables",
