@@ -25,6 +25,10 @@
     "last_name_placeholder": "Familiyangizni kiriting",
     "phone": "Telefon raqami",
     "phone_placeholder": "Telefon raqamingizni kiriting",
-    "submit": "Bepul Maslahatni Olish"
+    "submit": "Bepul Maslahatni Olish",
+    "success_title": "Rahmat!",
+    "success_message": "Sizning ma'lumotlaringiz qabul qilindi. Biz tez orada siz bilan bog'lanamiz.",
+    "error_title": "Xatolik",
+    "error_default": "Xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
   }
 }
