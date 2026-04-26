@@ -16,6 +16,20 @@
     "footer_rePYBH": {
       "type": "footer",
       "blocks": {
+        "social_link_frfFEB": {
+          "type": "social_link",
+          "settings": {
+            "social_url": "",
+            "social_icon": "shopify://shop_images/Social_Icons_1.svg"
+          }
+        },
+        "social_link_nDYqVx": {
+          "type": "social_link",
+          "settings": {
+            "social_url": "",
+            "social_icon": "shopify://shop_images/Vector.svg"
+          }
+        },
         "social_link_DnzdN9": {
           "type": "social_link",
           "settings": {
@@ -25,6 +39,8 @@
         }
       },
       "block_order": [
+        "social_link_frfFEB",
+        "social_link_nDYqVx",
         "social_link_DnzdN9"
       ],
       "name": "Footer Section",
