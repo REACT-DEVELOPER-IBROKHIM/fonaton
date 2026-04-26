@@ -14,43 +14,32 @@
 
     <div class="contact-us__form-wrapper">
       <form class="contact-us__form" id="contact-form" method="POST">
-        <div class="contact-us__form-group">
-          <label for="contact-first-name" class="contact-us__label">{{ 'contact_us.first_name' | t }}</label>
-          <input
-            type="text"
-            id="contact-first-name"
-            name="first_name"
-            class="contact-us__input"
-            placeholder="{{ 'contact_us.first_name_placeholder' | t }}"
-            required
-          />
-          <span class="contact-us__error" id="first-name-error"></span>
-        </div>
+        <div class="contact-us__form-row">
+          <div class="contact-us__form-group">
+            <label for="contact-first-name" class="contact-us__label">{{ 'contact_us.first_name' | t }}</label>
+            <input
+              type="text"
+              id="contact-first-name"
+              name="first_name"
+              class="contact-us__input"
+              placeholder="{{ 'contact_us.first_name_placeholder' | t }}"
+              required
+            />
+            <span class="contact-us__error" id="first-name-error"></span>
+          </div>
 
-        <div class="contact-us__form-group">
-          <label for="contact-last-name" class="contact-us__label">{{ 'contact_us.last_name' | t }}</label>
-          <input
-            type="text"
-            id="contact-last-name"
-            name="last_name"
-            class="contact-us__input"
-            placeholder="{{ 'contact_us.last_name_placeholder' | t }}"
-            required
-          />
-          <span class="contact-us__error" id="last-name-error"></span>
-        </div>
-
-        <div class="contact-us__form-group">
-          <label for="contact-email" class="contact-us__label">{{ 'contact_us.email' | t }}</label>
-          <input
-            type="email"
-            id="contact-email"
-            name="email"
-            class="contact-us__input"
-            placeholder="{{ 'contact_us.email_placeholder' | t }}"
-            required
-          />
-          <span class="contact-us__error" id="email-error"></span>
+          <div class="contact-us__form-group">
+            <label for="contact-last-name" class="contact-us__label">{{ 'contact_us.last_name' | t }}</label>
+            <input
+              type="text"
+              id="contact-last-name"
+              name="last_name"
+              class="contact-us__input"
+              placeholder="{{ 'contact_us.last_name_placeholder' | t }}"
+              required
+            />
+            <span class="contact-us__error" id="last-name-error"></span>
+          </div>
         </div>
 
         <div class="contact-us__form-group">
