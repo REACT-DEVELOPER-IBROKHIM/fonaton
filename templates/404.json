@@ -13,6 +13,15 @@
       "type": "navigation",
       "settings": {}
     },
+    "contact_us_KVzLWt": {
+      "type": "contact-us",
+      "name": "Contact Us Section",
+      "settings": {
+        "section_heading": "Biz bilan bog'laning",
+        "section_subheading": "Sizdan xabar olishdan mamnun bo‘lamiz. Bizga xabar yuboring va imkon qadar tezroq javob beramiz.",
+        "button_text": "Yuborish"
+      }
+    },
     "footer_rePYBH": {
       "type": "footer",
       "blocks": {
@@ -49,15 +58,6 @@
         "footer_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut.",
         "footer_links1": "footer",
         "footer_links2": ""
-      }
-    },
-    "contact_us_KVzLWt": {
-      "type": "contact-us",
-      "name": "Contact Us Section",
-      "settings": {
-        "section_heading": "Get in Touch",
-        "section_subheading": "We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
-        "button_text": "Send Message"
       }
     }
   },
