@@ -11,12 +11,33 @@
   "sections": {
     "navigation": {
       "type": "navigation",
+      "settings": {}
+    },
+    "footer_rePYBH": {
+      "type": "footer",
+      "blocks": {
+        "social_link_DnzdN9": {
+          "type": "social_link",
+          "settings": {
+            "social_url": "",
+            "social_icon": "shopify://shop_images/Social_Icons.svg"
+          }
+        }
+      },
+      "block_order": [
+        "social_link_DnzdN9"
+      ],
+      "name": "Footer Section",
       "settings": {
-        "navigation_logo_light": "shopify://shop_images/logo_22b057a9-a987-424a-a833-38f1817f6002.svg",
-        "navigation_logo_dark": "shopify://shop_images/Group.svg",
-        "navigation_logo_alt_text": "FONATON"
+        "footer_logo": "shopify://shop_images/light_logo.svg",
+        "footer_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut.",
+        "footer_links1": "footer",
+        "footer_links2": ""
       }
     }
   },
-  "order": ["navigation"]
+  "order": [
+    "navigation",
+    "footer_rePYBH"
+  ]
 }
