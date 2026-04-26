@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       return null;
     }
-
+    console.log("formatted", formattedDate)
     // Compose ISO string
     const isoString = `${formattedDate}T${timePart}:00`;
     const dateObj = new Date(isoString);
