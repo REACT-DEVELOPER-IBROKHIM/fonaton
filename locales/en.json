@@ -30,6 +30,12 @@
     "success_message": "Your information has been received. We'll contact you soon.",
     "error_title": "Error",
     "error_default": "An error occurred. Please try again."
+  },
+  "timer": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
   }
 }
 
