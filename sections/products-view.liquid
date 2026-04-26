@@ -92,21 +92,27 @@
       {% endif %}
 
       <div class="products-view__content">
-        {% paginate collection.products by 12 %}
-          <div class="products__grid" data-products-grid>
-            {% for product in collection.products %}
-              <div class="product-card-wrapper" data-product-vendor="{{ product.vendor | escape }}" data-product-type="{{ product.type | escape }}" data-product-tags="{{ product.tags | join: ',' | escape }}">
-                {% render 'product-card'
-                  , product: product
-                  , more_details_text: section.settings.more_details_text %}
-              </div>
-            {% endfor %}
+        {% if collection.products.size > 0 %}
+          {% paginate collection.products by 12 %}
+            <div class="products__grid" data-products-grid>
+              {% for product in collection.products %}
+                <div class="product-card-wrapper" data-product-vendor="{{ product.vendor | escape }}" data-product-type="{{ product.type | escape }}" data-product-tags="{{ product.tags | join: ',' | escape }}">
+                  {% render 'product-card'
+                    , product: product
+                    , more_details_text: section.settings.more_details_text %}
+                </div>
+              {% endfor %}
+            </div>
+            {% if paginate.pages > 1 %}
+              {% render 'pagination'
+                , paginate: paginate %}
+            {% endif %}
+          {% endpaginate %}
+        {% else %}
+          <div class="empty-collection">
+            <img src="{{ 'empty-cart-illustration-svg-download-png-9741053.webp' | asset_url }}" alt="Empty collection">
           </div>
-          {% if paginate.pages > 1 %}
-            {% render 'pagination'
-              , paginate: paginate %}
-          {% endif %}
-        {% endpaginate %}
+        {% endif %}
       </div>
     </div>
   </div>

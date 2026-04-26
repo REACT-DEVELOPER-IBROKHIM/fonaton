@@ -1,65 +1,102 @@
-<div class="customer-modal" id="customerModal">
+{%- render 'stylesheet', name: 'customer-modal' -%}
+
+
+<div class="customer-modal" id="customerModal" data-api-endpoint="{{ section.settings.modal_api_endpoint | default: 'https://hook.us2.make.com/pg9j1lyvvs0sil6vomh8tz5smlznsv77' }}" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
   <div class="customer-modal__overlay"></div>
   <div class="customer-modal__content">
-    <button class="customer-modal__close" aria-label="Close modal">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <button class="customer-modal__close" aria-label="Close modal" type="button">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
         <line x1="18" y1="6" x2="6" y2="18"></line>
         <line x1="6" y1="6" x2="18" y2="18"></line>
       </svg>
     </button>
     
     <div class="customer-modal__body">
-      <h2 class="customer-modal__title">{{ 'modal.title' | t }}</h2>
-      <p class="customer-modal__description">{{ 'modal.description' | t }}</p>
-      
-      <form class="customer-modal__form" id="customerForm">
-        <div class="form-group">
-          <label for="firstName" class="form-label">
-            {{ 'modal.first_name' | t }}
-            <span class="form-required">*</span>
-          </label>
-          <input 
-            type="text" 
-            id="firstName" 
-            name="firstName" 
-            class="form-input" 
-            placeholder="{{ 'modal.first_name_placeholder' | t }}"
-            required>
-          <span class="form-error" id="firstNameError"></span>
+      {%- # Error Container -%}
+      <div class="customer-modal__error is-hidden" role="alert" aria-live="assertive">
+        <div class="error-header">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          <span class="error-title">{{ 'modal.error_title' | t }}</span>
         </div>
+        <p class="error-message"></p>
+      </div>
+
+      {%- # Form Container -%}
+      <div class="customer-modal__form-container">
+        <h2 class="customer-modal__title" id="modalTitle">{{ section.settings.modal_title | default: 'modal.title' | t }}</h2>
+        <p class="customer-modal__description">{{ section.settings.modal_description | default: 'modal.description' | t }}</p>
         
-        <div class="form-group">
-          <label for="lastName" class="form-label">
-            {{ 'modal.last_name' | t }}
-            <span class="form-required">*</span>
-          </label>
-          <input 
-            type="text" 
-            id="lastName" 
-            name="lastName" 
-            class="form-input" 
-            placeholder="{{ 'modal.last_name_placeholder' | t }}"
-            required>
-          <span class="form-error" id="lastNameError"></span>
+        <form class="customer-modal__form" id="customerForm" novalidate>
+          <div class="form-group">
+            <label for="firstName" class="form-label">
+              {{ 'modal.first_name' | t }}
+              <span class="form-required" aria-label="required">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="firstName" 
+              name="firstName" 
+              class="form-input" 
+              placeholder="{{ 'modal.first_name_placeholder' | t }}"
+              aria-describedby="firstNameError"
+              required
+              autocomplete="given-name">
+            <span class="form-error" id="firstNameError" role="alert"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="lastName" class="form-label">
+              {{ 'modal.last_name' | t }}
+              <span class="form-required" aria-label="required">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="lastName" 
+              name="lastName" 
+              class="form-input" 
+              placeholder="{{ 'modal.last_name_placeholder' | t }}"
+              aria-describedby="lastNameError"
+              required
+              autocomplete="family-name">
+            <span class="form-error" id="lastNameError" role="alert"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone" class="form-label">
+              {{ 'modal.phone' | t }}
+              <span class="form-required" aria-label="required">*</span>
+            </label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              class="form-input" 
+              placeholder="{{ 'modal.phone_placeholder' | t }}"
+              aria-describedby="phoneError"
+              required
+              autocomplete="tel"
+              pattern="[0-9\s\-\(\)\+]*">
+            <span class="form-error" id="phoneError" role="alert"></span>
+          </div>
+          
+          <button type="submit" class="form-submit" aria-busy="false">{{ 'modal.submit' | t }}</button>
+        </form>
+      </div>
+
+      {%- # Success Container -%}
+      <div class="customer-modal__success is-hidden" role="alert" aria-live="assertive">
+        <div class="success-icon" aria-hidden="true">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
         </div>
-        
-        <div class="form-group">
-          <label for="phone" class="form-label">
-            {{ 'modal.phone' | t }}
-            <span class="form-required">*</span>
-          </label>
-          <input 
-            type="tel" 
-            id="phone" 
-            name="phone" 
-            class="form-input" 
-            placeholder="{{ 'modal.phone_placeholder' | t }}"
-            required>
-          <span class="form-error" id="phoneError"></span>
-        </div>
-        
-        <button type="submit" class="form-submit">{{ 'modal.submit' | t }}</button>
-      </form>
+        <h3 class="success-title">{{ 'modal.success_title' | t }}</h3>
+        <p class="success-message">{{ 'modal.success_message' | t }}</p>
+      </div>
     </div>
   </div>
 </div>

@@ -25,6 +25,11 @@
     "last_name_placeholder": "Enter your last name",
     "phone": "Phone Number",
     "phone_placeholder": "Enter your phone number",
-    "submit": "Get Free Consultation"
+    "submit": "Get Free Consultation",
+    "success_title": "Thank you!",
+    "success_message": "Your information has been received. We'll contact you soon.",
+    "error_title": "Error",
+    "error_default": "An error occurred. Please try again."
   }
 }
+
