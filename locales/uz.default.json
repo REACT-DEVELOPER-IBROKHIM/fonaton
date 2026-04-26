@@ -30,5 +30,11 @@
     "success_message": "Sizning ma'lumotlaringiz qabul qilindi. Biz tez orada siz bilan bog'lanamiz.",
     "error_title": "Xatolik",
     "error_default": "Xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
+  },
+  "timer": {
+    "days": "Kunlar",
+    "hours": "Soatlar",
+    "minutes": "Daqiqalar",
+    "seconds": "Soniyalar"
   }
 }
