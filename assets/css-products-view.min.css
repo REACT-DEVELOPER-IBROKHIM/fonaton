@@ -97,6 +97,19 @@
   width: 100%;
 }
 
+.empty-collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.empty-collection img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 @media (max-width: 768px) {
   .products-view__layout {
     flex-direction: column;
@@ -105,5 +118,11 @@
   .products-filter {
     width: 100%;
     position: static;
+  }
+  .empty-collection {
+    min-height: 300px;
+  }
+  .empty-collection img {
+    max-width: 200px;
   }
 }
