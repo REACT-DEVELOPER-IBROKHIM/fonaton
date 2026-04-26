@@ -36,6 +36,16 @@
     "hours": "Hours",
     "minutes": "Minutes",
     "seconds": "Seconds"
+  },
+  "contact_us": {
+    "first_name": "First Name",
+    "first_name_placeholder": "Enter your first name",
+    "last_name": "Last Name",
+    "last_name_placeholder": "Enter your last name",
+    "email": "Email",
+    "email_placeholder": "Enter your email address",
+    "phone": "Phone Number",
+    "phone_placeholder": "Enter your phone number"
   }
 }
 

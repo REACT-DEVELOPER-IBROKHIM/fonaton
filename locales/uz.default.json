@@ -36,5 +36,13 @@
     "hours": "Soatlar",
     "minutes": "Daqiqalar",
     "seconds": "Soniyalar"
-  }
-}
+  },
+  "contact_us": {
+    "first_name": "Ism",
+    "first_name_placeholder": "Ismingizni kiriting",
+    "last_name": "Familiya",
+    "last_name_placeholder": "Familiyangizni kiriting",
+    "email": "Elektron pochta",
+    "email_placeholder": "Elektron pochtangizni kiriting",
+    "phone": "Telefon raqami",
+    "phone_placeholder": "Telefon raqamingizni kiriting"

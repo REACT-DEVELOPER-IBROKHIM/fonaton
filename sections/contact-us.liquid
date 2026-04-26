@@ -1,0 +1,111 @@
+{%- render 'stylesheet', name: 'contact-us' -%}
+
+<section class="section-contact-us">
+  <div class="container">
+    <div class="contact-us__header">
+      {% if section.settings.section_heading %}
+        <h2 class="contact-us__heading">{{ section.settings.section_heading }}</h2>
+      {% endif %}
+
+      {% if section.settings.section_subheading %}
+        <p class="contact-us__subheading">{{ section.settings.section_subheading }}</p>
+      {% endif %}
+    </div>
+
+    <div class="contact-us__form-wrapper">
+      <form class="contact-us__form" id="contact-form" method="POST">
+        <div class="contact-us__form-group">
+          <label for="contact-first-name" class="contact-us__label">{{ 'contact_us.first_name' | t }}</label>
+          <input
+            type="text"
+            id="contact-first-name"
+            name="first_name"
+            class="contact-us__input"
+            placeholder="{{ 'contact_us.first_name_placeholder' | t }}"
+            required
+          />
+          <span class="contact-us__error" id="first-name-error"></span>
+        </div>
+
+        <div class="contact-us__form-group">
+          <label for="contact-last-name" class="contact-us__label">{{ 'contact_us.last_name' | t }}</label>
+          <input
+            type="text"
+            id="contact-last-name"
+            name="last_name"
+            class="contact-us__input"
+            placeholder="{{ 'contact_us.last_name_placeholder' | t }}"
+            required
+          />
+          <span class="contact-us__error" id="last-name-error"></span>
+        </div>
+
+        <div class="contact-us__form-group">
+          <label for="contact-email" class="contact-us__label">{{ 'contact_us.email' | t }}</label>
+          <input
+            type="email"
+            id="contact-email"
+            name="email"
+            class="contact-us__input"
+            placeholder="{{ 'contact_us.email_placeholder' | t }}"
+            required
+          />
+          <span class="contact-us__error" id="email-error"></span>
+        </div>
+
+        <div class="contact-us__form-group">
+          <label for="contact-phone" class="contact-us__label">{{ 'contact_us.phone' | t }}</label>
+          <input
+            type="tel"
+            id="contact-phone"
+            name="phone"
+            class="contact-us__input"
+            placeholder="{{ 'contact_us.phone_placeholder' | t }}"
+            required
+          />
+          <span class="contact-us__error" id="phone-error"></span>
+        </div>
+
+        <button type="submit" class="contact-us__submit">{{ section.settings.button_text }}</button>
+
+        <div class="contact-us__message" id="form-message"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Contact Us Section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Contact Us Section Settings"
+      },
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Section Heading",
+        "default": "Get in Touch"
+      },
+      {
+        "type": "text",
+        "id": "section_subheading",
+        "label": "Section Subheading",
+        "default": "We'd love to hear from you. Send us a message and we'll respond as soon as possible."
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Submit Button Text",
+        "default": "Send Message"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Contact Us Section",
+        "category": "Forms"
+      }
+    ]
+  }
+{% endschema %}
