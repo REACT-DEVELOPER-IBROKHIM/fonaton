@@ -29,8 +29,8 @@
       "type": "timer",
       "name": "Timer Section",
       "settings": {
-        "timer_heading": "Register for FREE Consultation.",
-        "timer_subheading": "Get Free Consultation from our Experts. Offer ends soon! Get a ticket now to secure your spot.",
+        "timer_heading": "Bepul Konsultatsiya uchun yoziling",
+        "timer_subheading": "Mutaxassislarimizdan bepul maslahat oling. Taklif tez orada tugaydi! Joyingizni band qilish uchun hoziroq chipta oling.",
         "timer_end_time": "2026-05-26 00:59",
         "timer_button": "Register"
       }
