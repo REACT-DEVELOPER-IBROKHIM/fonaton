@@ -5,43 +5,42 @@ document.addEventListener("DOMContentLoaded", () => {
     .getAttribute("data-end-time");
 
   function parseDateTime(str) {
-  str = str.trim().replace(/\u00A0|\u2000-\u200B/g, " ");
-  const parts = str.split(/\s+/);
-  if (parts.length < 2) return null;
+    str = str.trim().replace(/\u00A0|\u2000-\u200B/g, " ");
+    const parts = str.split(/\s+/);
+    if (parts.length < 2) return null;
 
-  let datePart = parts[0];
-  let timePart = parts[1].replace(/[-,]/g, ":");
+    let datePart = parts[0];
+    let timePart = parts[1].replace(/[-,]/g, ":");
 
-  if (datePart.includes(".")) {
-    // Russian format: DD.MM.YYYY
-    const [day, month, year] = datePart.split(".");
-    if (!day || !month || !year) return null;
-    const [hour, minute] = timePart.split(":");
-    // Use array form, subtract 1 from month
-    const dateObj = new Date(
-      Number(year),
-      Number(month) - 1,
-      Number(day),
-      Number(hour),
-      Number(minute),
-      0
-    );
-    if (isNaN(dateObj.getTime())) return null;
-    return dateObj;
-  } else if (datePart.includes("-")) {
-    // English/Uzbek format: YYYY-MM-DD
-    const formattedDate = datePart;
-    const isoString = `${formattedDate}T${timePart}:00`;
-    const dateObj = new Date(isoString);
-    if (isNaN(dateObj.getTime())) return null;
-    return dateObj;
-  } else {
-    return null;
+    if (datePart.includes(".")) {
+      // Russian format: DD.MM.YYYY
+      const [day, month, year] = datePart.split(".");
+      if (!day || !month || !year) return null;
+      const [hour, minute] = timePart.split(":");
+      // Use array form, subtract 1 from month
+      const dateObj = new Date(
+        Number(year),
+        Number(month) - 1,
+        Number(day),
+        Number(hour),
+        Number(minute),
+        0,
+      );
+      if (isNaN(dateObj.getTime())) return null;
+      return dateObj;
+    } else if (datePart.includes("-")) {
+      // English/Uzbek format: YYYY-MM-DD
+      const formattedDate = datePart;
+      const isoString = `${formattedDate}T${timePart}:00`;
+      const dateObj = new Date(isoString);
+      if (isNaN(dateObj.getTime())) return null;
+      return dateObj;
+    } else {
+      return null;
+    }
   }
-}
-
   const endTime = parseDateTime(endTimeString);
-  console.log("end", endTime)
+  console.log("end", endTime);
 
   if (!endTime) {
     console.error("Failed to parse date:", endTimeString);
@@ -71,10 +70,22 @@ document.addEventListener("DOMContentLoaded", () => {
       const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
       const seconds = totalSeconds % 60;
 
-      document.getElementById("days").textContent = String(days).padStart(2, "0");
-      document.getElementById("hours").textContent = String(hours).padStart(2, "0");
-      document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
-      document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+      document.getElementById("days").textContent = String(days).padStart(
+        2,
+        "0",
+      );
+      document.getElementById("hours").textContent = String(hours).padStart(
+        2,
+        "0",
+      );
+      document.getElementById("minutes").textContent = String(minutes).padStart(
+        2,
+        "0",
+      );
+      document.getElementById("seconds").textContent = String(seconds).padStart(
+        2,
+        "0",
+      );
     }
 
     updateTimer();
