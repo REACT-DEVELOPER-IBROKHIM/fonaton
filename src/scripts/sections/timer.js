@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const endTime = parseDateTime(endTimeString);
+  console.log("end", endTime)
 
   if (!endTime) {
     console.error("Failed to parse date:", endTimeString);
