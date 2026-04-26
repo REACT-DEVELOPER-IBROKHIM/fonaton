@@ -3,9 +3,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const endTimeString = document
     .querySelector("#endtime")
     .getAttribute("data-end-time");
-  const [datePart, timePart] = endTimeString.split(" ");
-  const formattedTime = timePart.replace("-", ":");
-  const formattedString = `${datePart}T${formattedTime}`;
+  
+  // Handle various date formats - clean up the string to ensure proper parsing
+  let cleanedString = endTimeString.trim();
+  // Replace any non-ASCII spaces or special characters with regular space
+  cleanedString = cleanedString.replace(/\u00A0|\u2000-\u200B/g, " ");
+  
+  const parts = cleanedString.split(/\s+/);
+  if (parts.length < 2) {
+    console.error("Invalid date format:", endTimeString);
+    return;
+  }
+  
+  const datePart = parts[0];
+  const timePart = parts[1];
+  
+  // Ensure time format is HH:MM by replacing any hyphens with colons
+  const formattedTime = timePart.replace(/[-,]/g, ":");
+  const formattedString = `${datePart}T${formattedTime}:00`;
   const endTime = new Date(formattedString);
 
   timerElements.forEach(() => {
