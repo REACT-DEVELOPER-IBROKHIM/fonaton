@@ -21,15 +21,33 @@
 
   &.text-image--image-left {
     grid-template-columns: 1fr 1fr;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
   }
 
   &.text-image--image-right {
     grid-template-columns: 1fr 1fr;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
   }
 
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  @media (max-width: 1024px) {
+    gap: 48px;
   }
 }
 
