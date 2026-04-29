@@ -14,7 +14,11 @@
   "products_view": {
     "filter_by_vendor": "Фильтр по бренду",
     "filter_by_type": "Фильтр по типу",
-    "filter_by_tag": "Фильтр по тегу"
+    "filter_by_tag": "Фильтр по тегу",
+    "more_details": "Подробнее"
+  },
+  "collection": {
+    "collection_text": "КОЛЛЕКЦИЯ"
   },
   "modal": {
     "title": "Бесплатная консультация",
