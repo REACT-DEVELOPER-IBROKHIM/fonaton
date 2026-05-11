@@ -42,6 +42,17 @@
   font-weight: 400;
   margin-bottom: 8px;
 }
+@media (max-width: 768px) {
+  .product .product__title {
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+}
+@media (max-width: 480px) {
+  .product .product__title {
+    font-size: 15px;
+  }
+}
 .product .product__description {
   font-size: 14px;
   line-height: 1.4;
@@ -52,6 +63,17 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (max-width: 768px) {
+  .product .product__description {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .product .product__description {
+    font-size: 11px;
+  }
 }
 .product .product__link {
   text-decoration: none;

@@ -69,9 +69,14 @@
 .customer-modal__body {
   padding: 40px;
 }
+@media (max-width: 768px) {
+  .customer-modal__body {
+    padding: 20px;
+  }
+}
 @media (max-width: 640px) {
   .customer-modal__body {
-    padding: 24px;
+    padding: 16px;
   }
 }
 .customer-modal__title {
@@ -80,9 +85,14 @@
   font-weight: 600;
   color: #333;
 }
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .customer-modal__title {
     font-size: 20px;
+  }
+}
+@media (max-width: 640px) {
+  .customer-modal__title {
+    font-size: 18px;
   }
 }
 .customer-modal__description {
@@ -90,6 +100,17 @@
   font-size: 14px;
   color: #666;
   line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .customer-modal__description {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .customer-modal__description {
+    font-size: 12px;
+  }
 }
 .customer-modal__error {
   padding: 16px;
@@ -154,6 +175,11 @@
   flex-direction: column;
   gap: 6px;
 }
+@media (max-width: 768px) {
+  .form-group {
+    gap: 4px;
+  }
+}
 
 .form-label {
   font-size: 14px;
@@ -162,6 +188,16 @@
   display: flex;
   align-items: center;
   gap: 4px;
+}
+@media (max-width: 768px) {
+  .form-label {
+    font-size: 13px;
+  }
+}
+@media (max-width: 640px) {
+  .form-label {
+    font-size: 12px;
+  }
 }
 
 .form-required {
@@ -177,6 +213,18 @@
   font-family: inherit;
   transition: all 0.2s ease;
   background-color: #fff;
+}
+@media (max-width: 768px) {
+  .form-input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 640px) {
+  .form-input {
+    padding: 9px 11px;
+    font-size: 12px;
+  }
 }
 .form-input:focus {
   outline: none;
@@ -194,10 +242,17 @@
 }
 .form-input::placeholder {
   color: #999;
+  font-size: 14px;
 }
-.form-input[type=tel] {
-  letter-spacing: 0.5px;
-  font-family: "Courier New", monospace;
+@media (max-width: 768px) {
+  .form-input::placeholder {
+    font-size: 13px;
+  }
+}
+@media (max-width: 640px) {
+  .form-input::placeholder {
+    font-size: 12px;
+  }
 }
 
 .form-error {
@@ -205,6 +260,16 @@
   color: #e74c3c;
   min-height: 16px;
   display: block;
+}
+@media (max-width: 768px) {
+  .form-error {
+    font-size: 11px;
+  }
+}
+@media (max-width: 640px) {
+  .form-error {
+    font-size: 10px;
+  }
 }
 
 .form-submit {
@@ -219,6 +284,18 @@
   transition: all 0.2s ease;
   margin-top: 8px;
   position: relative;
+}
+@media (max-width: 768px) {
+  .form-submit {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 640px) {
+  .form-submit {
+    padding: 9px 16px;
+    font-size: 12px;
+  }
 }
 .form-submit:hover:not(:disabled) {
   background-color: #0056b3;

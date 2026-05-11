@@ -7,6 +7,18 @@
   margin: 0 auto;
   position: relative;
 }
+@media (max-width: 768px) {
+  .section-hero {
+    height: 85vh;
+    height: 85dvh;
+  }
+}
+@media (max-width: 480px) {
+  .section-hero {
+    height: 75vh;
+    height: 75dvh;
+  }
+}
 
 .hero__content {
   display: flex;

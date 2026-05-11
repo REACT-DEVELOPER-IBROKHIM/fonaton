@@ -7,6 +7,11 @@
   padding: 10px;
   z-index: 6;
 }
+@media (max-width: 768px) {
+  .lang_switcher {
+    margin-left: 0;
+  }
+}
 
 .localeBtn {
   opacity: 1;

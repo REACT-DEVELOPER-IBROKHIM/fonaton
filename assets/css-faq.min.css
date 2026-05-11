@@ -98,9 +98,21 @@
   .faq-items .faq-item .faq-question {
     font-size: 16px;
   }
+}
+@media (max-width: 768px) and (max-width: 480px) {
+  .faq-items .faq-item .faq-question {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
   .faq-items .faq-item .faq-answer {
     max-width: 90%;
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) and (max-width: 480px) {
+  .faq-items .faq-item .faq-answer {
+    font-size: 13px;
   }
 }
 @media (max-width: 480px) {

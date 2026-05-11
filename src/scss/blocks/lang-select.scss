@@ -3,6 +3,10 @@
   margin-left: 16px;
   padding: 10px;
   z-index: 6;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .localeBtn {

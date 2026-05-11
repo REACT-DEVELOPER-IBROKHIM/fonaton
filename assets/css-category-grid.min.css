@@ -65,6 +65,7 @@
 }
 .category-item .category-item__name {
   font-weight: 500;
+  padding: 12px 16px;
 }
 .category-item img {
   width: 100%;
