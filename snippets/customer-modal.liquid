@@ -1,7 +1,7 @@
 {%- render 'stylesheet', name: 'customer-modal' -%}
 
 
-<div class="customer-modal" id="customerModal" data-api-endpoint="{{ section.settings.modal_api_endpoint | default: 'https://hook.us2.make.com/pg9j1lyvvs0sil6vomh8tz5smlznsv77' }}" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+<div class="customer-modal" id="customerModal" data-api-endpoint="{{ section.settings.modal_api_endpoint | default: 'https://form-production-51a4.up.railway.app/api/save-customer-data' }}" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
   <div class="customer-modal__overlay"></div>
   <div class="customer-modal__content">
     <button class="customer-modal__close" aria-label="Close modal" type="button">

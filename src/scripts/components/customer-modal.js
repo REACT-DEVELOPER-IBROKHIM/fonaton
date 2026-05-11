@@ -10,9 +10,10 @@ class CustomerModal {
     this.isSubmitting = false;
 
     // Configuration
-    this.apiEndpoint = config.apiEndpoint || this.getConfigFromHTML() || "https://hook.us2.make.com/pg9j1lyvvs0sil6vomh8tz5smlznsv77";
+    this.apiEndpoint = config.apiEndpoint || this.getConfigFromHTML() || "https://form-production-51a4.up.railway.app/api/save-customer-data";
     this.autoShowDelay = config.autoShowDelay || 5000; // 5 seconds
     this.localStorageKey = "customerModalDismissed";
+    this.localStorageSuccessKey = "customerModalSuccess";
 
     // Phone masking configuration
     this.phoneMaskPattern = config.phoneMaskPattern || "+1 (XXX) XXX-XXXX";
@@ -65,7 +66,7 @@ class CustomerModal {
    * Check if modal has been dismissed by user
    */
   checkDismissalState() {
-    this.isModalDismissed = localStorage.getItem(this.localStorageKey) === "true";
+    this.isModalDismissed = localStorage.getItem(this.localStorageKey) === "true" || localStorage.getItem(this.localStorageSuccessKey) === "true";
   }
 
   /**
@@ -304,10 +305,9 @@ class CustomerModal {
 
   async sendToAPI(data) {
     const payload = {
-      phone: data.phone,
       name: data.firstName,
       surname: data.lastName,
-      created_at: new Date().toISOString(),
+      phone: data.phone
     };
 
     try {
@@ -342,6 +342,9 @@ class CustomerModal {
     const formContainer = this.modal.querySelector(".customer-modal__form-container");
     const successContainer = this.modal.querySelector(".customer-modal__success");
 
+    // Reset button state
+    this.hideLoadingState();
+
     if (formContainer) {
       formContainer.classList.add("is-hidden");
     }
@@ -351,7 +354,10 @@ class CustomerModal {
       successContainer.setAttribute("role", "alert");
     }
 
-    // Close modal after 3 seconds
+    // Store success state in localStorage to keep modal hidden
+    localStorage.setItem(this.localStorageSuccessKey, "true");
+
+    // Close modal after 1 second
     setTimeout(() => {
       this.close();
       // Reset form for next use
@@ -363,7 +369,7 @@ class CustomerModal {
       if (successContainer) {
         successContainer.classList.add("is-hidden");
       }
-    }, 3000);
+    }, 1000);
   }
 
   showFormError(message) {

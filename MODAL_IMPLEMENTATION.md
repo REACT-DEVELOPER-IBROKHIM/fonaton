@@ -63,7 +63,7 @@ A fully-featured, accessible modal component built with Liquid and vanilla JavaS
 ### API Endpoint
 The modal sends data to a configurable API endpoint. By default, it uses:
 ```
-https://hook.us2.make.com/pg9j1lyvvs0sil6vomh8tz5smlznsv77
+https://form-production-51a4.up.railway.app/api/save-customer-data
 ```
 
 To customize the endpoint, you can:
