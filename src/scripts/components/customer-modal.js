@@ -143,12 +143,34 @@ class CustomerModal {
   }
 
   /**
-   * Validate phone input (no formatting)
+   * Validate and format phone input
+   * Format: +XXX-XX-XXX-XX-XX
    */
   validatePhoneOnInput(event) {
-    // Only allow digits and common phone characters
     let value = event.target.value;
-    event.target.value = value.replace(/[^\d\s\-\+\(\)]/g, "");
+    // Remove any characters that aren't digits or +
+    let cleaned = value.replace(/[^\d\+]/g, "");
+    
+    // Apply formatting
+    let formatted = "";
+    
+    if (cleaned.length > 0) {
+      // Check if starts with +
+      if (cleaned.startsWith("+")) {
+        formatted = "+";
+        cleaned = cleaned.slice(1);
+      }
+      
+      // Add digits with dashes in pattern: XXX-XX-XXX-XX-XX
+      for (let i = 0; i < cleaned.length; i++) {
+        if (i === 3 || i === 5 || i === 8 || i === 10) {
+          formatted += "-";
+        }
+        formatted += cleaned[i];
+      }
+    }
+    
+    event.target.value = formatted;
   }
 
   /**
