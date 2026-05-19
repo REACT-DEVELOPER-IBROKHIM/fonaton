@@ -20,7 +20,7 @@
         "more_details_text": "More Details"
       }
     },
-    "footer": {
+    "footer_F9QCxA": {
       "type": "footer",
       "blocks": {
         "social_link_b9mPNF": {
@@ -59,9 +59,5 @@
       }
     }
   },
-  "order": [
-    "navigation",
-    "products_view_VKbxQa",
-    "footer"
-  ]
+  "order": ["navigation", "products_view_VKbxQa", "footer"]
 }
