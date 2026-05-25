@@ -185,15 +185,41 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
+    "sections": {
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "social_link_mDpEHN": {
+            "type": "social_link",
+            "settings": {
+              "social_url": "",
+              "social_icon": "shopify://shop_images/Social_Icons.svg"
+            }
+          },
+          "social_link_Y47wCy": {
+            "type": "social_link",
+            "settings": {
+              "social_url": "",
+              "social_icon": "shopify://shop_images/Vector.svg"
+            }
+          }
+        },
+        "block_order": [
+          "social_link_mDpEHN",
+          "social_link_Y47wCy"
+        ],
+        "settings": {
+          "footer_logo": "shopify://shop_images/light_logo.svg",
+          "footer_text": "Fonaton O'zbekistonda eshitish apparatlari sohasidagi yetakchi klinika bo'lib, biz har bir mijozimizga individual yondashuv va yuqori sifatli xizmat taklif qilamiz.",
+          "footer_links1": "footer",
+          "footer_links2": ""
+        }
+      }
+    },
     "content_for_index": [],
     "blocks": {
       "7570552984445421165": {
         "type": "shopify://apps/yotpo-product-photo-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-        "disabled": false,
-        "settings": {}
-      },
-      "319724205969189013": {
-        "type": "shopify://apps/hulk-form-builder/blocks/app-embed/b6b8dd14-356b-4725-a4ed-77232212b3c3",
         "disabled": false,
         "settings": {}
       }

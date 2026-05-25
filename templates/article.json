@@ -7,16 +7,11 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
-
 {
   "sections": {
     "navigation": {
       "type": "navigation",
-      "settings": {
-        "navigation_logo_light": "shopify://shop_images/logo_22b057a9-a987-424a-a833-38f1817f6002.svg",
-        "navigation_logo_dark": "shopify://shop_images/Group.svg",
-        "navigation_logo_alt_text": "FONATON"
-      }
+      "settings": {}
     },
     "article": {
       "type": "article-content",
@@ -27,5 +22,9 @@
       "settings": {}
     }
   },
-  "order": ["navigation", "article", "related"]
+  "order": [
+    "navigation",
+    "article",
+    "related"
+  ]
 }
