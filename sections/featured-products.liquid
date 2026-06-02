@@ -20,6 +20,14 @@
           , more_details_text: section.settings.more_details_text %}
       {% endfor %}
     </div>
+
+    {% if section.settings.cta_button_text and section.settings.cta_button_link %}
+      <div class="featured-products__footer">
+        <a href="{{ section.settings.cta_button_link }}" class="featured-products__cta-button">
+          {{ section.settings.cta_button_text }}
+        </a>
+      </div>
+    {% endif %}
   </div>
 </div>
 
@@ -48,6 +56,21 @@
         "id": "more_details_text",
         "label": "Product Card Button Text",
         "default": "More Details"
+      },
+      {
+        "type": "header",
+        "content": "Call to Action Button"
+      },
+      {
+        "type": "text",
+        "id": "cta_button_text",
+        "label": "Button Text",
+        "default": "Explore All Products"
+      },
+      {
+        "type": "url",
+        "id": "cta_button_link",
+        "label": "Button Link"
       }
     ],
     "presets": [
