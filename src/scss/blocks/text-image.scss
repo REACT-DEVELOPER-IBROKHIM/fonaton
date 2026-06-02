@@ -2,14 +2,14 @@
 @import "../resources";
 
 .section-text-image {
-  padding: 48px var(--default-padding);
+  padding-block: 48px var(--default-padding);
 
   .container {
     max-width: var(--max-container-size);
   }
 
   @media (max-width: 768px) {
-    padding: 32px var(--tablet-padding);
+    padding-block: 32px var(--tablet-padding);
   }
 }
 
