@@ -54,7 +54,9 @@
       "settings": {
         "section_heading": "Tavsiya etilgan mahsulot",
         "section_subheading": "Do‘konning asosiy va eng ko‘p sotiladigan mahsulotilari to'plami.",
-        "more_details_text": "Ko'proq bilish"
+        "more_details_text": "Ko'proq bilish",
+        "cta_button_text": "Explore All Products",
+        "cta_button_link": "shopify://collections/devices"
       }
     },
     "category_grid_zYPD8t": {
