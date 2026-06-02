@@ -49,7 +49,19 @@
     "email": "Email",
     "email_placeholder": "Enter your email address",
     "phone": "Phone Number",
-    "phone_placeholder": "Enter your phone number"
+    "phone_placeholder": "Enter your phone number",
+    "errors": {
+      "first_name_required": "First name is required",
+      "first_name_min": "First name must be at least 2 characters",
+      "last_name_required": "Last name is required",
+      "last_name_min": "Last name must be at least 2 characters",
+      "phone_required": "Phone number is required",
+      "phone_invalid": "Please enter a valid phone number",
+      "phone_format": "Phone number can only contain numbers, spaces, and symbols",
+      "fix_errors": "Please fix the errors above"
+    },
+    "success": "Thank you! We'll get back to you soon.",
+    "error_sending": "There was an error sending your message. Please try again.",
+    "sending": "Sending..."
   }
 }
-

@@ -13,7 +13,7 @@
     </div>
 
     <div class="contact-us__form-wrapper">
-      <form class="contact-us__form" id="contact-form" method="POST">
+      <form class="contact-us__form" id="contact-form">
         <div class="contact-us__form-row">
           <div class="contact-us__form-group">
             <label for="contact-first-name" class="contact-us__label">{{ 'contact_us.first_name' | t }}</label>
@@ -55,13 +55,34 @@
           <span class="contact-us__error" id="phone-error"></span>
         </div>
 
-        <button type="submit" class="contact-us__submit">{{ section.settings.button_text }}</button>
+        <button type="button" class="contact-us__submit">{{ section.settings.button_text }}</button>
 
         <div class="contact-us__message" id="form-message"></div>
       </form>
     </div>
   </div>
 </section>
+
+<script>
+  window.contactUsTranslations = {
+    errors: {
+      first_name_required: {{ 'contact_us.errors.first_name_required' | t | json }},
+      first_name_min: {{ 'contact_us.errors.first_name_min' | t | json }},
+      last_name_required: {{ 'contact_us.errors.last_name_required' | t | json }},
+      last_name_min: {{ 'contact_us.errors.last_name_min' | t | json }},
+      phone_required: {{ 'contact_us.errors.phone_required' | t | json }},
+      phone_invalid: {{ 'contact_us.errors.phone_invalid' | t | json }},
+      phone_format: {{ 'contact_us.errors.phone_format' | t | json }},
+      fix_errors: {{ 'contact_us.errors.fix_errors' | t | json }}
+    },
+    success: {{ 'contact_us.success' | t | json }},
+    error_sending: {{ 'contact_us.error_sending' | t | json }},
+    sending: {{ 'contact_us.sending' | t | json }},
+    button_text: {{ section.settings.button_text | json }}
+  };
+</script>
+
+<script src="{{ 'js-contact-us.min.js' | asset_url }}" type="module" defer></script>
 
 {% schema %}
   {
