@@ -2,6 +2,14 @@
   padding: 20px 0;
   position: relative;
 
+  @media (max-width: 768px) {
+    padding: 16px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 12px 0;
+  }
+
   .product-tag-header {
     position: absolute;
     left: 0;
@@ -29,6 +37,16 @@
     border-radius: 8px;
     margin-bottom: 20px;
     overflow: hidden;
+
+    @media (max-width: 768px) {
+      margin-bottom: 12px;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 480px) {
+      margin-bottom: 8px;
+      border-radius: 4px;
+    }
   }
 
   .product__image {
@@ -85,6 +103,18 @@
     height: 20px;
     margin-top: 12px;
     margin-bottom: 24px;
+
+    @media (max-width: 768px) {
+      margin-top: 8px;
+      margin-bottom: 16px;
+      height: 18px;
+    }
+
+    @media (max-width: 480px) {
+      margin-top: 6px;
+      margin-bottom: 12px;
+      height: 16px;
+    }
   }
 
   .product__original-price {
