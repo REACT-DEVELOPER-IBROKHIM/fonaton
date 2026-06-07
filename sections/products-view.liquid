@@ -50,7 +50,7 @@
               <div class="products-filter__options">
                 {% for vendor in vendor_list %}
                   <label class="products-filter__option">
-                    <input type="checkbox" value="{{ vendor | escape }}" data-filter-checkbox="vendor" checked>
+                    <input type="checkbox" value="{{ vendor | escape }}" data-filter-checkbox="vendor">
                     <span class="products-filter__checkmark"></span>
                     <span class="products-filter__name">{{ vendor }}</span>
                   </label>
@@ -65,7 +65,7 @@
               <div class="products-filter__options">
                 {% for type in type_list %}
                   <label class="products-filter__option">
-                    <input type="checkbox" value="{{ type | escape }}" data-filter-checkbox="type" checked>
+                    <input type="checkbox" value="{{ type | escape }}" data-filter-checkbox="type">
                     <span class="products-filter__checkmark"></span>
                     <span class="products-filter__name">{{ type }}</span>
                   </label>
@@ -80,7 +80,7 @@
               <div class="products-filter__options">
                 {% for tag in tag_list %}
                   <label class="products-filter__option">
-                    <input type="checkbox" value="{{ tag | escape }}" data-filter-checkbox="tag" checked>
+                    <input type="checkbox" value="{{ tag | escape }}" data-filter-checkbox="tag">
                     <span class="products-filter__checkmark"></span>
                     <span class="products-filter__name">{{ tag }}</span>
                   </label>

@@ -39,19 +39,18 @@ if (filterContainer && productsGrid) {
       // If no filters selected for a category, all products match that category
       // If filters selected, product must match at least one in that category
 
-      console.log("selected ven", selectedVendors)
-      console.log("vendor", vendor)
       const vendorMatch =
         selectedVendors.length === 0 ||
+        !vendor ||
         selectedVendors.includes(vendor);
       const typeMatch =
         selectedTypes.length === 0 ||
+        !type ||
         selectedTypes.includes(type);
       const tagMatch =
         selectedTags.length === 0 ||
+        productTags.length === 0 ||
         selectedTags.some((tag) => productTags.includes(tag));
-
-        console.log("ven match", vendorMatch)
       // Show product only if it matches all active filters
       const shouldShow = vendorMatch && typeMatch && tagMatch;
       product.style.display = shouldShow ? "" : "none";
@@ -62,6 +61,9 @@ if (filterContainer && productsGrid) {
   filterProducts();
 
   checkboxes.forEach((cb) => {
-    cb.addEventListener("change", filterProducts);
+    cb.addEventListener("change", () => {
+      filterProducts();
+      productsGrid.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   });
 }
