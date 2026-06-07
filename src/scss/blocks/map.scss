@@ -21,6 +21,26 @@
   }
 }
 
+// Fargana region highlight
+.fargana-region {
+  filter: drop-shadow(0 0 5px rgba(35, 130, 242, 0.55));
+  transition: filter 0.3s ease;
+
+  &:hover {
+    filter: drop-shadow(0 0 10px rgba(35, 130, 242, 0.85));
+  }
+}
+
+// Map pins
+.map-pin-fargana,
+.map-pin-tashkent {
+  pointer-events: none;
+
+  rect {
+    filter: drop-shadow(0 2px 4px rgba(35, 130, 242, 0.4));
+  }
+}
+
 .map-iframe-subheading {
   color: var(--color-blue);
   font-size: 16px;

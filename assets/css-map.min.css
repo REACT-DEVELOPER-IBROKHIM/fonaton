@@ -23,6 +23,23 @@
   max-height: 600px;
 }
 
+.fargana-region {
+  filter: drop-shadow(0 0 5px rgba(35, 130, 242, 0.55));
+  transition: filter 0.3s ease;
+}
+.fargana-region:hover {
+  filter: drop-shadow(0 0 10px rgba(35, 130, 242, 0.85));
+}
+
+.map-pin-fargana,
+.map-pin-tashkent {
+  pointer-events: none;
+}
+.map-pin-fargana rect,
+.map-pin-tashkent rect {
+  filter: drop-shadow(0 2px 4px rgba(35, 130, 242, 0.4));
+}
+
 .map-iframe-subheading {
   color: var(--color-blue);
   font-size: 16px;

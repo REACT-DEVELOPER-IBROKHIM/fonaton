@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(grep -E '\\\\.\\(html|css|js\\)$')",
-      "Bash(grep -E '\\\\.\\(html|css|js|scss\\)$')"
+      "Bash(grep -E '\\\\.\\(html|css|js|scss\\)$')",
+      "Bash(python3 -)",
+      "Bash(grep -o 'M780\\\\.441 337\\\\.9[^/]*.\\\\{1,5\\\\}' /Users/ibrokhim_jalalov/Documents/fonaton/snippets/map.liquid)"
     ]
   }
 }

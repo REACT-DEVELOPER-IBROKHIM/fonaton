@@ -246,6 +246,10 @@
   background-color: var(--color-black);
 }
 
+.navigation__mobile-close {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .navigation__menu-link {
     padding: 20px;
