@@ -2,6 +2,7 @@
 
 <div class="section-product-page">
   <div class="container">
+    {%- render 'breadcrumb' -%}
     <div class="product-page__wrapper">
       {% render 'product-gallery', product: product %}
       {% render 'product-info', product: product %}

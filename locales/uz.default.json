@@ -8,6 +8,10 @@
  * ------------------------------------------------------------
  */
 {
+  "breadcrumb": {
+    "label": "Sahifa yo'li",
+    "home": "Bosh sahifa"
+  },
   "related_posts": {
     "btn_text": "Batafsil"
   },
@@ -15,6 +19,7 @@
     "filter_by_vendor": "Brend bo'yicha filtrlash",
     "filter_by_type": "Turi bo'yicha filtrlash",
     "filter_by_tag": "Teg bo'yicha filtrlash",
+    "filter_toggle": "Filtrlar",
     "more_details": "Batafsil"
   },
   "collection": {

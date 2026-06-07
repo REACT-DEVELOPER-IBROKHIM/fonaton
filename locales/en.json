@@ -8,6 +8,10 @@
  * ------------------------------------------------------------
  */
 {
+  "breadcrumb": {
+    "label": "Breadcrumb",
+    "home": "Home"
+  },
   "related_posts": {
     "btn_text": "Read more"
   },
@@ -15,6 +19,7 @@
     "filter_by_vendor": "Filter by brand",
     "filter_by_type": "Filter by type",
     "filter_by_tag": "Filter by tag",
+    "filter_toggle": "Filters",
     "more_details": "More Details"
   },
   "collection": {

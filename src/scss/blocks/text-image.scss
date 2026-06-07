@@ -55,7 +55,6 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  animation: fadeInUp 0.6s ease-out;
 
   @media (max-width: 768px) {
     order: 2;
@@ -139,7 +138,6 @@
   overflow: hidden;
   position: relative;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-  animation: fadeInRight 0.6s ease-out;
 
   &::before {
     content: "";
@@ -181,11 +179,9 @@
 .text-image--image-left {
   .text-image__image {
     order: -1;
-    animation: fadeInLeft 0.6s ease-out;
 
     @media (max-width: 768px) {
       order: 1;
-      animation: fadeInUp 0.6s ease-out;
     }
   }
 
@@ -193,39 +189,5 @@
     @media (max-width: 768px) {
       order: 2;
     }
-  }
-}
-
-// Animations
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }

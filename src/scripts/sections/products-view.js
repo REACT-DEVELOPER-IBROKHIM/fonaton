@@ -66,4 +66,16 @@ if (filterContainer && productsGrid) {
       productsGrid.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
+
+  // Mobile filter toggle
+  const filterToggle = filterContainer.querySelector("[data-filter-toggle]");
+  const filterBody = filterContainer.querySelector(".products-filter__body");
+
+  if (filterToggle && filterBody) {
+    filterToggle.addEventListener("click", () => {
+      const isOpen = filterToggle.getAttribute("aria-expanded") === "true";
+      filterToggle.setAttribute("aria-expanded", String(!isOpen));
+      filterBody.classList.toggle("is-open", !isOpen);
+    });
+  }
 }

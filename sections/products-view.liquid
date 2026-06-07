@@ -3,6 +3,8 @@
 
 <section class="section-products-view">
   <div class="container">
+    {%- render 'breadcrumb' -%}
+
     <h2 class="product-grid-section__title" data-animate="fade-up">{{- collection.title | upcase }} {{ 'collection.collection_text' | t }}</h2>
 
     {%- liquid
@@ -44,50 +46,55 @@
     <div class="products-view__layout">
       {% if vendor_list.size > 0 or type_list.size > 0 or tag_list.size > 0 %}
         <aside class="products-filter" data-products-filter data-animate="fade-left">
-          {% if vendor_list.size > 0 %}
-            <div class="products-filter__group">
-              <h3 class="products-filter__title">{{ 'products_view.filter_by_vendor' | t }}</h3>
-              <div class="products-filter__options">
-                {% for vendor in vendor_list %}
-                  <label class="products-filter__option">
-                    <input type="checkbox" value="{{ vendor | escape }}" data-filter-checkbox="vendor">
-                    <span class="products-filter__checkmark"></span>
-                    <span class="products-filter__name">{{ vendor }}</span>
-                  </label>
-                {% endfor %}
+          <button class="products-filter__toggle" data-filter-toggle aria-expanded="false">
+            {{ 'products_view.filter_toggle' | t }}
+          </button>
+          <div class="products-filter__body">
+            {% if vendor_list.size > 0 %}
+              <div class="products-filter__group">
+                <h3 class="products-filter__title">{{ 'products_view.filter_by_vendor' | t }}</h3>
+                <div class="products-filter__options">
+                  {% for vendor in vendor_list %}
+                    <label class="products-filter__option">
+                      <input type="checkbox" value="{{ vendor | escape }}" data-filter-checkbox="vendor">
+                      <span class="products-filter__checkmark"></span>
+                      <span class="products-filter__name">{{ vendor }}</span>
+                    </label>
+                  {% endfor %}
+                </div>
               </div>
-            </div>
-          {% endif %}
+            {% endif %}
 
-          {% if type_list.size > 0 %}
-            <div class="products-filter__group">
-              <h3 class="products-filter__title">{{ 'products_view.filter_by_type' | t }}</h3>
-              <div class="products-filter__options">
-                {% for type in type_list %}
-                  <label class="products-filter__option">
-                    <input type="checkbox" value="{{ type | escape }}" data-filter-checkbox="type">
-                    <span class="products-filter__checkmark"></span>
-                    <span class="products-filter__name">{{ type }}</span>
-                  </label>
-                {% endfor %}
+            {% if type_list.size > 0 %}
+              <div class="products-filter__group">
+                <h3 class="products-filter__title">{{ 'products_view.filter_by_type' | t }}</h3>
+                <div class="products-filter__options">
+                  {% for type in type_list %}
+                    <label class="products-filter__option">
+                      <input type="checkbox" value="{{ type | escape }}" data-filter-checkbox="type">
+                      <span class="products-filter__checkmark"></span>
+                      <span class="products-filter__name">{{ type }}</span>
+                    </label>
+                  {% endfor %}
+                </div>
               </div>
-            </div>
-          {% endif %}
+            {% endif %}
 
-          {% if tag_list.size > 0 %}
-            <div class="products-filter__group">
-              <h3 class="products-filter__title">{{ 'products_view.filter_by_tag' | t }}</h3>
-              <div class="products-filter__options">
-                {% for tag in tag_list %}
-                  <label class="products-filter__option">
-                    <input type="checkbox" value="{{ tag | escape }}" data-filter-checkbox="tag">
-                    <span class="products-filter__checkmark"></span>
-                    <span class="products-filter__name">{{ tag }}</span>
-                  </label>
-                {% endfor %}
+            {% if tag_list.size > 0 %}
+              <div class="products-filter__group">
+                <h3 class="products-filter__title">{{ 'products_view.filter_by_tag' | t }}</h3>
+                <div class="products-filter__options">
+                  {% for tag in tag_list %}
+                    <label class="products-filter__option">
+                      <input type="checkbox" value="{{ tag | escape }}" data-filter-checkbox="tag">
+                      <span class="products-filter__checkmark"></span>
+                      <span class="products-filter__name">{{ tag }}</span>
+                    </label>
+                  {% endfor %}
+                </div>
               </div>
-            </div>
-          {% endif %}
+            {% endif %}
+          </div>
         </aside>
       {% endif %}
 
