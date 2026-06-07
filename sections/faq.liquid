@@ -7,7 +7,7 @@
 <section class="faq-section">
   <div class="container">
     <div class="faq-wrapper">
-      <div class="faq-header">
+      <div class="faq-header" data-animate="fade-up">
         {% if section.settings.faq_title %}
           <h2 class="faq-title">{{ section.settings.faq_title }}</h2>
         {% endif %}
@@ -18,7 +18,7 @@
       <ul class="faq-items">
         {% for block in section.blocks %}
           {% if block.type == 'faq_item' %}
-            <li class="faq-item" aria-expanded="false">
+            <li class="faq-item" aria-expanded="false" data-animate="fade-up" style="--animate-delay: {{ forloop.index0 | times: 80 | at_most: 400 }}ms">
               <div>
                 <h3 class="faq-question">{{ block.settings.question }}</h3>
                 <div class="faq-answer" aria-hidden="true">

@@ -3,14 +3,14 @@
 
 <section class="section-blog-posts">
   <div class="container">
-    <div class="blog-posts__header">
+    <div class="blog-posts__header" data-animate="fade-up">
       <h2 class="blog-posts__title">{{ section.settings.blog_posts_title }}</h2>
       <p class="blog-posts__subtitle">{{ section.settings.blog_posts_subtitle }}</p>
     </div>
     {% if blogs['our-featured-posts'].articles  %}
       <div class="blog-posts__content">
       {% for post in blogs['our-featured-posts'].articles %}
-        <article class="blog-post">
+        <article class="blog-post" data-animate="fade-up" style="--animate-delay: {{ forloop.index0 | times: 100 | at_most: 400 }}ms">
           {{ post.image | image_url: width: 400 | image_tag: alt: post.title, class: 'blog-post__image' }}
           <div class="blog-post__content">
             <h3 class="blog-post__title">{{ post.title }}</h3>

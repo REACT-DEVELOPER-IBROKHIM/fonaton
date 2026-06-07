@@ -5,16 +5,16 @@
   <div class="container">
     <div class="category__content">
       {% if section.settings.section_title %}
-        <h2 class="category-grid-section__title">{{ section.settings.section_title }}</h2>
+        <h2 class="category-grid-section__title" data-animate="fade-up">{{ section.settings.section_title }}</h2>
       {% endif %}
 
       {% if section.settings.section_subtitle %}
-        <p class="category-grid-section__subtitle">{{ section.settings.section_subtitle }}</p>
+        <p class="category-grid-section__subtitle" data-animate="fade-up" style="--animate-delay: 150ms">{{ section.settings.section_subtitle }}</p>
       {% endif %}
     </div>
     <div class="category__wrapper">
       {% for category in section.settings.section_list limit: 4 %}
-        <div class="category-item {{ 'cat-name' |  append: forloop.index }}">
+        <div class="category-item {{ 'cat-name' |  append: forloop.index }}" data-animate="fade-up" style="--animate-delay: {{ forloop.index0 | times: 100 }}ms">
           {% if category.featured_image and category.url %}
             <a href="{{ category.url }}" class="category-item__link">
               {{ category.featured_image | image_url: width: 600 | image_tag }}

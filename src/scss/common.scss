@@ -72,3 +72,31 @@ body {
   display: flex !important;
   flex-direction: column !important;
 }
+
+// ---- Animation system ----
+[data-animate] {
+  opacity: 0;
+  transition:
+    opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--animate-delay, 0ms);
+
+  &[data-animate="fade-up"]    { transform: translateY(40px); }
+  &[data-animate="fade-down"]  { transform: translateY(-30px); }
+  &[data-animate="fade-left"]  { transform: translateX(-50px); }
+  &[data-animate="fade-right"] { transform: translateX(50px); }
+  &[data-animate="scale-up"]   { transform: scale(0.9) translateY(20px); }
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

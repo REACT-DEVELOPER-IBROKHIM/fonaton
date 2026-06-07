@@ -3,7 +3,7 @@
 <section class="section-text-image">
   <div class="container">
     <div class="text-image__wrapper {% if section.settings.image_position == 'left' %}text-image--image-left{% else %}text-image--image-right{% endif %}">
-      <div class="text-image__content">
+      <div class="text-image__content" data-animate="{% if section.settings.image_position == 'left' %}fade-right{% else %}fade-left{% endif %}">
         {% if section.settings.section_heading %}
           <h2 class="text-image__heading">{{ section.settings.section_heading }}</h2>
         {% endif %}
@@ -20,7 +20,7 @@
       </div>
 
       {% if section.settings.image %}
-        <div class="text-image__image">
+        <div class="text-image__image" data-animate="{% if section.settings.image_position == 'left' %}fade-left{% else %}fade-right{% endif %}" style="--animate-delay: 200ms">
           <img src="{{ section.settings.image | img_url: 'large' }}" alt="{{ section.settings.image_alt }}">
         </div>
       {% endif %}

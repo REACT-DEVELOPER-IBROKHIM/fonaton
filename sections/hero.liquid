@@ -6,20 +6,20 @@
     <div class="hero__content">
       <div class="hero__content-wrapper">
         {% if section.settings.hero_heading %}
-          <h1 class="hero__heading">{{ section.settings.hero_heading }}</h1>
+          <h1 class="hero__heading" data-animate="fade-up" style="--animate-delay: 150ms">{{ section.settings.hero_heading }}</h1>
         {% endif %}
 
         {% if section.settings.hero_subheading %}
-          <p class="hero__subheading">{{ section.settings.hero_subheading }}</p>
+          <p class="hero__subheading" data-animate="fade-up" style="--animate-delay: 350ms">{{ section.settings.hero_subheading }}</p>
         {% endif %}
 
         {% if section.settings.hero_cta_text and section.settings.hero_cta_link %}
           {% if section.settings.is_cta_link %}
-            <a href="{{ section.settings.hero_cta_link }}" class="hero__cta-button">
+            <a href="{{ section.settings.hero_cta_link }}" class="hero__cta-button" data-animate="fade-up" style="--animate-delay: 550ms">
               {{ section.settings.hero_cta_text }}
             </a>
           {% else %}
-            <button class="hero__cta-button">
+            <button class="hero__cta-button" data-animate="fade-up" style="--animate-delay: 550ms">
               {{ section.settings.hero_cta_text }}
             </button>
           {% endif %}
