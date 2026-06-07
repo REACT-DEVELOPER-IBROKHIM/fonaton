@@ -1,22 +1,66 @@
 {%- render 'stylesheet', name: 'lang-select' -%}
 
 {% form 'localization', id: 'localization_form', class: 'lang_switcher' %}
-    <button class="localeBtn" disabled> {{ form.current_locale.endonym_name }}</button>
-    <div class="lang-content">
-        {% for locale in localization.available_languages %}
-               <a href="#" id="localeItem" lang="{{ locale.iso_code }}">{{ locale.endonym_name   }}</a>
-        {% endfor %}
-    </div>
-    <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" id="localeCode">
+  <button class="localeBtn" type="button" disabled aria-haspopup="true">
+    <img
+      src="{{ form.current_locale.iso_code | prepend: 'flag-' | append: '.svg' | asset_url }}"
+      alt="{{ form.current_locale.iso_code | upcase }}"
+      class="lang-flag"
+      width="22"
+      height="15"
+      loading="eager">
+    <span class="lang-name">{{ form.current_locale.iso_code | upcase }}</span>
+    <span class="lang-chevron"></span>
+  </button>
+
+  <div class="lang-content" role="menu">
+    {% for locale in localization.available_languages %}
+      <a href="#" class="localeItem" lang="{{ locale.iso_code }}" role="menuitem">
+        <img
+          src="{{ locale.iso_code | prepend: 'flag-' | append: '.svg' | asset_url }}"
+          alt="{{ locale.iso_code | upcase }}"
+          class="lang-flag"
+          width="22"
+          height="15"
+          loading="lazy">
+        <span class="lang-name">{{ locale.endonym_name }}</span>
+      </a>
+    {% endfor %}
+  </div>
+
+  <input type="hidden" name="locale_code" value="{{ form.current_locale.iso_code }}" id="localeCode">
 {% endform %}
 
-
 <script>
-    document.querySelectorAll("#localeItem").forEach(item => {
-        item.addEventListener("click",  (e) => {
-            document.getElementById("localeCode").value = item.getAttribute("lang");
-            console.log( document.getElementById("localeCode").value, item.getAttribute("lang"));
-            document.getElementById("localization_form").submit()
-        })
+(function () {
+  var switcher = document.querySelector('.lang_switcher');
+  if (!switcher) return;
+
+  var content = switcher.querySelector('.lang-content');
+  var hideTimer;
+
+  function show() {
+    clearTimeout(hideTimer);
+    switcher.classList.add('is-open');
+  }
+
+  function hide() {
+    hideTimer = setTimeout(function () {
+      switcher.classList.remove('is-open');
+    }, 150);
+  }
+
+  switcher.addEventListener('mouseenter', show);
+  switcher.addEventListener('mouseleave', hide);
+  content.addEventListener('mouseenter', show);
+  content.addEventListener('mouseleave', hide);
+
+  content.querySelectorAll('.localeItem').forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.getElementById('localeCode').value = item.getAttribute('lang');
+      document.getElementById('localization_form').submit();
     });
+  });
+})();
 </script>
