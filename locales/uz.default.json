@@ -8,6 +8,12 @@
  * ------------------------------------------------------------
  */
 {
+  "map": {
+    "region_fargana": "Farg'ona",
+    "region_tashkent": "Toshkent",
+    "region_surkhandarya": "Surxondaryo",
+    "region_andijan": "Andijon"
+  },
   "breadcrumb": {
     "label": "Sahifa yo'li",
     "home": "Bosh sahifa"

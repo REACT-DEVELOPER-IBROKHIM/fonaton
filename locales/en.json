@@ -8,6 +8,12 @@
  * ------------------------------------------------------------
  */
 {
+  "map": {
+    "region_fargana": "Fergana",
+    "region_tashkent": "Tashkent",
+    "region_surkhandarya": "Surkhandarya",
+    "region_andijan": "Andijan"
+  },
   "breadcrumb": {
     "label": "Breadcrumb",
     "home": "Home"

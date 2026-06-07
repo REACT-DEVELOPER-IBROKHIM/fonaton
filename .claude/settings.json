@@ -6,7 +6,8 @@
       "Bash(python3 -)",
       "Bash(grep -o 'M780\\\\.441 337\\\\.9[^/]*.\\\\{1,5\\\\}' /Users/ibrokhim_jalalov/Documents/fonaton/snippets/map.liquid)",
       "Bash(npm run *)",
-      "Bash(grep -E '\\\\.\\(html|js|css|scss|svg\\)$')"
+      "Bash(grep -E '\\\\.\\(html|js|css|scss|svg\\)$')",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
