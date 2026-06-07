@@ -1,6 +1,6 @@
 const navigation = document.querySelector(".section-navigation");
 
-document.addEventListener("scroll", (e) => {
+document.addEventListener("scroll", () => {
   if (window.scrollY > 45) {
     navigation.classList.add("pinned-navbar");
   } else {
@@ -8,32 +8,54 @@ document.addEventListener("scroll", (e) => {
   }
 });
 
-// Mobile hamburger menu toggle
+// Inject backdrop overlay
+const overlay = document.createElement("div");
+overlay.className = "nav-overlay";
+document.body.appendChild(overlay);
+
 const hamburger = document.querySelector(".navigation__hamburger");
 const menu = document.querySelector(".navigation__menu");
 
+// Inject close button inside the drawer
+const closeBtn = document.createElement("button");
+closeBtn.className = "navigation__mobile-close";
+closeBtn.setAttribute("aria-label", "Close menu");
+closeBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>`;
+menu.appendChild(closeBtn);
+
+function openMenu() {
+  menu.classList.add("is-open");
+  hamburger.classList.add("is-active");
+  hamburger.setAttribute("aria-expanded", "true");
+  overlay.classList.add("is-visible");
+  navigation.classList.add("is-menu-open");
+  document.body.style.overflow = "hidden";
+}
+
+function closeMenu() {
+  menu.classList.remove("is-open");
+  hamburger.classList.remove("is-active");
+  hamburger.setAttribute("aria-expanded", "false");
+  overlay.classList.remove("is-visible");
+  navigation.classList.remove("is-menu-open");
+  document.body.style.overflow = "";
+}
+
 if (hamburger && menu) {
   hamburger.addEventListener("click", () => {
-    const isOpen = menu.classList.toggle("is-open");
-    hamburger.classList.toggle("is-active");
-    hamburger.setAttribute("aria-expanded", isOpen);
-    document.body.style.overflow = isOpen ? "hidden" : "";
+    menu.classList.contains("is-open") ? closeMenu() : openMenu();
   });
 
-  // Close menu when clicking a direct link (not category headers)
+  overlay.addEventListener("click", closeMenu);
+  closeBtn.addEventListener("click", closeMenu);
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && menu.classList.contains("is-open")) {
+      closeMenu();
+    }
+  });
+
   menu.querySelectorAll(".navigation__menu-link[href]").forEach((link) => {
-    link.addEventListener("click", () => {
-      menu.classList.remove("is-open");
-      hamburger.classList.remove("is-active");
-      hamburger.setAttribute("aria-expanded", "false");
-      document.body.style.overflow = "";
-    });
-  });
-
-  // Handle submenu items - don't close the menu
-  menu.querySelectorAll(".submenu-item__link").forEach((link) => {
-    link.addEventListener("click", (e) => {
-      // Menu stays open, allow normal link navigation
-    });
+    link.addEventListener("click", closeMenu);
   });
 }
