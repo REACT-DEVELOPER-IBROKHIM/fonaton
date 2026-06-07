@@ -1,18 +1,51 @@
 {%- render 'stylesheet'
   , name: 'hearing-test' -%}
 
+{%- liquid
+  assign locale = request.locale.iso_code | downcase
+  if locale == 'ru'
+    assign iframe_src = section.settings.url_ru
+  elsif locale == 'uz'
+    assign iframe_src = section.settings.url_uz
+  else
+    assign iframe_src = section.settings.url_en
+  endif
+  if iframe_src == blank
+    assign iframe_src = section.settings.url_en
+  endif
+-%}
+
 <section class="hearing-test-fullscreen">
   <iframe
     width="100%"
     height="100%"
-    src="https://hearing-screener.beyondhearing.org/4C0OuK"
+    src="{{ iframe_src }}"
     frameborder="0"></iframe>
 </section>
 
 {% schema %}
   {
     "name": "Hearing Test",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "url_en",
+        "label": "Iframe URL (English)",
+        "default": "https://hearing-screener.beyondhearing.org/4C0OuK"
+      },
+      {
+        "type": "text",
+        "id": "url_ru",
+        "label": "Iframe URL (Russian)",
+        "default": "https://hearing-screener.beyondhearing.org/4C0OuK"
+      },
+      {
+        "type": "text",
+        "id": "url_uz",
+        "label": "Iframe URL (Uzbek)",
+        "default": "https://hearing-screener.beyondhearing.org/4C0OuK"
+      }
+    ],
     "presets": [
       {
         "name": "Hearing Test"
