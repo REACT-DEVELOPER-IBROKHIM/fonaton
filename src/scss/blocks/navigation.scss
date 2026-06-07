@@ -38,6 +38,11 @@
 
   @media (max-width: 768px) {
     gap: 12px;
+    padding: 12px 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px 0;
   }
 
   a {

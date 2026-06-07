@@ -1,1 +1,157 @@
-.section-timer{padding-top:100px}.timer{display:flex;justify-content:center;align-items:center;gap:50px;margin-top:40px}.timer .timer-seperator{font-size:36px;margin-top:-45px;color:var(--color-black)}.timer-section__content{text-align:center;margin-bottom:50px}.timer-section__content .timer-section__heading{font-size:32px;color:var(--color-black);margin-bottom:10px}.timer-section__content .timer-section__subheading{font-size:18px;color:var(--color-grey);max-width:600px;margin:20px auto}.time-segment{display:flex;flex-direction:column;align-items:center}.time-segment .time-value{color:var(--color-blue);font-size:48px;margin-bottom:20px}.time-segment .time-label{color:var(--color-grey);font-size:16px}.timer__button{display:inline-flex;align-items:center;justify-content:center;padding:10px 30px;background:linear-gradient(135deg, var(--background-blue) 0%, #1a5fc9 100%);color:var(--color-white);text-decoration:none;border-radius:10px;border:none;transition:all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);font-weight:600;width:fit-content;font-size:18px;letter-spacing:.5px;box-shadow:0 4px 15px rgba(35,130,242,.2);cursor:pointer;position:relative;overflow:hidden;text-transform:capitalize}.timer__button::before{content:"";position:absolute;top:50%;left:50%;width:0;height:0;background:hsla(0,0%,100%,.2);border-radius:50%;transform:translate(-50%, -50%);transition:width .5s,height .5s}.timer__button:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(35,130,242,.3)}.timer__button:hover::before{width:300px;height:300px}.timer__button:active{transform:translateY(-1px)}.timer__button{margin-top:50px}@media(max-width: 768px){.section-timer{padding-top:60px}.timer{gap:20px;flex-wrap:wrap}.timer .timer-seperator{font-size:24px;margin-top:-30px}.timer-section__content{margin-bottom:30px}.timer-section__content .timer-section__heading{font-size:24px}.timer-section__content .timer-section__subheading{font-size:16px}.time-segment .time-value{font-size:36px}.timer__button{margin-top:30px}}@media(max-width: 480px){.section-timer{padding-top:40px}.timer{gap:12px}.timer .timer-seperator{font-size:20px;margin-top:-20px}.timer-section__content .timer-section__heading{font-size:22px}.timer-section__content .timer-section__subheading{font-size:14px}.time-segment .time-value{font-size:28px;margin-bottom:10px}.time-segment .time-label{font-size:13px}.timer__button{font-size:16px;padding:10px 24px;margin-top:20px}}
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/sass-resources-loader/lib/loader.js??ruleSet[1].rules[0].use[3]!./src/scss/blocks/timer.scss ***!
+  \********************************************************************************************************************************************************************************************************************************/
+.section-timer {
+  padding-top: 100px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+.timer .timer-seperator {
+  font-size: 36px;
+  margin-top: -45px;
+  color: var(--color-black);
+}
+
+.timer-section__content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.timer-section__content .timer-section__heading {
+  font-size: 32px;
+  color: var(--color-black);
+  margin-bottom: 10px;
+}
+.timer-section__content .timer-section__subheading {
+  font-size: 18px;
+  color: var(--color-grey);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.time-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.time-segment .time-value {
+  color: var(--color-blue);
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.time-segment .time-label {
+  color: var(--color-grey);
+  font-size: 16px;
+}
+
+.timer__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  background: linear-gradient(135deg, var(--background-blue) 0%, #1a5fc9 100%);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  font-weight: 600;
+  width: fit-content;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(35, 130, 242, 0.2);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+.timer__button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.5s, height 0.5s;
+}
+.timer__button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(35, 130, 242, 0.3);
+}
+.timer__button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+.timer__button:active {
+  transform: translateY(-1px);
+}
+.timer__button {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .section-timer {
+    padding-top: 60px;
+  }
+  .timer {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .timer .timer-seperator {
+    font-size: 24px;
+    margin-top: -30px;
+  }
+  .timer-section__content {
+    margin-bottom: 30px;
+  }
+  .timer-section__content .timer-section__heading {
+    font-size: 24px;
+  }
+  .timer-section__content .timer-section__subheading {
+    font-size: 16px;
+  }
+  .time-segment .time-value {
+    font-size: 36px;
+  }
+  .timer__button {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .section-timer {
+    padding-top: 40px;
+  }
+  .timer {
+    gap: 12px;
+  }
+  .timer .timer-seperator {
+    font-size: 20px;
+    margin-top: -20px;
+  }
+  .timer-section__content .timer-section__heading {
+    font-size: 22px;
+  }
+  .timer-section__content .timer-section__subheading {
+    font-size: 14px;
+  }
+  .time-segment .time-value {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .time-segment .time-label {
+    font-size: 13px;
+  }
+  .timer__button {
+    font-size: 16px;
+    padding: 10px 24px;
+    margin-top: 20px;
+  }
+}
