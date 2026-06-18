@@ -25,6 +25,24 @@
     "map_NGrTUp": {
       "type": "map",
       "blocks": {
+        "location_WNYEij": {
+          "type": "location",
+          "settings": {
+            "location_info_type": "email",
+            "location_info_image": "shopify://shop_images/mail.svg",
+            "location_info_label": "Location",
+            "location_info_data": "info@fonaton.com"
+          }
+        },
+        "location_6RgD4X": {
+          "type": "location",
+          "settings": {
+            "location_info_type": "phone",
+            "location_info_image": "shopify://shop_images/phone.svg",
+            "location_info_label": "Phone",
+            "location_info_data": "+998996865000"
+          }
+        },
         "location_j4MBwp": {
           "type": "location",
           "settings": {
@@ -36,6 +54,8 @@
         }
       },
       "block_order": [
+        "location_WNYEij",
+        "location_6RgD4X",
         "location_j4MBwp"
       ],
       "name": "Map Section",
