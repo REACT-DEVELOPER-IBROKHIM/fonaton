@@ -21,10 +21,35 @@
         "section_subheading": "Sizdan xabar olishdan mamnun bo‘lamiz. Bizga xabar yuboring va imkon qadar tezroq javob beramiz.",
         "button_text": "Yuborish"
       }
+    },
+    "map_NGrTUp": {
+      "type": "map",
+      "blocks": {
+        "location_j4MBwp": {
+          "type": "location",
+          "settings": {
+            "location_info_type": "address",
+            "location_info_image": "shopify://shop_images/location_on.svg",
+            "location_info_label": "Location",
+            "location_info_data": "Tashkent, Alisher Navoiy, 20"
+          }
+        }
+      },
+      "block_order": [
+        "location_j4MBwp"
+      ],
+      "name": "Map Section",
+      "settings": {
+        "map_heading": "Our locations",
+        "map_heading_secondary": "Discover Our Location",
+        "map_subheading": "Location",
+        "map_location_iframe": "<div style=\"position:relative;overflow:hidden;\">\n<a href=\"https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&amp;utm_source=maps\" style=\"color:#eee;font-size:12px;position:absolute;top:0px;\">Ташкент</a><a href=\"https://yandex.uz/maps/geo/771288885/?ll=69.323750%2C41.290231&amp;utm_medium=mapframe&amp;utm_source=maps&amp;z=11.63\" style=\"color:#eee;font-size:12px;position:absolute;top:14px;\">Ташкент — Яндекс Карты</a><iframe src=\"https://yandex.uz/map-widget/v1/?ll=69.323750%2C41.290231&amp;mode=search&amp;ol=geo&amp;ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgk3NzEyODg4ODUSFk_Ku3piZWtpc3RvbiwgVG9zaGtlbnQiCg04j4pCFZ0-JUI%2C&amp;z=11.63\" width=\"560\" height=\"400\" frameborder=\"1\" allowfullscreen=\"true\" style=\"position:relative;\"></iframe>\n</div>"
+      }
     }
   },
   "order": [
     "navigation",
-    "contact_us_KVzLWt"
+    "contact_us_KVzLWt",
+    "map_NGrTUp"
   ]
 }
