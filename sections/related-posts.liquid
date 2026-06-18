@@ -3,8 +3,8 @@
 <section class="section-related-posts">
   <div class="container">
     <div class="related-posts__header">
-      <h2 class="related-posts__title">Related Articles</h2>
-      <p class="related-posts__subtitle">Check out these other great reads</p>
+      <h2 class="related-posts__title">{{ 'related_posts.title' | t }}</h2>
+      <p class="related-posts__subtitle">{{ 'related_posts.subtitle' | t }}</p>
     </div>
 
     {% if article.blog.articles.size > 1 %}
@@ -64,12 +64,12 @@
 
       <div class="related-posts__footer">
         <a href="{{ article.blog.url }}" class="related-posts__view-all">
-          View All Articles
+          {{ 'related_posts.view_all' | t }}
         </a>
       </div>
     {% else %}
       <div class="related-posts__empty">
-        <p>No other articles available at this time.</p>
+        <p>{{ 'related_posts.no_articles' | t }}</p>
       </div>
     {% endif %}
   </div>

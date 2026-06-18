@@ -19,7 +19,42 @@
     "home": "Home"
   },
   "related_posts": {
-    "btn_text": "Read more"
+    "btn_text": "Read more",
+    "title": "Related Articles",
+    "subtitle": "Check out these other great reads",
+    "view_all": "View All Articles",
+    "no_articles": "No other articles available at this time."
+  },
+  "blog_posts": {
+    "no_posts": "No blog posts available."
+  },
+  "article": {
+    "share_title": "Share this article",
+    "share_facebook": "Facebook",
+    "share_copy_link": "Copy Link",
+    "about_author": "About the author",
+    "details_title": "Article Details",
+    "published": "Published:",
+    "author": "Author:",
+    "default_author": "FONATON Team",
+    "tags": "Tags:",
+    "link_copied": "Link copied to clipboard!"
+  },
+  "product": {
+    "off": "% OFF",
+    "free_shipping": "Free worldwide shipping",
+    "free_shipping_condition": "on all orders over $100",
+    "delivery_time": "Delivers in 3-7 Working Days",
+    "shipping_return": "Shipping & Return",
+    "vendor": "Vendor:",
+    "type": "Type:",
+    "sku": "SKU:"
+  },
+  "navigation": {
+    "toggle_menu": "Toggle menu"
+  },
+  "footer": {
+    "copyright": "Copyright © {{ year }} www.fonaton.com. All rights reserved."
   },
   "products_view": {
     "filter_by_vendor": "Filter by brand",

@@ -19,7 +19,42 @@
     "home": "Bosh sahifa"
   },
   "related_posts": {
-    "btn_text": "Batafsil"
+    "btn_text": "Batafsil",
+    "title": "Tegishli Maqolalar",
+    "subtitle": "Boshqa ajoyib maqolalarni o'qing",
+    "view_all": "Barcha Maqolalarni Ko'rish",
+    "no_articles": "Hozircha boshqa maqolalar mavjud emas."
+  },
+  "blog_posts": {
+    "no_posts": "Blog postlari mavjud emas."
+  },
+  "article": {
+    "share_title": "Ushbu maqolani ulashing",
+    "share_facebook": "Facebook",
+    "share_copy_link": "Havolani Nusxalash",
+    "about_author": "Muallif haqida",
+    "details_title": "Maqola Tafsilotlari",
+    "published": "Nashr etilgan:",
+    "author": "Muallif:",
+    "default_author": "FONATON Jamoasi",
+    "tags": "Teglar:",
+    "link_copied": "Havola nusxalandi!"
+  },
+  "product": {
+    "off": "% CHEGIRMA",
+    "free_shipping": "Butun dunyo bo'ylab bepul yetkazib berish",
+    "free_shipping_condition": "$100 dan ortiq barcha buyurtmalarga",
+    "delivery_time": "3-7 ish kunida yetkazib berish",
+    "shipping_return": "Yetkazib berish va qaytarish",
+    "vendor": "Sotuvchi:",
+    "type": "Turi:",
+    "sku": "Artikul:"
+  },
+  "navigation": {
+    "toggle_menu": "Menyuni ochish"
+  },
+  "footer": {
+    "copyright": "Copyright © {{ year }} www.fonaton.com. Barcha huquqlar himoyalangan."
   },
   "products_view": {
     "filter_by_vendor": "Brend bo'yicha filtrlash",

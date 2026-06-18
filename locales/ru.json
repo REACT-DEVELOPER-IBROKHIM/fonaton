@@ -19,7 +19,42 @@
     "home": "Главная"
   },
   "related_posts": {
-    "btn_text": "Читать далее"
+    "btn_text": "Читать далее",
+    "title": "Похожие статьи",
+    "subtitle": "Ознакомьтесь с другими интересными материалами",
+    "view_all": "Все статьи",
+    "no_articles": "Пока нет других статей."
+  },
+  "blog_posts": {
+    "no_posts": "Нет доступных записей в блоге."
+  },
+  "article": {
+    "share_title": "Поделиться статьей",
+    "share_facebook": "Facebook",
+    "share_copy_link": "Копировать ссылку",
+    "about_author": "Об авторе",
+    "details_title": "Детали статьи",
+    "published": "Опубликовано:",
+    "author": "Автор:",
+    "default_author": "Команда FONATON",
+    "tags": "Теги:",
+    "link_copied": "Ссылка скопирована!"
+  },
+  "product": {
+    "off": "% СКИДКА",
+    "free_shipping": "Бесплатная доставка по всему миру",
+    "free_shipping_condition": "для всех заказов свыше $100",
+    "delivery_time": "Доставка за 3-7 рабочих дней",
+    "shipping_return": "Доставка и возврат",
+    "vendor": "Производитель:",
+    "type": "Тип:",
+    "sku": "Артикул:"
+  },
+  "navigation": {
+    "toggle_menu": "Открыть меню"
+  },
+  "footer": {
+    "copyright": "Copyright © {{ year }} www.fonaton.com. Все права защищены."
   },
   "products_view": {
     "filter_by_vendor": "Фильтр по бренду",

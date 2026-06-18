@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="footer-section__bottom">
-      Copyright © {{ 'now' | date: '%Y' }} www.fonaton.com. All rights reserved.
+      {% assign current_year = 'now' | date: '%Y' %}{{ 'footer.copyright' | t: year: current_year }}
     </div>
   </div>
 </footer>
