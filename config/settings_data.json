@@ -189,6 +189,13 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "social_link_xd7gQM": {
+            "type": "social_link",
+            "settings": {
+              "social_url": "https://www.instagram.com/fonaton.uz/",
+              "social_icon": "shopify://shop_images/instagram-white-icon.webp"
+            }
+          },
           "social_link_mDpEHN": {
             "type": "social_link",
             "settings": {
@@ -205,6 +212,7 @@
           }
         },
         "block_order": [
+          "social_link_xd7gQM",
           "social_link_mDpEHN",
           "social_link_Y47wCy"
         ],
