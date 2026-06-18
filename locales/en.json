@@ -63,6 +63,13 @@
     "filter_toggle": "Filters",
     "more_details": "More Details"
   },
+  "list_collections": {
+    "title": "Our Collections",
+    "subtitle": "Browse our complete range of hearing solutions — from implants and devices to accessories and consumables.",
+    "breadcrumb": "Collections",
+    "shop_now": "Shop Now",
+    "products": "products"
+  },
   "collection": {
     "collection_text": "COLLECTION"
   },

@@ -63,6 +63,13 @@
     "filter_toggle": "Filtrlar",
     "more_details": "Batafsil"
   },
+  "list_collections": {
+    "title": "Bizning To'plamlarimiz",
+    "subtitle": "Eshitish vositalari, implantlar, qurilmalar, aksessuarlar va sarflov materiallaridan iborat to'liq assortimentimizni ko'rib chiqing.",
+    "breadcrumb": "To'plamlar",
+    "shop_now": "Xarid qilish",
+    "products": "mahsulot"
+  },
   "collection": {
     "collection_text": "TO'PLAMI"
   },

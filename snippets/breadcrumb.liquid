@@ -7,6 +7,11 @@
     </li>
 
     {% case request.page_type %}
+      {% when 'list_collections' %}
+        <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">
+          <span class="breadcrumb__current">{{ 'list_collections.breadcrumb' | t }}</span>
+        </li>
+
       {% when 'collection' %}
         <li class="breadcrumb__item breadcrumb__item--active" aria-current="page">
           <span class="breadcrumb__current">{{ collection.title }}</span>

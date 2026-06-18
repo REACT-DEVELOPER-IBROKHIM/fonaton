@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "navigation": {
+      "type": "navigation",
+      "settings": {}
+    },
+    "list_collections_section": {
+      "type": "list-collections",
+      "settings": {
+        "title": "",
+        "subtitle": ""
+      }
+    }
+  },
+  "order": ["navigation", "list_collections_section"]
+}
